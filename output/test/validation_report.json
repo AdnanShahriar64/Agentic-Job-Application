@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "pages": 1,
+  "pdf_text_characters": 2190,
+  "extraction_backend": "PyMuPDF"
+}

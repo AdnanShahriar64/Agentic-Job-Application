@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "pages": 2,
+  "pdf_text_characters": 5887,
+  "extraction_backend": "PyMuPDF",
+  "exactly_two_letter_pages": true,
+  "provenance_ids_absent_from_pdf": true,
+  "no_placeholders": true,
+  "catalog_urls_preserved": true,
+  "template_copy_unchanged": true,
+  "verbatim_complete_achievement_units": true,
+  "all_achievement_bullets_present_in_pdf": true
+}

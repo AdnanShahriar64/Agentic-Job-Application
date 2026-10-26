@@ -1,0 +1,334 @@
+{
+  "library": "Demonstration Links Library",
+  "schema_version": "1.0",
+  "description": "Curated technical demonstration URLs for job-specific resume selection. Intrinsic importance is advisory; relevance must be evaluated against each job description.",
+  "selection_policy": {
+    "preferred_count": 3,
+    "maximum_count": 5,
+    "only_include_directly_relevant": true,
+    "use_exact_urls": true,
+    "show_explicit_urls_in_resume": true,
+    "preserve_original_ids": true,
+    "deduplicate_urls": true,
+    "never_claim_demonstration_proves_unspecified_skills": true,
+    "scoring": "Rank using job-specific relevance first, then evidence and intrinsic importance; category mappings are candidate sets, not mandatory inclusions."
+  },
+  "demonstrations": [
+    {
+      "id": 1,
+      "stable_id": "DEMO-001",
+      "title": "Finite element formulation software tool",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7122914707790843904/",
+      "keywords": [
+        "FEA",
+        "FEM",
+        "finite element formulation",
+        "numerical methods",
+        "solver development",
+        "scientific software"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 2,
+      "stable_id": "DEMO-002",
+      "title": "P-refinement software tool",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7257511067562500096/",
+      "keywords": [
+        "p-refinement",
+        "high-order FEM",
+        "finite element analysis",
+        "numerical methods",
+        "scientific software"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 3,
+      "stable_id": "DEMO-003",
+      "title": "Multi-body simulator",
+      "url": "https://www.youtube.com/watch?v=AnejHrP2HsQ&t=3s",
+      "keywords": [
+        "multibody dynamics",
+        "structural dynamics",
+        "simulation software",
+        "numerical methods"
+      ],
+      "importance": 4,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 4,
+      "stable_id": "DEMO-004",
+      "title": "Large-deformation beam simulator",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7429372567318331392/",
+      "keywords": [
+        "nonlinear structural analysis",
+        "large deformation",
+        "beam mechanics",
+        "FEA",
+        "simulation software"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 5,
+      "stable_id": "DEMO-005",
+      "title": "MCVT structural-mechanical model",
+      "url": "https://youtu.be/TAA66P_UXIM",
+      "keywords": [
+        "digital twin",
+        "MCVT",
+        "system-of-systems",
+        "structural mechanics",
+        "multiphysics",
+        "vibration"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 6,
+      "stable_id": "DEMO-006",
+      "title": "Lunar habitat thermal topology optimization",
+      "url": "https://youtu.be/EGVZgg1pb6Q",
+      "keywords": [
+        "thermal",
+        "topology optimization",
+        "thermo-mechanical",
+        "multiphysics",
+        "lunar habitat"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 7,
+      "stable_id": "DEMO-007",
+      "title": "CFD and bridge structural analysis",
+      "url": "https://youtu.be/DTQD6CamibM",
+      "keywords": [
+        "CFD",
+        "fluid-structure interaction",
+        "FSI",
+        "coupled Eulerian-Lagrangian",
+        "coastal bridges",
+        "structural analysis"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 8,
+      "stable_id": "DEMO-008",
+      "title": "HVAC duct CFD",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7258219618144538624/",
+      "keywords": [
+        "CFD",
+        "fluid dynamics",
+        "HVAC",
+        "duct airflow",
+        "thermal-fluid"
+      ],
+      "importance": 5,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 9,
+      "stable_id": "DEMO-009",
+      "title": "UAV structural design",
+      "url": "https://www.youtube.com/watch?v=dcf8jay01C8&t=1s",
+      "keywords": [
+        "UAV",
+        "aerospace",
+        "aircraft structures",
+        "mechanical design"
+      ],
+      "importance": 3,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 10,
+      "stable_id": "DEMO-010",
+      "title": "POPC lipid bilayer simulation",
+      "url": "https://www.youtube.com/watch?v=1F-n2GzWqcs",
+      "keywords": [
+        "molecular dynamics",
+        "POPC",
+        "cell membrane",
+        "biophysics",
+        "materials"
+      ],
+      "importance": 3,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 11,
+      "stable_id": "DEMO-011",
+      "title": "Graphene unit-cell / crystal structure visualization",
+      "url": "https://www.youtube.com/watch?v=SkaZX0MqueY",
+      "keywords": [
+        "graphene",
+        "crystallography",
+        "materials science",
+        "atomistic modeling",
+        "visualization"
+      ],
+      "importance": 3,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 12,
+      "stable_id": "DEMO-012",
+      "title": "Three-Minute Thesis: Computational Model for Habitat Structures Beyond Earth",
+      "url": "https://rrpress.utsa.edu/items/4d1a04f4-08fd-423d-957f-886608ee12d0",
+      "keywords": [
+        "research communication",
+        "academic",
+        "digital twin",
+        "space habitat",
+        "computational mechanics"
+      ],
+      "importance": 4,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 13,
+      "stable_id": "DEMO-013",
+      "title": "Animatronix project",
+      "url": "https://www.youtube.com/playlist?list=PLc7bpbeTIk77kdx4O8HoIr_Ep76HiSwil",
+      "keywords": [
+        "mechatronics",
+        "Arduino",
+        "embedded systems",
+        "animatronics"
+      ],
+      "importance": 3,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    },
+    {
+      "id": 15,
+      "stable_id": "DEMO-015",
+      "title": "2D Taylor-series visualization",
+      "url": "https://youtu.be/Gzu3rn8l1ao",
+      "keywords": [
+        "Taylor series",
+        "numerical methods",
+        "scientific visualization",
+        "mathematics"
+      ],
+      "importance": 3,
+      "status": "Demonstration link supplied by candidate; content not independently verified"
+    }
+  ],
+  "aliases": [
+    {
+      "id": 14,
+      "title": "Multi-pendulum simulation",
+      "canonical_id": 3,
+      "reason": "Exact same YouTube URL as entry 3; keep legacy ID but do not list twice"
+    }
+  ],
+  "job_category_mappings": [
+    {
+      "category": "FEA / Structural Simulation",
+      "candidate_link_numbers": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "category": "CFD / Fluid Dynamics",
+      "candidate_link_numbers": [
+        7,
+        8
+      ]
+    },
+    {
+      "category": "Thermal / Thermal-Fluid",
+      "candidate_link_numbers": [
+        6,
+        8
+      ]
+    },
+    {
+      "category": "Multiphysics / FSI",
+      "candidate_link_numbers": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "category": "Numerical Methods / Solver Development",
+      "candidate_link_numbers": [
+        1,
+        2,
+        3,
+        4,
+        15
+      ]
+    },
+    {
+      "category": "Structural Dynamics / Vibrations",
+      "candidate_link_numbers": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "category": "Scientific Software / Simulation Platform",
+      "candidate_link_numbers": [
+        1,
+        2,
+        3,
+        4,
+        15
+      ]
+    },
+    {
+      "category": "Aerospace / Aerodynamics",
+      "candidate_link_numbers": [
+        7,
+        9
+      ]
+    },
+    {
+      "category": "Molecular Dynamics / Materials",
+      "candidate_link_numbers": [
+        10,
+        11
+      ]
+    },
+    {
+      "category": "Mechatronics / Embedded Systems",
+      "candidate_link_numbers": [
+        13
+      ]
+    },
+    {
+      "category": "Research / Academic Positions",
+      "candidate_link_numbers": [
+        1,
+        2,
+        5,
+        6,
+        12
+      ]
+    }
+  ],
+  "tailoring_notes": [
+    "Category mappings reproduce the supplied library; re-rank for each actual job description.",
+    "Avoid equating a mathematical visualization with CFD or aerodynamics expertise without direct evidence.",
+    "Do not rewrite or truncate URLs; duplicate 14 resolves to canonical 3.",
+    "Use no more than five demonstrations in a standard two-page resume, and fewer when space is limited."
+  ]
+}

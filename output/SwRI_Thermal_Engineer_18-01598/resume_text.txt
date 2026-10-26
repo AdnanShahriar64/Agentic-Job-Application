@@ -1,0 +1,85 @@
+Adnan Shahriar, PhD
+Phone: 210-803-5230
+|
+Email: shahriar.adnan@yahoo.com
+LinkedIn: https://www.linkedin.com/in/adnan-shahriar/
+GitHub: https://github.com/AdnanShahriar64
+Google Scholar: https://scholar.google.com/citations?user=jF2HLEcAAAAJ
+PROFESSIONAL SUMMARY
+Ph.D. mechanical engineer combining thermal-fluid simulation, HVAC product development, and experimental
+validation. Developed custom coupled heat-transfer and fluid solvers, real-time HVAC plant models, and
+simulation-driven airflow improvements. At Rheem, validated a fan-shroud prototype with more than 80%
+higher airflow efficiency (CFM/W) than the previous design. Research experience includes NASA habitat
+thermal modeling and multiphysics integration.
+TECHNICAL SKILLS
+Thermal and Fluids: Heat transfer, Transient thermal analysis, CFD, Thermal-fluid coupling, HVAC airflow
+optimization, Navier-Stokes modeling
+Experiments and Validation: Airflow testing, Prototype evaluation, Experimental fixture design, Model
+calibration, Impact-hammer testing
+Computational Engineering: Finite element methods, Multiphysics simulation, Thermo-mechanical topology
+optimization, Numerical solver development, Parametric CAD automation
+Programming and Automation: Python, C/C++, CadQuery, SiL/HiL plant modeling, Jenkins, Bash,
+PowerShell
+PROFESSIONAL EXPERIENCE
+Project Engineer
+Mar 2025–Present
+Rheem Manufacturing (Friedrich Air Conditioning) | San Antonio, TX
+• Used CFD to optimize shroud geometry and improve airflow distribution across the condenser coil. Fabricated
+and tested a prototype, demonstrating more than 80% improvement in airflow efficiency (CFM/W) relative
+to the previous design.
+• Invented a passive condensate entrainment and slinging system that uses fan-generated pressure differences
+to draw condensed water into the fan airflow path and improve condensate slinging performance.
+• Performed CFD simulations to investigate airflow behavior, pressure distribution, and condensate entrainment
+mechanisms.
+• Designed, fabricated, and iteratively refined 3D-printed prototypes to demonstrate the mechanism.
+• Conducted experimental testing to validate condensate entrainment, slinging effectiveness, and overall
+system performance.
+• Designed an air-handling unit that delivered approximately 25% higher airflow than the existing configuration.
+Fabricated and tested 3D-printed prototypes to assess airflow and refine design assumptions.
+• Designed and fabricated a modular, 3D-printed cross-flow fan test fixture with adjustable tongue and scroll
+geometry and clearances, enabling multiple configurations to be tested without rebuilding the full housing.
+• Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations,
+and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and
+accelerating design iteration across product configurations.
+• Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity
+of fan performance to scroll and housing geometry.
+
+Senior Simulation Integration Engineer
+Jan 2024–Mar 2025
+L&T Technology Services | Plano, TX
+• Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-
+the-Loop (HiL) applications, combining finite element solution of transient heat transfer and velocity-pressure-
+coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-fluid
+coupling, and a proportional-derivative (PD) HVAC controller model.
+• Developed and integrated a Software-in-the-Loop (SiL) infrastructure connecting the simulator, display,
+virtual CAN/LIN communication, and ECU-testing components to support construction and forestry vehicle
+software testing.
+• Developed Jenkins CI/CD pipelines with Bash and PowerShell scripting and automated screen-capture
+capability, streamlining debugging and test workflows for construction and forestry vehicle software.
+• Applied experimental aerodynamics and CFD principles to evaluate wind-tunnel data, including dynamic-
+pressure, wake-distortion, strut-interference, and boundary-layer corrections.
+Graduate Researcher
+Dec 2019–Jan 2024
+Resilient Extraterrestrial Habitats Institute | San Antonio, TX
+• Developed custom three-dimensional finite element solvers from first principles for structural mechanics,
+transient heat transfer, and fluid dynamics, including coupled structural-thermal habitat models and interior
+thermal-fluid simulations.
+• Developed and integrated structural, thermal, and fluid plant models for NASA’s Modular-Coupled Virtual
+Testbed (MCVT), a system-of-systems simulation environment for virtual testing of resilient extraterrestrial
+habitats.
+• Investigated thermo-mechanical topology optimization of lunar habitat thermal protective layers under
+different environmental conditions and lunar latitudes.
+• Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer
+data, identifying natural frequencies and mode shapes, using Crypton optical geometry measurements,
+and calibrating a parameterized beam-element model to match identified modal properties and measured
+acceleration histories.
+• Developed computational tools emphasizing reduced arithmetic and memory complexity to support novel
+numerical formulations and simulation workflows; contributed to a publication on algorithm development.
+SELECTED TECHNICAL DEMONSTRATIONS
+MCVT structural-mechanical model: https://youtu.be/TAA66P_UXIM
+Lunar habitat thermal topology optimization: https://youtu.be/EGVZgg1pb6Q
+HVAC duct CFD: https://www.linkedin.com/feed/update/urn:li:activity:7258219618144538624/
+EDUCATION
+Ph.D., Mechanical Engineering — University of Texas at San Antonio, 2023 | GPA: 3.94
+B.S., Aeronautical Engineering (Aerospace Major) — Military Institute of Science and Technology,
+2015
