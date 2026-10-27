@@ -138,8 +138,15 @@ def validate_content(data):
     for entry in others:
         if not isinstance(entry, dict):
             raise ValueError('other_experience entries must be objects')
-        for key in ('heading', 'text', 'source_id'):
+        for key in ('heading', 'source_id'):
             text(entry.get(key), 'other_experience.' + key)
+        if 'bullets' in entry:
+            if not isinstance(entry['bullets'], list) or not entry['bullets']:
+                raise ValueError('other_experience.bullets must be nonempty')
+            for bullet in entry['bullets']:
+                text(bullet, 'other_experience.bullets')
+        else:
+            text(entry.get('text'), 'other_experience.text')
     demos = data.get('demonstrations', [])
     if not isinstance(demos, list):
         raise ValueError('demonstrations must be an array')
@@ -155,17 +162,34 @@ def validate_content(data):
     return True
 
 def make_macros(data):
-    # Also support direct callers using the grouped-bullets JSON format.
-    data = expand_experience_bullets(data)
-    validate_content(data)
+    validate_content(expand_experience_bullets(data))
     skills = '\n'.join(r'\textbf{' + tex_escape(x['category']) + ':} ' +
                        tex_escape(', '.join(x['items'])) + r'\par' for x in data['skills'])
     def bullet_list(name):
-        return '\n'.join(r'\item ' + tex_escape(x['text']) for x in data['experience'][name])
+        # Grouped IDs become a heading bullet with every original achievement as
+        # an indented child bullet. Legacy flat entries still compile as before.
+        output = []
+        for entry in data['experience'][name]:
+            if 'bullets' in entry:
+                output.append(r'\item \textbf{' + tex_escape(entry['heading']) + '}')
+                output.append(r'\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]')
+                output.extend(r'\item ' + tex_escape(b) for b in entry['bullets'])
+                output.append(r'\end{itemize}')
+            else:
+                output.append(r'\item ' + tex_escape(entry['text']))
+        return '\n'.join(output)
     others = ''
     if data.get('other_experience'):
-        others = '\n'.join(r'\textbf{' + tex_escape(x['heading']) + r'}\par' + '\n' +
-                           tex_escape(x['text']) + r'\par' for x in data['other_experience'])
+        other_parts = []
+        for entry in data['other_experience']:
+            other_parts.append(r'\textbf{' + tex_escape(entry['heading']) + r'}\par')
+            if 'bullets' in entry:
+                other_parts.append(r'\begin{itemize}[leftmargin=1.4em,topsep=1pt,itemsep=1pt]')
+                other_parts.extend(r'\item '+tex_escape(b) for b in entry['bullets'])
+                other_parts.append(r'\end{itemize}')
+            else:
+                other_parts.append(tex_escape(entry['text']) + r'\par')
+        others = '\n'.join(other_parts)
     demos = ''
     if data.get('demonstrations'):
         demos = '\n'.join(tex_escape(d['title']) + ': ' + url_tex(d['url']) + r'\par'
@@ -223,19 +247,18 @@ def main():
 
     try:
         original_data = json.loads(args.input.read_text(encoding='utf-8'))
-        data = expand_experience_bullets(original_data)
-        validate_content(data)
+        data = original_data
+        validate_content(expand_experience_bullets(data))
         if not args.template.exists():
             raise ValueError('Missing LaTeX template: ' + str(args.template))
         args.output.mkdir(parents=True, exist_ok=True)
-        # Save the expanded, backward-compatible schema for the PDF validator.
         (args.output / 'resume_content.json').write_text(
             json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         pdf = compile_latex(args.template, make_macros(data), args.output, args.compiler)
         print('Compiled:', pdf)
         if not args.skip_validate:
             from validate_resume import validate_pdf
-            report = validate_pdf(pdf, data, args.output / 'compile.log')
+            report = validate_pdf(pdf, expand_experience_bullets(data), args.output / 'compile.log')
             (args.output / 'validation_report.json').write_text(
                 json.dumps(report, indent=2), encoding='utf-8')
             print('Validation:', 'PASS' if report['passed'] else 'FAIL')
