@@ -9,21 +9,35 @@
 
 ### EXP-004-A: CAD-to-Mesh Automation Algorithm
 
-**Importance:** 4  
-**Domains:** Computational Geometry, Numerical Simulation, Scientific Software Development, Mesh Generation, Engineering Automation  
-**Keywords:** CAD-to-Mesh, Automated Meshing, Computational Geometry, Mesh Generation, Simulation Preprocessing, Numerical Algorithms, Arithmetic Complexity, Engineering Software  
+**Weighted Keywords:**
+- CAD-to-Mesh: 5
+- Automated Meshing: 5
+- Computational Geometry: 4
+- Mesh Generation: 4
+- Simulation Preprocessing: 3
+- Numerical Algorithms: 3
+- Arithmetic Complexity: 4
+- Engineering Software: 3
+- Scientific Computing: 10
 **Status:** Developed
 
 **Achievement:**
 - Developed a CAD-to-mesh automation algorithm for engineering simulation preprocessing, applying computational geometry methods with an emphasis on reducing arithmetic complexity and automating mesh generation from CAD models.
 
-## Keywords for Automated Resume Tailoring
 
-Computational geometry; CAD-to-mesh; automated meshing; mesh generation; numerical methods; simulation preprocessing; scientific computing; numerical algorithms; arithmetic complexity; engineering automation; simulation software development; CAE; CAD.
+## Weighted Keyword Interpretation
+
+- **5:** Defining technical capability demonstrated by the accomplishment.
+- **4:** Major technical capability.
+- **3:** Supporting technical capability.
+- **2:** Secondary associated capability.
+- **1:** Minor associated capability.
+- Use the achievement text as the authoritative evidence; weights are editorial starting values, not quantitative measurements or job-specific scores.
+- Preserve selected achievement bullets verbatim and in order; never print keyword metadata in the résumé.
 
 ## Tailoring Notes
 
 - Select EXP-004-A primarily for roles involving numerical simulation software, meshing, computational geometry, CAE automation, or solver preprocessing.
-- Importance (4/5) represents technical significance independent of any particular job description. Calculate job-specific relevance separately.
+- Keyword weights (1–5) indicate the relative centrality of each capability to this accomplishment, not its relevance to a specific job.
 - Do not claim a particular mesh type, meshing library, programming language, speedup percentage, or production deployment unless independently documented.
 - Preserve the distinction between developing a preprocessing algorithm and developing a complete CFD or FEA solver.

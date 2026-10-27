@@ -25,6 +25,7 @@
         "finite element formulation",
         "numerical methods",
         "solver development",
+        "simulation software",
         "scientific software"
       ],
       "importance": 5,
@@ -40,6 +41,7 @@
         "high-order FEM",
         "finite element analysis",
         "numerical methods",
+        "simulation software",
         "scientific software"
       ],
       "importance": 5,
@@ -54,7 +56,8 @@
         "multibody dynamics",
         "structural dynamics",
         "simulation software",
-        "numerical methods"
+        "numerical methods",
+        "scientific software"
       ],
       "importance": 4,
       "status": "Demonstration link supplied by candidate; content not independently verified"
@@ -69,7 +72,8 @@
         "large deformation",
         "beam mechanics",
         "FEA",
-        "simulation software"
+        "simulation software",
+        "scientific software"
       ],
       "importance": 5,
       "status": "Demonstration link supplied by candidate; content not independently verified"
@@ -100,7 +104,9 @@
         "topology optimization",
         "thermo-mechanical",
         "multiphysics",
-        "lunar habitat"
+        "lunar habitat",
+        "simulation software",
+        "scientific software"
       ],
       "importance": 5,
       "status": "Demonstration link supplied by candidate; content not independently verified"

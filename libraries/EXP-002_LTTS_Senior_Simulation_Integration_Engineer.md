@@ -12,9 +12,15 @@
 
 ### EXP-002-A: Wind-Tunnel Aerodynamic Data Evaluation
 
-**Importance:** 4  
-**Domains:** CFD, Experimental Aerodynamics, Wind-Tunnel Testing, Data Analysis, Automotive Engineering  
-**Keywords:** Computational Fluid Dynamics, CFD, Wind Tunnel, Dynamic-Pressure Correction, Wake Distortion, Strut Interference, Boundary-Layer Correction, Aerodynamic Data  
+**Weighted Keywords:**
+- Computational Fluid Dynamics: 5
+- CFD: 5
+- Wind Tunnel: 5
+- Dynamic-Pressure Correction: 5
+- Wake Distortion: 5
+- Strut Interference: 4
+- Boundary-Layer Correction: 4
+- Aerodynamic Data: 3
 **Status:** Completed Client Assignment
 
 **Achievement:**
@@ -22,9 +28,14 @@
 
 ### EXP-002-B: Modular GUI for Aerodynamic Data Analysis
 
-**Importance:** 4  
-**Domains:** Scientific Software Development, GUI Development, Aerodynamic Analysis, Software Architecture, Computational Efficiency  
-**Keywords:** Graphical User Interface, GUI, Modular Software, Input/Output Interfaces, Computational Optimization, Memory Efficiency, Data Processing  
+**Weighted Keywords:**
+- Graphical User Interface: 5
+- GUI: 4
+- Modular Software: 5
+- Input/Output Interfaces: 4
+- Computational Optimization: 3
+- Memory Efficiency: 4
+- Data Processing: 3
 **Status:** Completed Client Assignment
 
 **Achievement:**
@@ -36,9 +47,22 @@
 
 ### EXP-002-C: Real-Time C/C++ HVAC Plant Model for SiL and HiL
 
-**Importance:** 5  
-**Domains:** Multiphysics Simulation, HVAC, Embedded Software, Numerical Methods, Digital Plant Modeling, Controls  
-**Keywords:** C, C++, Real-Time Simulation, HVAC Plant Model, Software-in-the-Loop, SiL, Hardware-in-the-Loop, HiL, Finite Element Method, FEM, Navier-Stokes Equations, Transient Heat Transfer, Lumped Capacitance, Convective Coupling, PD Control  
+**Weighted Keywords:**
+- C++: 5
+- Real-Time Simulation: 5
+- HVAC Plant Model: 5
+- Plant Modeling: 5
+- Software-in-the-Loop: 4
+- SiL: 2
+- Hardware-in-the-Loop: 4
+- HiL: 2
+- Finite Element Method: 4
+- FEM: 2
+- Navier-Stokes Equations: 5
+- Transient Heat Transfer: 3
+- Lumped Capacitance: 5
+- Convective Coupling: 5
+- PID Control: 5
 **Status:** Completed Development
 
 **Achievement:**
@@ -52,9 +76,14 @@
 
 ### EXP-002-D: Probability-Based File-Type Detection Algorithm
 
-**Importance:** 4  
-**Domains:** Software Engineering, Statistical Algorithms, Data-Driven Classification, Computational Efficiency  
-**Keywords:** Statistical Modeling, Probability-Based Classification, File Type Detection, Algorithm Design, Scalability, Software Performance, Refactoring  
+**Weighted Keywords:**
+- Statistical Modeling: 5
+- Probability-Based Classification: 5
+- File Type Detection: 5
+- Algorithm Design: 5
+- Scalability: 5
+- Software Performance: 5
+- Refactoring: 5
 **Status:** Completed Development
 
 **Achievement:**
@@ -62,9 +91,17 @@
 
 ### EXP-002-E: Integrated SiL Simulation Infrastructure and Vehicle Network Virtualization
 
-**Importance:** 5  
-**Domains:** Embedded Systems, Simulation Platform Development, Software Integration, Vehicle Networks, Virtual Testing  
-**Keywords:** Software-in-the-Loop, SiL, Simulation Infrastructure, Virtual CAN, LIN, ECU Testing, Simulator Integration, Display Integration, Embedded Control  
+**Weighted Keywords:**
+- Software-in-the-Loop: 5
+- SiL: 2
+- Simulation Infrastructure: 5
+- Virtual CAN: 4
+- LIN: 4
+- ECU Testing: 4
+- Simulator Integration: 3
+- Display Integration: 3
+- Embedded Control: 3
+- Software Engineering: 5
 **Status:** Completed Development
 
 **Achievement:**
@@ -72,9 +109,17 @@
 
 ### EXP-002-F: Jenkins CI/CD and Automated Debugging
 
-**Importance:** 5  
-**Domains:** DevOps, Test Automation, Software Engineering, Continuous Integration, Embedded Software Validation  
-**Keywords:** Jenkins, CI/CD, Bash, PowerShell, Automated Testing, Screen Capture, Debugging, Construction Equipment, Forestry Equipment  
+**Weighted Keywords:**
+- Jenkins: 5
+- CI/CD: 5
+- Bash: 4
+- PowerShell: 4
+- Automated Testing: 4
+- Screen Capture: 3
+- Debugging: 3
+- Construction Equipment: 3
+- Forestry Equipment: 3
+- Software Engineering: 5
 **Status:** Completed Development
 
 **Achievement:**
@@ -82,23 +127,38 @@
 
 ### EXP-002-G: C#/.NET Database and Desktop Application Integration
 
-**Importance:** 3  
-**Domains:** Desktop Software Development, Database Integration, Software Engineering, Application Development  
-**Keywords:** C#, .NET, Windows Forms, WinForms, SQL, Entity Framework, Database Read/Write, Desktop Applications  
+**Weighted Keywords:**
+- C#: 5
+- .NET: 5
+- Windows Forms: 4
+- WinForms: 3
+- SQL: 4
+- Entity Framework: 4
+- Database Read/Write: 3
+- Desktop Applications: 3
+- Software Engineering: 5
+
 **Status:** Completed Development
 
 **Achievement:**
 - Implemented database read/write operations using SQL and Entity Framework within C#/.NET Windows Forms (WinForms) applications.
 
-## Keywords for Automated Resume Tailoring
 
-CFD; computational fluid dynamics; experimental aerodynamics; wind-tunnel testing; automotive aerodynamics; dynamic-pressure correction; wake distortion; strut interference; boundary-layer correction; GUI; scientific software; modular architecture; C; C++; embedded software; HVAC plant model; transient heat transfer; finite element method; Navier-Stokes; thermal-fluid coupling; lumped capacitance; PD controller; real-time simulation; SiL; HiL; ECU testing; CAN; LIN; vehicle network virtualization; simulation integration; Jenkins; CI/CD; Bash; PowerShell; test automation; debugging; statistical classification; file-type detection; C#; .NET; WinForms; SQL; Entity Framework.
+## Weighted Keyword Interpretation
+
+- **5:** Defining technical capability demonstrated by the accomplishment.
+- **4:** Major technical capability.
+- **3:** Supporting technical capability.
+- **2:** Secondary associated capability.
+- **1:** Minor associated capability.
+- Use the achievement text as the authoritative evidence; weights are editorial starting values, not quantitative measurements or job-specific scores.
+- Preserve selected achievement bullets verbatim and in order; never print keyword metadata in the résumé.
 
 ## Tailoring Notes
 
 - This is one L&T Technology Services employment entry with two client assignments; do not present the clients as separate employers.
 - Preserve the distinct assignment dates and the overall employment dates.
-- Importance ratings reflect broad technical significance, not relevance to an individual job description. Calculate job-specific relevance separately.
+- Weighted keywords represent capability centrality within each accomplishment; evaluate job-specific relevance separately.
 - EXP-002-C contains detailed components of the same HVAC plant model. Use the summary achievement or selected technical details, not both redundantly.
 - Do not automatically infer certification, production deployment, a measured speedup, or a specific CFD software package from the described work.
 - Preserve C/C++ as described; do not assert which components were exclusively C versus C++ without additional evidence.

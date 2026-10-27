@@ -3,7 +3,7 @@
 **Library priority:** Low — exceptional job-specific matches only  
 **Default inclusion:** Exclude from tailored resumes  
 **Eligibility:** Include at most one accomplishment from this library only if it directly addresses a central, specific requirement that the higher-priority EXP-001 through EXP-004 libraries do not adequately demonstrate.  
-**Selection threshold:** Job relevance 5/5 AND explicit evidence match; intrinsic importance does not override this gate.  
+**Selection threshold:** Job relevance 5/5 AND explicit evidence match; keyword weights do not override this gate.  
 **Attribution:** Preserve each project's actual institution and dates. These projects are not separate full-time jobs unless independently documented.  
 **Source fidelity:** Do not imply experiments or analyses were completed beyond the wording below.
 
@@ -13,14 +13,17 @@
 **Institution:** University of Texas at San Antonio (UTSA)  
 **Dates:** April 1, 2017 – March 31, 2018  
 **Funding:** U.S. Department of Energy / Savannah River Nuclear Solutions  
-**Keywords:** TEM, HRTEM, 2D FFT, image processing, crystallography, MoSe2, atomistic modeling, molecular dynamics, mercury, steel, materials characterization  
 **Project priority:** Low; exceptional materials science, microscopy, or molecular simulation match only
 
 ### EXP-005-A1: Microscopy Image Processing
 
-**Importance:** 3/5  
-**Domains:** Scientific Image Processing, Materials Characterization, Computational Materials Science  
-**Keywords:** TEM, HRTEM, 2D FFT, MoSe2, microscopy, nanocrystals  
+**Weighted Keywords:**
+- TEM: 5
+- HRTEM: 4
+- 2D FFT: 5
+- MoSe2: 3
+- microscopy: 3
+- nanocrystals: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -28,9 +31,11 @@
 
 ### EXP-005-A2: Crystallographic Analysis
 
-**Importance:** 2/5  
-**Domains:** Crystallography, Microscopy, Materials Characterization  
-**Keywords:** crystal structure, spatial frequency, crystallographic patterns, MoSe2  
+**Weighted Keywords:**
+- crystal structure: 3
+- spatial frequency: 5
+- crystallographic patterns: 5
+- MoSe2: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -38,9 +43,11 @@
 
 ### EXP-005-A3: Atomistic MoSe2 Models
 
-**Importance:** 2/5  
-**Domains:** Atomistic Modeling, Computational Materials Science  
-**Keywords:** 3D atomistic models, MoSe2, molecular geometry, crystal structure  
+**Weighted Keywords:**
+- 3D atomistic models: 5
+- MoSe2: 5
+- molecular geometry: 3
+- crystal structure: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -48,9 +55,13 @@
 
 ### EXP-005-A4: Mercury–Steel Molecular Dynamics
 
-**Importance:** 3/5  
-**Domains:** Molecular Dynamics, Materials Science, Contaminant–Material Interaction  
-**Keywords:** molecular dynamics, MD, mercury, Hg, steel substrate, interatomic interactions  
+**Weighted Keywords:**
+- molecular dynamics: 5
+- MD: 2
+- mercury: 5
+- Hg: 2
+- steel substrate: 4
+- interatomic interactions: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -58,9 +69,11 @@
 
 ### EXP-005-A5: Contaminant Interaction Interpretation
 
-**Importance:** 2/5  
-**Domains:** Computational Materials Science, Atomistic Interactions  
-**Keywords:** atomic interactions, molecular interactions, contaminant behavior, DOE materials  
+**Weighted Keywords:**
+- atomic interactions: 5
+- molecular interactions: 3
+- contaminant behavior: 5
+- DOE materials: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -71,14 +84,15 @@
 **Project:** Interaction of Graphene and Graphene Derivatives with Cell Membranes  
 **Institution:** University of Texas at San Antonio (UTSA)  
 **Dates:** January 2017 – December 2017  
-**Keywords:** graphene, graphene derivatives, molecular dynamics, energy minimization, POPC, lipid bilayer, water, membrane, biophysics  
 **Project priority:** Low; exceptional atomistic modeling, molecular dynamics, or membrane simulation match only
 
 ### EXP-005-B1: Graphene Energy Minimization
 
-**Importance:** 3/5  
-**Domains:** Computational Materials Science, Atomistic Modeling, Material Mechanics  
-**Keywords:** graphene, energy minimization, mechanical properties, atomic-scale modeling  
+**Weighted Keywords:**
+- graphene: 5
+- energy minimization: 5
+- mechanical properties: 3
+- atomic-scale modeling: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -86,9 +100,11 @@
 
 ### EXP-005-B2: Graphene Derivative Molecular Models
 
-**Importance:** 2/5  
-**Domains:** Molecular Modeling, Nanomaterials  
-**Keywords:** graphene derivatives, molecular models, material characteristics, biological interactions  
+**Weighted Keywords:**
+- graphene derivatives: 5
+- molecular models: 5
+- material characteristics: 3
+- biological interactions: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -96,9 +112,12 @@
 
 ### EXP-005-B3: Graphene–Membrane Molecular Dynamics
 
-**Importance:** 3/5  
-**Domains:** Molecular Dynamics, Computational Biophysics  
-**Keywords:** molecular dynamics, graphene derivatives, cell membranes, lipid membrane, MD  
+**Weighted Keywords:**
+- molecular dynamics: 5
+- graphene derivatives: 3
+- cell membranes: 5
+- lipid membrane: 3
+- MD: 2
 **Status:** Completed research work
 
 **Achievement:**
@@ -106,9 +125,12 @@
 
 ### EXP-005-B4: POPC–Water Model Characterization
 
-**Importance:** 3/5  
-**Domains:** Molecular Dynamics, Membrane Simulation, Model Validation  
-**Keywords:** POPC, phosphatidylcholine, lipid, water, molecular interactions  
+**Weighted Keywords:**
+- POPC: 5
+- phosphatidylcholine: 3
+- lipid: 3
+- water: 5
+- molecular interactions: 4
 **Status:** Completed research work
 
 **Achievement:**
@@ -116,9 +138,11 @@
 
 ### EXP-005-B5: Intermolecular Interaction Analysis
 
-**Importance:** 2/5  
-**Domains:** Molecular Dynamics, Computational Biophysics  
-**Keywords:** intermolecular forces, graphene, lipid membrane, atomic-scale interactions  
+**Weighted Keywords:**
+- intermolecular forces: 5
+- graphene: 3
+- lipid membrane: 5
+- atomic-scale interactions: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -129,14 +153,16 @@
 **Project:** Aerodynamic Characteristics of Biplane and Monoplane Wings Using NACA 0012 Airfoils  
 **Institution:** University of Texas at San Antonio (UTSA)  
 **Dates:** January 2019 – May 2019  
-**Keywords:** NACA 0012, aerodynamic testing, biplane, monoplane, wind tunnel, variable wing spacing, CAD, GD&T, 3D printing  
 **Project priority:** Low; exceptional aircraft aerodynamic experimentation or test-fixture match only
 
 ### EXP-005-C1: Wing Aerodynamic Experimental Framework
 
-**Importance:** 3/5  
-**Domains:** Aerodynamics, Experimental Design  
-**Keywords:** NACA 0012, biplane, monoplane, aerodynamic testing, wing spacing  
+**Weighted Keywords:**
+- NACA 0012: 3
+- biplane: 3
+- monoplane: 3
+- aerodynamic testing: 5
+- wing spacing: 5
 **Status:** Completed experimental design work
 
 **Achievement:**
@@ -144,9 +170,11 @@
 
 ### EXP-005-C2: Subsonic Wind-Tunnel Test Planning
 
-**Importance:** 3/5  
-**Domains:** Experimental Aerodynamics, Test Planning  
-**Keywords:** subsonic wind tunnel, aerodynamic forces, test setup, wings  
+**Weighted Keywords:**
+- subsonic wind tunnel: 5
+- aerodynamic forces: 5
+- test setup: 3
+- wings: 3
 **Status:** Test planning and setup
 
 **Achievement:**
@@ -154,9 +182,11 @@
 
 ### EXP-005-C3: Adjustable Wing Test Structure
 
-**Importance:** 3/5  
-**Domains:** Mechanical Design, Experimental Fixture Design  
-**Keywords:** adjustable wing gap, modular experimental setup, variable geometry, wing spacing  
+**Weighted Keywords:**
+- adjustable wing gap: 5
+- modular experimental setup: 5
+- variable geometry: 3
+- wing spacing: 3
 **Status:** Designed
 
 **Achievement:**
@@ -164,9 +194,11 @@
 
 ### EXP-005-C4: Parametric Wing and Mounting CAD
 
-**Importance:** 3/5  
-**Domains:** CAD, Mechanical Design, Prototyping  
-**Keywords:** parametric CAD, NACA 0012, modular mounting structure, aerodynamic tests  
+**Weighted Keywords:**
+- parametric CAD: 5
+- NACA 0012: 5
+- modular mounting structure: 3
+- aerodynamic tests: 3
 **Status:** Developed
 
 **Achievement:**
@@ -174,9 +206,11 @@
 
 ### EXP-005-C5: GD&T and Assembly Fit
 
-**Importance:** 2/5  
-**Domains:** Mechanical Design, GD&T, Assembly  
-**Keywords:** GD&T, geometric tolerancing, dimensional accuracy, assembly compatibility  
+**Weighted Keywords:**
+- GD&T: 5
+- geometric tolerancing: 5
+- dimensional accuracy: 3
+- assembly compatibility: 3
 **Status:** Applied during design
 
 **Achievement:**
@@ -184,9 +218,11 @@
 
 ### EXP-005-C6: Additively Manufactured Wind-Tunnel Hardware
 
-**Importance:** 3/5  
-**Domains:** Additive Manufacturing, Rapid Prototyping, Experimental Hardware  
-**Keywords:** 3D printing, wing components, mounting hardware, prototyping  
+**Weighted Keywords:**
+- 3D printing: 5
+- wing components: 3
+- mounting hardware: 5
+- prototyping: 3
 **Status:** Fabricated
 
 **Achievement:**
@@ -197,14 +233,16 @@
 **Project:** Aircraft-Runway Interaction and Runway Roughness Analysis  
 **Institution:** University of Texas at San Antonio (UTSA)  
 **Dates:** January 2022 – December 2022  
-**Keywords:** aircraft dynamics, runway roughness, landing gear, tire–runway contact, beam finite elements, structural dynamics, takeoff, taxiing, landing  
 **Project priority:** Low; exceptional landing gear, ground dynamics, contact modeling, or aircraft dynamics match only
 
 ### EXP-005-D1: Aircraft–Runway Dynamic Simulation
 
-**Importance:** 3/5  
-**Domains:** Structural Dynamics, Aircraft Simulation  
-**Keywords:** numerical modeling, aircraft-runway interaction, taxiing, takeoff, landing  
+**Weighted Keywords:**
+- numerical modeling: 5
+- aircraft-runway interaction: 5
+- taxiing: 3
+- takeoff: 3
+- landing: 3
 **Status:** Developed
 
 **Achievement:**
@@ -212,9 +250,11 @@
 
 ### EXP-005-D2: Beam Finite Element Aircraft Model
 
-**Importance:** 3/5  
-**Domains:** FEA, Structural Dynamics, Aerospace Engineering  
-**Keywords:** beam finite elements, aircraft structures, stiffness, dynamic response  
+**Weighted Keywords:**
+- beam finite elements: 5
+- aircraft structures: 3
+- stiffness: 3
+- dynamic response: 5
 **Status:** Developed
 
 **Achievement:**
@@ -222,9 +262,11 @@
 
 ### EXP-005-D3: Landing Gear and Tire–Runway Contact
 
-**Importance:** 3/5  
-**Domains:** Multibody Dynamics, Contact Mechanics, Aircraft Dynamics  
-**Keywords:** landing gear, tire-runway contact, surface irregularities, runway roughness  
+**Weighted Keywords:**
+- landing gear: 5
+- tire-runway contact: 5
+- surface irregularities: 3
+- runway roughness: 3
 **Status:** Modeled
 
 **Achievement:**
@@ -232,9 +274,11 @@
 
 ### EXP-005-D4: Aerodynamic Loading in Ground Operations
 
-**Importance:** 3/5  
-**Domains:** Aerospace Dynamics, Coupled Loading  
-**Keywords:** aerodynamic forces, takeoff, aircraft dynamics, ground operations  
+**Weighted Keywords:**
+- aerodynamic forces: 5
+- takeoff: 3
+- aircraft dynamics: 3
+- ground operations: 5
 **Status:** Implemented
 
 **Achievement:**
@@ -242,9 +286,11 @@
 
 ### EXP-005-D5: Coupled Aircraft–Runway Model
 
-**Importance:** 3/5  
-**Domains:** Multiphysics Coupling, Aircraft Dynamics, Contact Mechanics  
-**Keywords:** aircraft structural model, landing gear dynamics, runway contact, coupled response  
+**Weighted Keywords:**
+- aircraft structural model: 3
+- landing gear dynamics: 5
+- runway contact: 5
+- coupled response: 4
 **Status:** Integrated
 
 **Achievement:**
@@ -252,9 +298,11 @@
 
 ### EXP-005-D6: Runway Roughness Assessment
 
-**Importance:** 2/5  
-**Domains:** Engineering Simulation, Aircraft Dynamics  
-**Keywords:** runway roughness, numerical simulation, surface irregularities, aircraft dynamic response  
+**Weighted Keywords:**
+- runway roughness: 5
+- numerical simulation: 5
+- surface irregularities: 3
+- aircraft dynamic response: 3
 **Status:** Completed research work
 
 **Achievement:**
@@ -265,14 +313,16 @@
 **Project:** Aircraft Fuselage Design and Conceptual Aircraft Development  
 **Institution:** Military Institute of Science and Technology, Bangladesh  
 **Dates:** Not provided; do not infer  
-**Keywords:** aerospace structures, composites, fuselage, lightweight design, tensile elements, static loading, dynamic loading, aircraft configuration, canard, forward-swept wings  
 **Project priority:** Low; exceptional airframe/composites/conceptual aircraft design match only
 
 ### EXP-005-E1: Lightweight Composite Fuselage
 
-**Importance:** 3/5  
-**Domains:** Aerospace Structures, Composites, Mechanical Design  
-**Keywords:** fuselage, composite materials, wire tension elements, bending, tensile loads  
+**Weighted Keywords:**
+- fuselage: 5
+- composite materials: 5
+- wire tension elements: 3
+- bending: 3
+- tensile loads: 3
 **Status:** Designed and fabricated
 
 **Achievement:**
@@ -280,9 +330,12 @@
 
 ### EXP-005-E2: Airframe Load-Path Assessment
 
-**Importance:** 3/5  
-**Domains:** Structural Mechanics, Aerospace Engineering  
-**Keywords:** airframe load paths, static loading, dynamic loading, material selection, lightweight structures  
+**Weighted Keywords:**
+- airframe load paths: 5
+- static loading: 5
+- dynamic loading: 3
+- material selection: 3
+- lightweight structures: 3
 **Status:** Completed design work
 
 **Achievement:**
@@ -290,9 +343,12 @@
 
 ### EXP-005-E3: Wide-Body Aircraft Concept
 
-**Importance:** 3/5  
-**Domains:** Conceptual Aerospace Design, Aerodynamic Configuration  
-**Keywords:** wide-body aircraft, canard, forward-swept wings, passenger capacity, fuel efficiency  
+**Weighted Keywords:**
+- wide-body aircraft: 5
+- canard: 5
+- forward-swept wings: 4
+- passenger capacity: 3
+- fuel efficiency: 3
 **Status:** Conceptual design
 
 **Achievement:**
@@ -300,20 +356,33 @@
 
 ### EXP-005-E4: Unconventional Aircraft Configurations and Publications
 
-**Importance:** 2/5  
-**Domains:** Aerospace Conceptual Design, Research  
-**Keywords:** unconventional aircraft, aerodynamic advantages, structural advantages, publications  
+**Weighted Keywords:**
+- unconventional aircraft: 5
+- aerodynamic advantages: 3
+- structural advantages: 3
+- publications: 5
 **Status:** Research and publications
 
 **Achievement:**
 - Investigated potential aerodynamic and structural advantages of unconventional aircraft configurations, contributing to two publications on conceptual aircraft design.
+
+
+## Weighted Keyword Interpretation
+
+- **5:** Defining technical capability demonstrated by the accomplishment.
+- **4:** Major technical capability.
+- **3:** Supporting technical capability.
+- **2:** Secondary associated capability.
+- **1:** Minor associated capability.
+- Use the achievement text as the authoritative evidence; weights are editorial starting values, not quantitative measurements or job-specific scores.
+- Preserve selected achievement bullets verbatim and in order; never print keyword metadata in the résumé.
 
 ## Mandatory Tailoring Rules for EXP-005
 
 1. **Low-priority gate:** Do not select from EXP-005 by default. Keywords alone do not satisfy the gate.
 2. **Exceptional-match requirement:** Include an EXP-005 accomplishment only when the specific job description makes its narrow domain a central requirement and the higher-priority experience libraries provide insufficient direct evidence.
 3. **At most one:** Include no more than one EXP-005 accomplishment in a standard two-page targeted resume. Only override this limit if the user explicitly asks.
-4. **Score condition:** Job-specific relevance must be 5/5, supported by the actual achievement text; intrinsic importance is only a secondary ranking factor.
+4. **Score condition:** Job-specific relevance must be 5/5, supported by the actual achievement text; weighted-keyword relevance is only a secondary ranking aid after the exceptional-match gate.
 5. **Priority order:** Consider EXP-001 through EXP-004 first. Do not displace stronger recent experience for a generic match from EXP-005.
 6. **Preserve attribution:** These are selected research/engineering projects; keep the institution and original project context clear when including one.
 7. **Avoid exaggeration:** Do not convert test planning to completed physical testing, conceptual designs to proven performance, or research models to production deployment.

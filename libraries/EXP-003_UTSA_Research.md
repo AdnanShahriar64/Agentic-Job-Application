@@ -20,9 +20,15 @@
 
 #### EXP-003-A: Custom 3D Multiphysics Finite Element Solvers
 
-**Importance:** 5  
-**Domains:** Numerical Methods, FEA, CFD, Thermal-Fluid Modeling, Multiphysics, Solver Development  
-**Keywords:** 3D FEM, Finite Element Formulation, Navier-Stokes, Fluid Dynamics, Transient Heat Transfer, Thermo-Fluid Coupling, Structural-Thermal Coupling, Computational Mechanics  
+**Weighted Keywords:**
+- 3D FEM: 5
+- Finite Element Formulation: 5
+- Navier-Stokes: 5
+- Fluid Dynamics: 5
+- Transient Heat Transfer: 5
+- Thermo-Fluid Coupling: 5
+- Structural-Thermal Coupling: 5
+- Computational Mechanics: 5
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -30,9 +36,16 @@
 
 #### EXP-003-B: XFEM, Nonlinear Materials, and Damage Modeling
 
-**Importance:** 5  
-**Domains:** FEA, XFEM, Nonlinear Mechanics, Damage Mechanics, Materials Modeling  
-**Keywords:** Extended FEM, XFEM, 3D Voids, Plasticity, Strain-Rate Effects, Thermal Expansion, von Mises, Drucker-Prager, Constitutive Modeling  
+**Weighted Keywords:**
+- Extended FEM: 5
+- XFEM: 5
+- 3D Voids: 3
+- Plasticity: 4
+- Strain-Rate Effects: 4
+- Thermal Expansion: 3
+- von Mises: 3
+- Drucker-Prager: 3
+- Constitutive Modeling: 4
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -40,9 +53,15 @@
 
 #### EXP-003-C: Thermal Protective Layer Topology Optimization
 
-**Importance:** 5  
-**Domains:** Thermal Engineering, Thermo-Mechanical Simulation, Topology Optimization, Lunar Habitat Design  
-**Keywords:** Thermal Topology Optimization, Thermo-Mechanical Optimization, Thermal Protection, Heat Transfer, Lunar Environment, Design Optimization  
+**Weighted Keywords:**
+- Thermal Topology Optimization: 5
+- Thermal: 5
+- Thermo Fluid: 5
+- Thermo-Mechanical Optimization: 5
+- Thermal Protection: 3
+- Heat Transfer: 4
+- Lunar Environment: 3
+- Design Optimization: 3
 **Status:** Research Investigation Completed
 
 **Achievement:**
@@ -50,9 +69,14 @@
 
 #### EXP-003-D: Reduced-Order Modeling and High-Order Elements
 
-**Importance:** 4  
-**Domains:** Structural Dynamics, Numerical Methods, Model Order Reduction, Acoustics  
-**Keywords:** Modal Reduction, Modal Coordinates, Guyan Condensation, High-Order Finite Elements, Wave Propagation, Micrometeoroid Impact  
+**Weighted Keywords:**
+- Modal Reduction: 5
+- Modal Coordinates: 3
+- Guyan Condensation: 5
+- High-Order Finite Elements: 4
+- Wave Propagation: 4
+- Micrometeoroid Impact: 3
+- Digital Twin: 5
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -62,9 +86,15 @@
 
 #### EXP-003-E: NASA Modular-Coupled Virtual Testbed (MCVT)
 
-**Importance:** 5  
-**Domains:** Digital Twins, Multiphysics, System-of-Systems, Thermal-Fluid Modeling, FEA, Simulation Integration  
-**Keywords:** MCVT, Modular-Coupled Virtual Testbed, Plant Modeling, Structural-Thermal-Fluid Coupling, System Integration, Virtual Testing, NASA  
+**Weighted Keywords:**
+- MCVT: 5
+- Modular-Coupled Virtual Testbed: 5
+- Plant Modeling: 3
+- Structural-Thermal-Fluid Coupling: 4
+- System Integration: 4
+- Virtual Testing: 3
+- NASA: 2
+- Digital Twin: 5
 **Status:** Completed Research Contribution
 
 **Achievement:**
@@ -72,9 +102,17 @@
 
 #### EXP-003-F: Experimental Structural Digital Twin and Model Updating
 
-**Importance:** 5  
-**Domains:** Digital Twins, Structural Dynamics, Experimental Validation, FEA, System Identification  
-**Keywords:** Model Updating, Impact-Hammer Testing, Accelerometers, Modal Identification, Natural Frequencies, Mode Shapes, Modal Damping, Crypton Optical Measurement, Beam Elements  
+**Weighted Keywords:**
+- Model Updating: 5
+- Impact-Hammer Testing: 5
+- Accelerometers: 3
+- Modal Identification: 4
+- Natural Frequencies: 4
+- Mode Shapes: 4
+- Modal Damping: 3
+- Crypton Optical Measurement: 3
+- Beam Elements: 3
+- Digital Twin: 5
 **Status:** Completed Research Development and Experimental Calibration
 
 **Achievement:**
@@ -82,9 +120,14 @@
 
 #### EXP-003-G: XFEM-Informed Neural Network Damage Surrogate
 
-**Importance:** 4  
-**Domains:** Machine Learning, Surrogate Modeling, Computational Mechanics, Digital Twins  
-**Keywords:** Neural Networks, XFEM, Damage Prediction, Physics-Based Surrogates, High-Fidelity Simulation, Reduced Computational Cost  
+**Weighted Keywords:**
+- Neural Networks: 5
+- XFEM: 4
+- Damage Prediction: 5
+- Physics-Based Surrogates: 4
+- High-Fidelity Simulation: 3
+- Reduced Computational Cost: 3
+- Digital Twin: 5
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -94,9 +137,14 @@
 
 #### EXP-003-H: Efficient Scientific Software and Numerical Algorithms
 
-**Importance:** 4  
-**Domains:** Scientific Software, Numerical Algorithms, Computational Efficiency, Simulation Automation  
-**Keywords:** Arithmetic Complexity, Memory Complexity, Numerical Formulations, Solver Development, Scientific Computing, Algorithm Publication  
+**Weighted Keywords:**
+- Arithmetic Complexity: 5
+- Memory Complexity: 5
+- Numerical Formulations: 4
+- Solver Development: 4
+- Scientific Computing: 3
+- Algorithm Publication: 3
+- Software Engineering: 5
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -104,9 +152,13 @@
 
 #### EXP-003-I: Modular Experimental Habitat and Cyber-Physical Testing
 
-**Importance:** 4  
-**Domains:** Experimental Engineering, Prototyping, Mechanical Design, Digital Twin Validation  
-**Keywords:** Cyber-Physical Testing, Experimental Habitat, Additive Manufacturing, Design for Assembly, Modular Prototyping, Validation  
+**Weighted Keywords:**
+- Cyber-Physical Testing: 4
+- Experimental Habitat: 5
+- Additive Manufacturing: 4
+- Design for Assembly: 3
+- Modular Prototyping: 5
+- Validation: 3
 **Status:** Completed Conceptual Design
 
 **Achievement:**
@@ -124,9 +176,15 @@
 
 #### EXP-003-J: Eulerian CFD and Hurricane Wave Simulation
 
-**Importance:** 5  
-**Domains:** CFD, Fluid Mechanics, Coastal Engineering, Numerical Modeling, Wave Dynamics  
-**Keywords:** Eulerian CFD, Wave Generation, Hurricane Waves, Hydrodynamic Loading, Fluid Motion, Coastal Bridges, Numerical Simulation  
+**Weighted Keywords:**
+- Eulerian CFD: 5
+- CFD: 5
+- Wave Generation: 5
+- Hurricane Waves: 4
+- Hydrodynamic Loading: 4
+- Fluid Motion: 3
+- Coastal Bridges: 3
+- Numerical Simulation: 3
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -134,9 +192,13 @@
 
 #### EXP-003-K: Numerical Experiments in Wave and Fluid Loading
 
-**Importance:** 4  
-**Domains:** CFD, Numerical Experimentation, Wave Modeling, Research Validation  
-**Keywords:** Numerical Experiments, Wave Behavior, Fluid Loading, Computational Wave Generation, Simulation Analysis, Conference Publication  
+**Weighted Keywords:**
+- Numerical Experiments: 5
+- Wave Behavior: 5
+- Fluid Loading: 4
+- Computational Wave Generation: 3
+- Simulation Analysis: 3
+- Conference Publication: 3
 **Status:** Completed Research and Publication Contribution
 
 **Achievement:**
@@ -146,9 +208,14 @@
 
 #### EXP-003-L: Coupled Eulerian-Lagrangian FSI Modeling
 
-**Importance:** 5  
-**Domains:** CFD, FSI, Multiphysics, Computational Mechanics, Coastal Infrastructure  
-**Keywords:** Coupled Eulerian-Lagrangian, CEL, Fluid-Structure Interaction, Eulerian Fluid Domain, Lagrangian Structure, Wave-Structure Interaction, Hydrodynamic Loads  
+**Weighted Keywords:**
+- Coupled Eulerian-Lagrangian: 5
+- CEL: 2
+- Fluid-Structure Interaction: 5
+- Eulerian Fluid Domain: 3
+- Lagrangian Structure: 3
+- Wave-Structure Interaction: 4
+- Hydrodynamic Loads: 3
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -156,9 +223,14 @@
 
 #### EXP-003-M: Bridge Dynamics Under Extreme Hydrodynamic Loading
 
-**Importance:** 5  
-**Domains:** FSI, Structural Dynamics, Structural Vulnerability, Multiphysics Analysis  
-**Keywords:** Bridge Vibration, Stress Distribution, Hydrodynamic Loading, Dynamic Response, Wave Impact, Structural Deformation, Coastal Infrastructure  
+**Weighted Keywords:**
+- Bridge Vibration: 5
+- Stress Distribution: 4
+- Hydrodynamic Loading: 4
+- Dynamic Response: 5
+- Wave Impact: 3
+- Structural Deformation: 3
+- Coastal Infrastructure: 3
 **Status:** Completed Research Analysis
 
 **Achievement:**
@@ -168,9 +240,13 @@
 
 #### EXP-003-N: Large-Scale FSI Simulations on HPC Systems
 
-**Importance:** 5  
-**Domains:** High-Performance Computing, CFD, FSI, Large-Scale Simulation  
-**Keywords:** HPC, Supercomputer, Coupled Eulerian-Lagrangian, CEL, Large-Scale FSI, Computational Simulation  
+**Weighted Keywords:**
+- HPC: 5
+- Supercomputer: 5
+- Coupled Eulerian-Lagrangian: 4
+- CEL: 2
+- Large-Scale FSI: 4
+- Computational Simulation: 3
 **Status:** Completed Research Simulation
 
 **Achievement:**
@@ -178,9 +254,14 @@
 
 #### EXP-003-O: Simulation Post-Processing and Bridge Research Publications
 
-**Importance:** 4  
-**Domains:** CFD, FSI, Data Analysis, Scientific Research, Technical Communication  
-**Keywords:** Simulation Post-Processing, Quantitative Analysis, Bridge Engineering, Numerical Modeling, Structural Vulnerability, Journal Publications, Conference Papers  
+**Weighted Keywords:**
+- Simulation Post-Processing: 5
+- Quantitative Analysis: 5
+- Bridge Engineering: 3
+- Numerical Modeling: 3
+- Structural Vulnerability: 3
+- Journal Publications: 4
+- Conference Papers: 3
 **Status:** Completed Research Contribution
 
 **Achievement:**
@@ -188,17 +269,16 @@
 
 ---
 
-## Keywords for Automated Resume Tailoring
 
-**CFD and fluid mechanics:** CFD; computational fluid dynamics; Eulerian modeling; wave generation; wave dynamics; hydrodynamic loading; coastal fluid mechanics; Navier-Stokes; airflow; thermal-fluid simulation; fluid-structure interaction; FSI; coupled Eulerian-Lagrangian; CEL.
+## Weighted Keyword Interpretation
 
-**Thermal and multiphysics:** Transient heat transfer; thermo-fluid modeling; structural-thermal coupling; multiphysics simulation; thermal protection; thermo-mechanical optimization; system-of-systems; MCVT.
-
-**Structural and numerical methods:** FEM; FEA; XFEM; computational mechanics; nonlinear constitutive modeling; plasticity; structural dynamics; high-order elements; acoustics; modal reduction; Guyan condensation.
-
-**Digital twins and scientific software:** Digital twin; system identification; experimental modal analysis; model updating; simulation integration; neural-network surrogate; scientific computing; numerical algorithms; computational efficiency.
-
-**Experimental and research methods:** HPC; supercomputing; numerical experiments; simulation post-processing; impact-hammer testing; accelerometer measurements; optical geometry measurement; additive manufacturing; cyber-physical testing; research publications.
+- **5:** Defining technical capability demonstrated by the accomplishment.
+- **4:** Major technical capability.
+- **3:** Supporting technical capability.
+- **2:** Secondary associated capability.
+- **1:** Minor associated capability.
+- Use the achievement text as the authoritative evidence; weights are editorial starting values, not quantitative measurements or job-specific scores.
+- Preserve selected achievement bullets verbatim and in order; never print keyword metadata in the résumé.
 
 ## Tailoring Notes
 
@@ -207,7 +287,7 @@
 - For thermal or multiphysics jobs, prioritize EXP-003-A, EXP-003-C, EXP-003-E, and relevant CFD/FSI entries from Project 2.
 - For structural FEA jobs, prioritize EXP-003-A, EXP-003-B, EXP-003-D, EXP-003-F, and EXP-003-M.
 - For simulation software or digital twin jobs, prioritize EXP-003-A, EXP-003-E, EXP-003-F, EXP-003-G, and EXP-003-H.
-- Importance is **intrinsic technical strength** (1–5), not a fixed job match score. Compute job-specific relevance separately.
+- Keyword weights (1–5) describe each capability’s centrality to an accomplishment; compute job-specific relevance separately.
 - Preserve the distinction between **Eulerian CFD**, **CEL-based FSI**, and **structural response analysis**. Do not assume unsupported turbulence models, specific commercial solvers, or one-way/two-way coupling details.
 - Keep publication counts and roles accurate; do not imply first authorship or ownership of all seven-plus bridge publications.
 - Avoid combining distinct research efforts into one ambiguous achievement. When space is limited, preserve representation of both projects for CFD/FSI-focused applications.
