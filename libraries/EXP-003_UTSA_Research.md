@@ -62,9 +62,6 @@
 - Heat Transfer: 4
 - Lunar Environment: 3
 - Design Optimization: 3
-- AI: 6
-- Artificial Intellegence: 6
-- Machine Learning: 6
 
 **Status:** Research Investigation Completed
 
@@ -84,9 +81,6 @@
 - Wave Propagation: 4
 - Micrometeoroid Impact: 3
 - Digital Twin: 5
-- AI: 6
-- Artificial Intellegence: 6
-- Machine Learning: 6
 
 **Status:** Completed Research Development
 
@@ -124,9 +118,6 @@
 - Crypton Optical Measurement: 3
 - Beam Elements: 3
 - Digital Twin: 5
-- AI: 5
-- Artificial Intellegence: 5
-- Machine Learning: 5
 
 **Status:** Completed Research Development and Experimental Calibration
 
@@ -143,9 +134,7 @@
 - High-Fidelity Simulation: 3
 - Reduced Computational Cost: 3
 - Digital Twin: 5
-- AI: 10
-- Artificial Intellegence: 10
-- Machine Learning: 10
+- Machine Learning (AI): 5
 
 **Status:** Completed Research Development
 
@@ -292,13 +281,13 @@
 
 **Weighted Keywords:**
 - Numerical Method Development: 5
-- Thermal Control Systems: 10
-- Coolant Flow Modeling: 10
-- Darcy Potential Flow: 10
+- Thermal Control Systems: 5
+- Coolant Flow Modeling: 5
+- Darcy Potential Flow: 5
 - Extended Finite Element Method (XFEM): 5
 - Level-Set Method: 5
 - Multi-Material Modeling: 5
-- Embedded Coolant Channels: 10
+- Embedded Coolant Channels: 5
 - Multiphysics Simulation: 5
 - Heat Transfer: 5
 - Finite Element Analysis (FEA): 4

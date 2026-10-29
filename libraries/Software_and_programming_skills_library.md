@@ -37,7 +37,8 @@
 **Source Number:** 4  
 **Importance:** 5/5  
 **Domains:** CFD; Flow Simulation  
-**Tools and Capabilities:** SOLIDWORKS Flow Simulation, Ansys, OpenFOAM, Custom CFD Solvers, ParaView  
+**Tools and Capabilities:** Ansys Fluent, SOLIDWORKS Flow Simulation, Ansys, OpenFOAM, Custom CFD Solvers, ParaView  
+**Confirmed by candidate:** Ansys Fluent (October 28, 2026). May be listed as a CFD tool in the skills section. Do not attribute a specific accomplishment to Fluent unless that accomplishment's Achievement text names it.  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-05: Thermal & HVAC Simulation

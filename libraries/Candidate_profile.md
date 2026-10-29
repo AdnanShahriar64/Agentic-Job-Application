@@ -31,6 +31,20 @@
 
 **Summary-writing rule:** Use the target job description to select relevant strengths. Do not represent all listed specialties as equally recent or equally deep, and do not assert years of specific-domain experience without checking the dated evidence.
 
+## Career Focus
+
+Areas the candidate wants emphasized. This is the **only** place to add extra emphasis — do not raise keyword weights above 5 in the experience libraries.
+
+`scripts/score_selection.py` reads this table. When a job asks for a focus area (any of its job signals, judged by meaning, not exact words), each listed evidence ID gets the bonus added to its score S. IDs not listed get no bonus, and a focus area the job does not ask for gives no bonus. The bonus changes ranking only; it never allows claiming a capability the Achievement text does not show.
+
+| Focus ID | Focus area | Job signals | Evidence IDs | Bonus |
+|---|---|---|---|---|
+| FOCUS-AI | AI/ML for engineering simulation | machine learning, AI, neural networks, surrogate models, data-driven design | EXP-003-G, EXP-001-B | 0.5 |
+| FOCUS-THERMAL | Thermal management and thermal-fluid modeling | thermal management, heat transfer, cooling, thermal control, HVAC thermal | EXP-003-P, EXP-002-C, EXP-003-C, EXP-003-A | 0.5 |
+| FOCUS-SCI | Scientific computing and numerical software | scientific computing, numerical methods, solver development, HPC | EXP-004-A, EXP-003-H, EXP-003-A | 0.5 |
+
+Job discovery (Agent 1) should also rank a job higher when it asks for one of these focus areas and the overall match is otherwise comparable.
+
 ## Education
 
 ### Ph.D. in Mechanical Engineering

@@ -1,26 +1,13 @@
+# EXP-001: Rheem Manufacturing — Project Engineer II
 
+**Employer:** Rheem Manufacturing | Friedrich Air Conditioning Division
+**Location:** San Antonio, TX
+**Dates:** March 2025 – Present
+**Position:** Project Engineer II
 
-**# EXP-001: Rheem Manufacturing — Project Engineer II**
+## Engineering Automation and Computational Tool Development
 
-
-
-**\*\*Employer:\*\*** Rheem Manufacturing | Friedrich Air Conditioning Division
-
-**\*\*Location:\*\*** San Antonio, TX
-
-**\*\*Dates:\*\*** March 2025 – Present
-
-**\*\*Position:\*\*** Project Engineer II
-
-
-
-**## Engineering Automation and Computational Tool Development**
-
-
-
-**### EXP-001-A: Parametric Fan-Shroud Generation**
-
-
+### EXP-001-A: Parametric Fan-Shroud Generation
 
 **Weighted Keywords:**
 - CAD: 3
@@ -33,23 +20,13 @@
 - HVAC: 2
 - CFD: 1
 - FEA: 1
-- AI: 5
-- Artificial Intellegence: 5
-- Machine Learning: 5
 
-**\*\*Status:\*\*** Completed
+**Status:** Completed
 
+**Achievement:**
+- Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations.
 
-
-**\*\*Achievement:\*\***
-
-\- Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations.
-
-
-
-**### EXP-001-B: Simulation-Driven Design Optimization**
-
-
+### EXP-001-B: Simulation-Driven Design Optimization
 
 **Weighted Keywords:**
 - Data-Driven Design Optimization: 5
@@ -61,25 +38,14 @@
 - Simulation Automation: 5
 - CFD: 5
 - Computational Fluid Dynamics: 5
-- AI: 10
-- Artificial Intellegence: 10
-- Machine Learning: 10
 
-**\*\*Status:\*\*** In Development
+**Status:** In Development
 
+**Achievement:**
+- Developing a framework that uses batch CFD simulations to build a performance dataset across fan-shroud geometry parameters.
+- Applying statistical analysis and predictive modeling to identify promising configurations, establish data-driven design guidelines, and reduce the need for computationally expensive CFD runs during future product development.
 
-
-**\*\*Achievement:\*\***
-
-\- Developing a framework that uses batch CFD simulations to build a performance dataset across fan-shroud geometry parameters. 
-
-\- Applying statistical analysis and predictive modeling to identify promising configurations, establish data-driven design guidelines, and reduce the need for computationally expensive CFD runs during future product development.
-
-
-
-**### EXP-001-C: Refrigerant-Tube Routing Optimization**
-
-
+### EXP-001-C: Refrigerant-Tube Routing Optimization
 
 **Weighted Keywords:**
 - Structural Dynamics: 5
@@ -90,25 +56,13 @@
 - Modal Analysis: 5
 - Experimental Model Updating: 5
 - Vibration: 5
-- Explicit: 4
-- Implicit: 4
-- AI: 5
-- Artificial Intellegence: 5
-- Machine Learning: 5
 
-**\*\*Status:\*\*** In Development
+**Status:** In Development
 
+**Achievement:**
+- Developing an FEA-based tool to evaluate natural frequencies and optimize compressor-to-outdoor-coil tubing routes to reduce vibration susceptibility. Incorporating experimental modal testing and model updating to calibrate FEA predictions against measured vibration characteristics.
 
-
-**\*\*Achievement:\*\***
-
-\- Developing an FEA-based tool to evaluate natural frequencies and optimize compressor-to-outdoor-coil tubing routes to reduce vibration susceptibility. Incorporating experimental modal testing and model updating to calibrate FEA predictions against measured vibration characteristics.
-
-
-
-**### EXP-001-D: Engineering Workflow Automation**
-
-
+### EXP-001-D: Engineering Workflow Automation
 
 **Weighted Keywords:**
 - Engineering Workflow Automation: 5
@@ -117,23 +71,14 @@
 - Numerical Evaluation: 3
 - CAD Generation: 3
 
-**\*\*Status:\*\*** Completed
+**Status:** Completed
 
+**Achievement:**
+- Built workflows linking parametric design inputs, numerical evaluation, optimization, and CAD output to enable programmatic exploration of engineering alternatives.
 
+## CFD, Structural Optimization, and HVAC Product Design
 
-**\*\*Achievement:\*\***
-
-\- Built workflows linking parametric design inputs, numerical evaluation, optimization, and CAD output to enable programmatic exploration of engineering alternatives.
-
-
-
-**## CFD, Structural Optimization, and HVAC Product Design**
-
-
-
-**### EXP-001-E: Outdoor Fan-Shroud Optimization**
-
-
+### EXP-001-E: Outdoor Fan-Shroud Optimization
 
 **Weighted Keywords:**
 - Experimental Performance Validation: 4
@@ -144,19 +89,12 @@
 - Condenser Coil Airflow: 3
 - CFD: 5
 
-**\*\*Status:\*\*** Completed
+**Status:** Completed
 
+**Achievement:**
+- Used CFD to optimize shroud geometry and improve airflow distribution across the condenser coil. Fabricated and tested a prototype, demonstrating more than 80% improvement in airflow efficiency (CFM/W) relative to the previous design.
 
-
-**\*\*Achievement:\*\***
-
-\- Used CFD to optimize shroud geometry and improve airflow distribution across the condenser coil. Fabricated and tested a prototype, demonstrating more than 80% improvement in airflow efficiency (CFM/W) relative to the previous design.
-
-
-
-**### EXP-001-F: Airflow-Induced Condensate Management Invention**
-
-
+### EXP-001-F: Airflow-Induced Condensate Management Invention
 
 **Weighted Keywords:**
 - Experimental Validation: 5
@@ -165,28 +103,19 @@
 - 3D-Printed Prototype Testing: 4
 - Fan Pressure Differential: 4
 - Fluid Dynamics: 3
+- Invention Disclosure: 3
 - CFD: 5
 - Computational Fluid Dynamics: 5
 
-**\*\*Status:\*\*** Completed Experimental Development
+**Status:** Completed Experimental Development; invention disclosure submitted (see EXP-001-L)
 
+**Achievement:**
+- Invented a passive condensate entrainment and slinging system (patent disclosure submitted) that uses fan-generated pressure differences to draw condensed water into the fan airflow path and improve condensate slinging performance.
+- Performed CFD simulations to investigate airflow behavior, pressure distribution, and condensate entrainment mechanisms.
+- Designed, fabricated, and iteratively refined 3D-printed prototypes to demonstrate the mechanism.
+- Conducted experimental testing to validate condensate entrainment, slinging effectiveness, and overall system performance.
 
-
-**\*\*Achievement:\*\***
-
-\- Invented a passive condensate entrainment and slinging system that uses fan-generated pressure differences to draw condensed water into the fan airflow path and improve condensate slinging performance.
-
-\- Performed CFD simulations to investigate airflow behavior, pressure distribution, and condensate entrainment mechanisms.
-
-\- Designed, fabricated, and iteratively refined 3D-printed prototypes to demonstrate the mechanism.
-
-\- Conducted experimental testing to validate condensate entrainment, slinging effectiveness, and overall system performance.
-
-
-
-**### EXP-001-G: Motor-Mount Structural Optimization**
-
-
+### EXP-001-G: Motor-Mount Structural Optimization
 
 **Weighted Keywords:**
 - FEA-Based Structural Optimization: 5
@@ -197,19 +126,12 @@
 - Injection-Molding Simplification: 3
 - Design for Manufacturability: 3
 
-**\*\*Status:\*\*** Completed
+**Status:** Completed
 
+**Achievement:**
+- Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining stiffness and vibration requirements. Simplified injection-molded components to reduce secondary manufacturing operations and assembly complexity.
 
-
-**\*\*Achievement:\*\***
-
-\- Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining stiffness and vibration requirements. Simplified injection-molded components to reduce secondary manufacturing operations and assembly complexity.
-
-
-
-**### EXP-001-H: Cross-Flow Fan Aerodynamics**
-
-
+### EXP-001-H: Cross-Flow Fan Aerodynamics
 
 **Weighted Keywords:**
 - Cross-Flow Fan Aerodynamics: 5
@@ -220,19 +142,12 @@
 - CFD: 5
 - Computational Fluid Dynamics: 5
 
-**\*\*Status:\*\*** Completed CFD Investigation
+**Status:** Completed CFD Investigation
 
+**Achievement:**
+- Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity of fan performance to scroll and housing geometry.
 
-
-**\*\*Achievement:\*\***
-
-\- Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity of fan performance to scroll and housing geometry.
-
-
-
-**### EXP-001-I: Reconfigurable Fan Test Fixture**
-
-
+### EXP-001-I: Reconfigurable Fan Test Fixture
 
 **Weighted Keywords:**
 - Experimental Test Fixture: 5
@@ -243,22 +158,14 @@
 - Mechanical Design: 3
 - Experimental Validation: 5
 - Design of Experiments: 5
-- Validation: 5
 - Airflow Testing: 5
 
-**\*\*Status:\*\*** Completed
+**Status:** Completed
 
+**Achievement:**
+- Designed and fabricated a modular, 3D-printed cross-flow fan test fixture with adjustable tongue and scroll geometry and clearances, enabling multiple configurations to be tested without rebuilding the full housing.
 
-
-**\*\*Achievement:\*\***
-
-\- Designed and fabricated a modular, 3D-printed cross-flow fan test fixture with adjustable tongue and scroll geometry and clearances, enabling multiple configurations to be tested without rebuilding the full housing.
-
-
-
-**### EXP-001-J: VPAK Air-Handling Unit Development**
-
-
+### EXP-001-J: VPAK Air-Handling Unit Development
 
 **Weighted Keywords:**
 - Airflow Performance Improvement: 5
@@ -270,21 +177,12 @@
 - CFD: 5
 - Computational Fluid Dynamics: 5
 
-**\*\*Status:\*\*** Completed Prototype Development
+**Status:** Completed Prototype Development
 
+**Achievement:**
+- Designed an air-handling unit prototype that achieved approximately 25% higher airflow than the existing configuration. Fabricated and tested 3D-printed prototypes to measure airflow and refine design assumptions.
 
-
-**\*\*Achievement:\*\***
-
-\- Designed an air-handling unit that delivered approximately 25% higher airflow than the existing configuration. Fabricated and tested 3D-printed prototypes to assess airflow and refine design assumptions.
-
-
-
-
-
-**### EXP-001-K: Air-Conditioner Front-Panel Design**
-
-
+### EXP-001-K: Air-Conditioner Front-Panel Design
 
 **Weighted Keywords:**
 - Airflow Improvement: 3
@@ -293,19 +191,12 @@
 - Product Appearance: 2
 - HVAC: 2
 
-**\*\*Status:\*\*** Completed Design
+**Status:** Completed Design
 
+**Achievement:**
+- Redesigned the front panel to deliver approximately 60% higher airflow than the baseline while improving its appearance. Used AI-assisted concept exploration to compare visual design alternatives.
 
-
-**\*\*Achievement:\*\***
-
-\- Redesigned the front panel to deliver approximately 60% higher airflow than the baseline while improving its appearance. Used AI-assisted concept exploration to compare visual design alternatives.
-
-
-
-**### EXP-001-L: Invention Disclosures**
-
-
+### EXP-001-L: Invention Disclosures
 
 **Weighted Keywords:**
 - Invention Disclosures (Four Submitted): 5
@@ -315,19 +206,12 @@
 - Fan-Shroud Optimization: 3
 - Research and Development: 3
 
-**\*\*Status:\*\*** Four Disclosures Submitted
+**Status:** Four Disclosures Submitted
 
+**Achievement:**
+- Submitted four patent disclosures covering HVAC innovations, including fan shroud optimization, condensate management, and experimental testing systems.
 
-
-**\*\*Achievement:\*\***
-
-\- Submitted four patent disclosures covering HVAC innovations, including fan shroud optimization, condensate management, and experimental testing systems.
-
-
-
-**### EXP-001-M: Modular VPAK Air-Handling Unit Prototype**
-
-
+### EXP-001-M: Modular VPAK Air-Handling Unit Prototype
 
 **Weighted Keywords:**
 - Design Flexibility: 5
@@ -338,22 +222,14 @@
 - Production Design Intent: 2
 - Experimental Validation: 5
 - Design of Experiments: 5
-- Validation: 5
 - Airflow Testing: 5
 
-**\*\*Status:\*\*** Completed Prototype Development
+**Status:** Completed Prototype Development
 
+**Achievement:**
+- Designed and developed a nine-segment modular VPAK air-handling unit (AHU) prototype, allowing individual sections to be modified independently for airflow optimization and rapid accommodation of design changes, including heater, coil, and component configurations. Used low-cost 3D printing to accelerate design iteration while preserving the single-piece AHU design intended for production.
 
-
-**\*\*Achievement:\*\***
-
-\- Designed and developed a nine-segment modular VPAK air-handling unit (AHU) prototype, allowing individual sections to be modified independently for airflow optimization and rapid accommodation of design changes, including heater, coil, and component configurations. Used low-cost 3D printing to accelerate design iteration while maintaining a unified, single-piece AHU configuration for production.
-
-
-
-**### EXP-001-N: Structural FEA and Assembly Optimization of Modular AHU**
-
-
+### EXP-001-N: Structural FEA and Assembly Optimization of Modular AHU
 
 **Weighted Keywords:**
 - Structural Integrity FEA: 5
@@ -366,21 +242,12 @@
 - Mechanical Interference Prevention: 4
 - Stress Analysis: 5
 
-**\*\*Status:\*\*** Completed FEA Analysis
+**Status:** Completed FEA Analysis
 
+**Achievement:**
+- Performed finite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load-bearing capacity. Analyzed deformation under fan and motor loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical interference and supporting reliable prototype operation.
 
-
-**\*\*Achievement:\*\***
-
-\- Performed comprehensive finite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load-bearing capacity. Analyzed deformation under fan and motor loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical interference and supporting reliable prototype operation.
-
-
-
-
-
-**### EXP-001-O: Multi-Material Product FEA Analysis**
-
-
+### EXP-001-O: Multi-Material Product FEA Analysis
 
 **Weighted Keywords:**
 - Finite Element Analysis (FEA): 5
@@ -394,17 +261,12 @@
 - Material Density Variation: 5
 - Stress Analysis: 5
 
-**\*\*Status:\*\*** Completed FEA Analysis
+**Status:** Completed FEA Analysis
 
+**Achievement:**
+- Performed finite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at different densities.
 
-
-**\*\*Achievement:\*\***
-
-\- Performed finite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at different densities.
-
-
-
-**### EXP-001-P: Fan-Induced Vibration and Modal Analysis**
+### EXP-001-P: Fan-Induced Vibration and Modal Analysis
 
 **Weighted Keywords:**
 - Modal Analysis: 5
@@ -421,8 +283,7 @@
 **Achievement:**
 - Performed FEA-based modal analysis to identify natural frequencies of product components and assess resonance risk by comparing them with fan rotational frequency (RPM/60) and blade-passing frequency.
 
-
-**### EXP-001-Q: Explicit Dynamic Impact and Fracture Assessment**
+### EXP-001-Q: Explicit Dynamic Impact and Fracture Assessment
 
 **Weighted Keywords:**
 - Explicit Dynamic FEA: 5
@@ -438,8 +299,7 @@
 **Achievement:**
 - Performed explicit dynamic FEA impact analysis of plastic components to evaluate impact-induced stresses and potential cracking; calculated the J-integral to assess the driving force for crack propagation.
 
-
-**### EXP-001-R: Experimental Drop-Impact Testing**
+### EXP-001-R: Experimental Drop-Impact Testing
 
 **Weighted Keywords:**
 - Experimental Drop Testing: 5
@@ -453,33 +313,19 @@
 **Achievement:**
 - Conducted physical drop tests to experimentally assess component response and damage under impact loading.
 
+## Tailoring Notes
 
-**## Tailoring Notes**
-
-\- Use only Weighted Keywords; no overall Importance or Domains metadata.
-
-\- Weights: 5 = defining, 4 = major, 3 = supporting, 2 = secondary, 1 = minor.
-
-\- Do not interpret a high keyword weight as evidence that planned work is complete.
-
-
-
-\- Preserve distinctions between completed projects, experimental prototypes, and work in development.
-
-\- Never describe submitted patent disclosures as granted patents.
-
-\- Preserve quantitative improvements and their stated comparison baselines.
-
-\- Treat weighted keyword values (1–5) as how central each capability is within its accomplishment, not job-specific relevance.
-
-\- Score each keyword against job requirements separately; use weighted relevance and actual achievement text as evidence.
-
-\- Do not count duplicate or synonymous keywords as independent qualifications.
-
-\- Compute job relevance separately for each job description; do not assume keywords alone prove a capability.
-
-\- Select individual accomplishments rather than automatically selecting entire sections.
-
-\- Select or exclude each accomplishment ID as a complete unit; preserve all its Achievement bullets verbatim and in order. Do not merge or rewrite bullets.
-
-\- Do not interpret experimental prototype performance as production-level validation unless specifically supported.
+- Use only Weighted Keywords; no overall Importance or Domains metadata.
+- Weights: 5 = defining, 4 = major, 3 = supporting, 2 = secondary, 1 = minor. Never use weights above 5; extra emphasis belongs in the Career Focus section of `Candidate_profile.md`.
+- A keyword must be supported by the Achievement text. Do not tag a capability (for example AI/ML) that the Achievement text does not show.
+- Do not interpret a high keyword weight as evidence that planned work is complete.
+- Preserve distinctions between completed projects, experimental prototypes, and work in development.
+- Never describe submitted patent disclosures as granted patents.
+- Preserve quantitative improvements and their stated comparison baselines.
+- Treat weighted keyword values (1–5) as how central each capability is within its accomplishment, not job-specific relevance.
+- Score each keyword against job requirements separately; use weighted relevance and actual achievement text as evidence.
+- Do not count duplicate or synonymous keywords as independent qualifications.
+- Compute job relevance separately for each job description; do not assume keywords alone prove a capability.
+- Select individual accomplishments rather than automatically selecting entire sections.
+- Select or exclude each accomplishment ID as a complete unit; preserve all its Achievement bullets verbatim and in order. Do not merge or rewrite bullets.
+- Do not interpret experimental prototype performance as production-level validation unless specifically supported.

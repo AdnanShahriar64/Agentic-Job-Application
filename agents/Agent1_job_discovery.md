@@ -128,7 +128,7 @@ For every search:
 6. Prefer official employer career pages.
 7. Identify duplicate postings.
 8. Evaluate technical compatibility.
-9. Rank jobs based on overall suitability.
+9. Rank jobs based on overall suitability. When matches are otherwise comparable, rank higher the jobs that ask for a Career Focus area in `Candidate_profile.md`.
 10. Present the strongest matches.
 
 Never invent job openings, requisition numbers, salaries, or application links.

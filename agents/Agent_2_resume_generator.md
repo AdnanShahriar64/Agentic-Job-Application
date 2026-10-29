@@ -10,10 +10,10 @@ Read `libraries/Candidate_profile.md`, `libraries/Summary_library.md`, the five 
 Each accomplishment has `Weighted Keywords` (weights 1–5), `Status`, and `Achievement`. No overall `Importance` or `Domains` field is required.
 
 1. Analyze mandatory and preferred requirements.
-2. For every weighted keyword assess semantic job relevance r (0–5), grounded in the actual `Achievement` text.
-3. Compute weighted relevance R = sum(weight × relevance) / sum(weight).
-4. Assess evidence strength E (0–5) from completed/validated work and reported status.
-5. Use S = 0.80 R + 0.20 E as a ranking aid, not a hard gate.
+2. Decide which Career Focus areas (table in `libraries/Candidate_profile.md`) the job asks for, judged by meaning. List none if it asks for none.
+3. For the candidate accomplishments, judge each weighted keyword's job relevance r (0–5), grounded in the actual `Achievement` text, and the evidence strength E (0–5) from completed/validated work and status. Write these to `jobs/<company_role>/relevance.json`. Do **not** write weights, R or S yourself.
+4. Run `python scripts/score_selection.py jobs/<company_role>`. It takes the weights from the libraries, computes R = sum(weight × r) / sum(weight) and S = 0.80 R + 0.20 E + focus bonus, caps E at 2 for in-development work, and writes the ranking to `selection_scores.json`.
+5. Use the ranking as the starting order, not a hard gate. The focus bonus only reorders; it never allows a claim the Achievement text does not support.
 6. Prioritize direct matches to mandatory requirements; never invent qualifications.
 7. Preserve mandatory Rheem, L&T, UTSA representation. Consider EXP-004 where useful. EXP-005 remains exceptional-match only, job relevance 5/5, maximum one selected entry without explicit override.
 

@@ -18,7 +18,7 @@
 - Numerical Algorithms: 3
 - Arithmetic Complexity: 4
 - Engineering Software: 3
-- Scientific Computing: 10
+- Scientific Computing: 5
 **Status:** Developed
 
 **Achievement:**

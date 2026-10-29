@@ -50,6 +50,13 @@ def main():
     for name in FILES.values():
         known |= set(extract_entries(ROOT / 'libraries' / name))
 
+    # 0. Library keyword weights must stay within 1-5
+    try:
+        from score_selection import load_library
+        load_library()
+    except ValueError as exc:
+        errors.append(str(exc))
+
     # 1. Posting text
     posting = folder / 'job_posting.txt'
     if not posting.is_file():
