@@ -1,6 +1,18 @@
+
+# Python
 __pycache__/
 *.pyc
+
+# LaTeX temporary files
 *.aux
 *.log
 *.out
 *.synctex.gz
+
+# Ignore generated jobs and output contents
+/jobs/*
+/output/*
+
+# Keep the empty folders in GitHub
+!/jobs/.gitkeep
+!/output/.gitkeep
