@@ -1,0 +1,23 @@
+{
+  "target_company": "PACCAR",
+  "target_role": "Thermal CFD Simulation Engineer (GR 25)",
+  "job_source": "C:\\Users\\AluPotol\\Documents\\GitHub\\Agentic-Job-Application\\jobs\\PACCAR_Thermal_CFD_Simulation_Engineer_1446274933\\job_requirements.json",
+  "motivation_ids": [
+    "MOT-001"
+  ],
+  "accomplishment_ids": [
+    "EXP-003-A",
+    "EXP-001-E",
+    "EXP-002-C"
+  ],
+  "company_specific_reason": "Official posting describes aftertreatment/exhaust thermal modeling and simulation-to-test correlation with Kenworth/Peterbilt engineering teams.",
+  "technical_fit_reason": "Translate governing thermal/fluid physics into numerical models and compare predictions against tests.",
+  "unverified_claims": [],
+  "uncertainties": [
+    "STAR-CCM+, Fluent and TAITherm proficiency not established.",
+    "Direct exhaust/aftertreatment, DEF, underhood/underbody and formal DFMEA experience not established.",
+    "Five-plus combined research/engineering years supported; five-plus industry-only years not established.",
+    "Washington work location and relocation willingness not confirmed."
+  ],
+  "contact_policy": "Name from profile. No contact header needed; avoids conflicting email sources."
+}

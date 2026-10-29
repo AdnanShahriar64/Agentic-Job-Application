@@ -1,0 +1,204 @@
+{
+  "target_company": "PACCAR",
+  "target_role": "Thermal CFD Simulation Engineer (GR 25)",
+  "summary": "Ph.D. mechanical engineer combining CFD, thermal-fluid modeling, and experimental validation for engineering research and HVAC product development. Developed custom three-dimensional thermal and fluid solvers and real-time C/C++ plant simulation. At Rheem, used CFD and prototype testing to demonstrate more than 80% improvement in fan-shroud airflow efficiency versus the previous design, with additional experience in coupled physics, thermal optimization, and simulation automation.",
+  "skills": [
+    {
+      "category": "Thermal and Fluid Modeling",
+      "items": [
+        "CFD",
+        "Heat transfer",
+        "Thermal-fluid coupling"
+      ]
+    },
+    {
+      "category": "Numerical Methods",
+      "items": [
+        "Custom FEM solvers",
+        "Fluid-structure interaction",
+        "Thermo-mechanical optimization"
+      ]
+    },
+    {
+      "category": "Engineering Tools",
+      "items": [
+        "Python",
+        "C/C++",
+        "CadQuery",
+        "Parametric CAD",
+        "STEP export"
+      ]
+    },
+    {
+      "category": "Experimental Validation",
+      "items": [
+        "Prototype testing",
+        "Airflow testing",
+        "Impact-hammer testing",
+        "Structural model calibration"
+      ]
+    }
+  ],
+  "experience": {
+    "rheem": [
+      {
+        "source_id": "EXP-001-E",
+        "heading": "Outdoor Fan-Shroud Optimization",
+        "bullets": [
+          "Used CFD to optimize shroud geometry and improve airflow distribution across the condenser coil. Fabricated and tested a prototype, demonstrating more than 80% improvement in airflow efficiency (CFM/W) relative to the previous design."
+        ]
+      },
+      {
+        "source_id": "EXP-001-H",
+        "heading": "Cross-Flow Fan Aerodynamics",
+        "bullets": [
+          "Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity of fan performance to scroll and housing geometry."
+        ]
+      },
+      {
+        "source_id": "EXP-001-F",
+        "heading": "Airflow-Induced Condensate Management Invention",
+        "bullets": [
+          "Invented a passive condensate entrainment and slinging system that uses fan-generated pressure differences to draw condensed water into the fan airflow path and improve condensate slinging performance.",
+          "Performed CFD simulations to investigate airflow behavior, pressure distribution, and condensate entrainment mechanisms.",
+          "Designed, fabricated, and iteratively refined 3D-printed prototypes to demonstrate the mechanism.",
+          "Conducted experimental testing to validate condensate entrainment, slinging effectiveness, and overall system performance."
+        ]
+      },
+      {
+        "source_id": "EXP-001-A",
+        "heading": "Parametric Fan-Shroud Generation",
+        "bullets": [
+          "Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations."
+        ]
+      },
+      {
+        "source_id": "EXP-001-J",
+        "heading": "VPAK Air-Handling Unit Development",
+        "bullets": [
+          "Designed an air-handling unit that delivered approximately 25% higher airflow than the existing configuration. Fabricated and tested 3D-printed prototypes to assess airflow and refine design assumptions."
+        ]
+      },
+      {
+        "source_id": "EXP-001-I",
+        "heading": "Reconfigurable Fan Test Fixture",
+        "bullets": [
+          "Designed and fabricated a modular, 3D-printed cross-flow fan test fixture with adjustable tongue and scroll geometry and clearances, enabling multiple configurations to be tested without rebuilding the full housing."
+        ]
+      }
+    ],
+    "ltts": [
+      {
+        "source_id": "EXP-002-A",
+        "heading": "Wind-Tunnel Aerodynamic Data Evaluation",
+        "bullets": [
+          "Applied experimental aerodynamics and CFD principles to evaluate wind-tunnel data, including dynamic-pressure, wake-distortion, strut-interference, and boundary-layer corrections."
+        ]
+      },
+      {
+        "source_id": "EXP-002-B",
+        "heading": "Modular GUI for Aerodynamic Data Analysis",
+        "bullets": [
+          "Developed a modular GUI for aerodynamic data analysis with well-defined input/output interfaces, improving maintainability and reducing computational and memory overhead."
+        ]
+      },
+      {
+        "source_id": "EXP-002-C",
+        "heading": "Real-Time C/C++ HVAC Plant Model for SiL and HiL",
+        "bullets": [
+          "Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-the-Loop (HiL) applications, combining finite element solution of transient heat transfer and velocity-pressure-coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-fluid coupling, and a proportional-derivative (PD) HVAC controller model."
+        ]
+      }
+    ],
+    "utsa": [
+      {
+        "source_id": "EXP-003-A",
+        "heading": "Custom 3D Multiphysics Finite Element Solvers",
+        "bullets": [
+          "Developed custom three-dimensional finite element solvers from first principles for structural mechanics, transient heat transfer, and fluid dynamics, including coupled structural-thermal habitat models and interior thermal-fluid simulations."
+        ]
+      },
+      {
+        "source_id": "EXP-003-C",
+        "heading": "Thermal Protective Layer Topology Optimization",
+        "bullets": [
+          "Investigated thermo-mechanical topology optimization of lunar habitat thermal protective layers under different environmental conditions and lunar latitudes."
+        ]
+      },
+      {
+        "source_id": "EXP-003-E",
+        "heading": "NASA Modular-Coupled Virtual Testbed (MCVT)",
+        "bullets": [
+          "Developed and integrated structural, thermal, and fluid plant models for NASA's Modular-Coupled Virtual Testbed (MCVT), a system-of-systems simulation environment for virtual testing of resilient extraterrestrial habitats."
+        ]
+      },
+      {
+        "source_id": "EXP-003-J",
+        "heading": "Eulerian CFD and Hurricane Wave Simulation",
+        "bullets": [
+          "Developed Eulerian-based CFD models to simulate wave generation and fluid motion under extreme hurricane conditions, enabling numerical investigation of hydrodynamic loads on coastal bridge structures."
+        ]
+      },
+      {
+        "source_id": "EXP-003-L",
+        "heading": "Coupled Eulerian-Lagrangian FSI Modeling",
+        "bullets": [
+          "Developed coupled Eulerian-Lagrangian (CEL) simulation models to investigate fluid-structure interaction between hurricane-driven waves and coastal bridge structures, integrating Eulerian fluid modeling with Lagrangian structural mechanics."
+        ]
+      },
+      {
+        "source_id": "EXP-003-N",
+        "heading": "Large-Scale FSI Simulations on HPC Systems",
+        "bullets": [
+          "Executed computationally intensive coupled Eulerian-Lagrangian simulations using supercomputing resources to support large-scale fluid-structure interaction analysis of hurricane-exposed bridges."
+        ]
+      },
+      {
+        "source_id": "EXP-003-F",
+        "heading": "Experimental Structural Digital Twin and Model Updating",
+        "bullets": [
+          "Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer data, identifying natural frequencies and mode shapes, using Crypton optical geometry measurements, and calibrating a parameterized beam-element model to match identified modal properties and measured acceleration histories."
+        ]
+      },
+      {
+        "source_id": "EXP-003-H",
+        "heading": "Efficient Scientific Software and Numerical Algorithms",
+        "bullets": [
+          "Developed computational tools emphasizing reduced arithmetic and memory complexity to support novel numerical formulations and simulation workflows; contributed to a publication on algorithm development."
+        ]
+      },
+      {
+        "source_id": "EXP-003-O",
+        "heading": "Simulation Post-Processing and Bridge Research Publications",
+        "bullets": [
+          "Performed numerical post-processing and quantitative analysis of hurricane-induced fluid and structural response; contributed to more than seven journal and conference publications in bridge engineering, numerical simulation, and structural vulnerability assessment."
+        ]
+      },
+      {
+        "source_id": "EXP-003-K",
+        "heading": "Numerical Experiments in Wave and Fluid Loading",
+        "bullets": [
+          "Designed and conducted numerical experiments to investigate wave behavior and fluid loading, contributing to a conference publication on computational wave generation."
+        ]
+      }
+    ]
+  },
+  "other_experience": [],
+  "demonstrations": [
+    {
+      "id": 8,
+      "title": "HVAC duct CFD",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7258219618144538624/"
+    },
+    {
+      "id": 6,
+      "title": "Lunar habitat thermal topology optimization",
+      "url": "https://youtu.be/EGVZgg1pb6Q"
+    },
+    {
+      "id": 7,
+      "title": "CFD and bridge structural analysis",
+      "url": "https://youtu.be/DTQD6CamibM"
+    }
+  ]
+}

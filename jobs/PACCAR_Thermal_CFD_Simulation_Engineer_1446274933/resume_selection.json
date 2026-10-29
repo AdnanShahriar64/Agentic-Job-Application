@@ -1,0 +1,75 @@
+{
+  "target_company": "PACCAR",
+  "target_role": "Thermal CFD Simulation Engineer (GR 25)",
+  "summary": "Ph.D. mechanical engineer combining CFD, thermal-fluid modeling, and experimental validation for engineering research and HVAC product development. Developed custom three-dimensional thermal and fluid solvers and real-time C/C++ plant simulation. At Rheem, used CFD and prototype testing to demonstrate more than 80% improvement in fan-shroud airflow efficiency versus the previous design, with additional experience in coupled physics, thermal optimization, and simulation automation.",
+  "skills": [
+    {
+      "category": "Thermal and Fluid Modeling",
+      "items": [
+        "CFD",
+        "Heat transfer",
+        "Thermal-fluid coupling"
+      ]
+    },
+    {
+      "category": "Numerical Methods",
+      "items": [
+        "Custom FEM solvers",
+        "Fluid-structure interaction",
+        "Thermo-mechanical optimization"
+      ]
+    },
+    {
+      "category": "Engineering Tools",
+      "items": [
+        "Python",
+        "C/C++",
+        "CadQuery",
+        "Parametric CAD",
+        "STEP export"
+      ]
+    },
+    {
+      "category": "Experimental Validation",
+      "items": [
+        "Prototype testing",
+        "Airflow testing",
+        "Impact-hammer testing",
+        "Structural model calibration"
+      ]
+    }
+  ],
+  "experience": {
+    "rheem": [
+      "EXP-001-E",
+      "EXP-001-H",
+      "EXP-001-F",
+      "EXP-001-A",
+      "EXP-001-J",
+      "EXP-001-I"
+    ],
+    "ltts": [
+      "EXP-002-A",
+      "EXP-002-B",
+      "EXP-002-C"
+    ],
+    "utsa": [
+      "EXP-003-A",
+      "EXP-003-C",
+      "EXP-003-E",
+      "EXP-003-J",
+      "EXP-003-L",
+      "EXP-003-N",
+      "EXP-003-F",
+      "EXP-003-H",
+      "EXP-003-O",
+      "EXP-003-K"
+    ],
+    "other": []
+  },
+  "demonstration_ids": [
+    8,
+    6,
+    7
+  ]
+}
