@@ -1,0 +1,194 @@
+{
+  "employer": "Dassault Systèmes",
+  "product": "SIMULIA",
+  "job_title": "AI Software Test Engineer",
+  "requisition_number": "550654",
+  "location": "Johnston, Rhode Island, United States",
+  "employment_arrangement": {
+    "type": "Regular",
+    "work_mode": "Not specified; listed location Johnston, RI",
+    "experience_level_label": "0 to 3 years; qualifications state 0–3+ years"
+  },
+  "official_job_posting_url": "https://www.3ds.com/careers/jobs/ai-software-test-engineer-550654",
+  "official_application_url": "https://talentacquisition.3ds.com/careersection/qa/jobapply.ftl?job=550654&lang=en&src=CWS-10080",
+  "date_checked": "2026-10-28",
+  "date_posted": "2026-10-27",
+  "verification": {
+    "status": "Live official employer description and Apply link retrieved with web tool; linked application destination resolves",
+    "limitations": "Direct Python download failed certificate verification; complete available employer-page content preserved from web tool.",
+    "duplicate_check": "New employer and reference ID, absent from existing jobs"
+  },
+  "complete_available_job_description": "# AI Software Test Engineer\n\nUnited States, RI, Johnston\n\nRegular\n\nApply (see official application URL)\n\n* * *\n\nKey Job Details\n\nLocation:\n\nUnited States, RI, Johnston\n\nJob type:\n\nRegular\n\nProduct:\n\nSIMULIA\n\nExperience level:\n\n0 to 3 years\n\nPosted on:\n\n10/27/2026\n\nRef ID:\n\n550654\n### Role Description & Responsibilities\n\nDo you have a passion for multiphysics simulation, data integrity, and AI-driven engineering workflows? Join us to help validate and enable next-generation machine learning models built on high-fidelity simulation data within the 3DEXPERIENCE platform.\nIn this role, you will operate at the intersection of finite element analysis (FEA), data preparation, and AI model validation, ensuring that historical simulation datasets are accurate, consistent, and production-ready for machine learning applications.\n\nYou will work primarily within GUI-driven workflows on cloud-based HPC environments to execute, validate, and prepare simulation data used to power predictive engineering and design optimization.\n\nKey Responsibilities\n  * Execute and validate physics-based simulations using the 3DEXPERIENCE platform environment\n  * Review and validate historical FEA datasets for:\n    * Boundary condition correctness\n    * Mesh quality and convergence behavior\n    * Material model consistency\n  * Prepare and transform simulation outputs into structured datasets for machine learning training:\n    * Feature extraction\n    * Normalization and consistency checks\n    * Label validation\n  * Perform regression and validation testing on simulation workflows and datasets\n  * Compare simulation outputs against baseline or “gold standard” datasets to ensure fidelity\n  * Identify and debug issues in simulation execution across cloud HPC environments (job failures, convergence issues, runtime errors)\n  * Collaborate with R&D team members in Product Define, and Development to ensure high-quality training data pipelines\n  * Support development of surrogate models by validating ML predictions against physics-based results\n  * Document test methodologies, validation criteria, and data preparation workflows\n### Qualifications\n  * Master’s or PhD degree in:\n    * Mechanical Engineering\n    * Aerospace Engineering\n    * Applied Physics\n    * Computational Engineering or related field\n  * 0–3+ years of experience in simulation, CAE, or engineering software environments\n  * Hands-on experience with at least one FEA tool\n  * Strong understanding of:\n    * Finite Element Analysis fundamentals\n    * Boundary conditions, meshing, and solver behavior\n    * Numerical accuracy and convergence\n  * Experience working with engineering datasets and structured data\n  * Excellent English verbal and written communication skills\nPreferred Qualifications\n  * Experience using the 3DEXPERIENCE platform\n  * Exposure to machine learning workflows or data pipelines\n  * Familiarity with Python (NumPy, Pandas) for data processing\n  * Experience running simulations in cloud or HPC environments (e.g., job scheduling, distributed compute)\n  * Understanding of:\n    * Surrogate modeling\n    * Reduced-order modeling\n    * Design optimization workflows\n  * Experience with test case design, validation strategies, and regression testing in numerical systems\n## Inclusion statement\nIn order to provide equal employment and advancement opportunities to all individuals, employment decisions at 3DS are based on merit, qualifications and abilities.\n3DS is committed to a policy of non-discrimination and equal opportunity for all employees and qualified applicants without regard to race, color, religion, gender, sex (including pregnancy, childbirth or medical or common conditions related to pregnancy or childbirth), sexual orientation, gender identity, gender expression, marital status, familial status, national origin, ancestry, age (40 and above), disability, veteran status, military service, application for military service, genetic information, receipt of free medical care, or any other characteristic protected under applicable law.\n3DS will make reasonable accommodations for qualified individuals with known disabilities, in accordance with applicable law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with applicable state laws and local ordinances. We are committed to fair employment practices and will evaluate all candidates based on their qualifications, regardless of past arrest or conviction history.\n## Compensation & Benefits\nDassault Systèmes offers an excellent salary with potential for bonus, commensurate with experience.\nBenefits include a choice of plans providing comprehensive coverage for medical, dental, vision care for employee & dependents as well as employee life, short & long term disability, tuition reimbursement, immediate 401K enrollment, 401K match (50 cents on the dollar, up to the first 8% of your eligible compensation that you contribute based on match eligibility criteria), flexible time off policy, and 10 paid holidays.\nSalary Pay Transparency\n\nCompensation for the role will be commensurate with experience. The total expected compensation range will be between $118000 and $130000, representing the base salary (or annualized salary based on estimated hourly compensation) and target bonus.\n\nApply (see official application URL)",
+  "required_qualifications": [
+    "Master’s or PhD degree in:",
+    "Mechanical Engineering",
+    "Aerospace Engineering",
+    "Applied Physics",
+    "Computational Engineering or related field",
+    "0–3+ years of experience in simulation, CAE, or engineering software environments",
+    "Hands-on experience with at least one FEA tool",
+    "Strong understanding of:",
+    "Finite Element Analysis fundamentals",
+    "Boundary conditions, meshing, and solver behavior",
+    "Numerical accuracy and convergence",
+    "Experience working with engineering datasets and structured data",
+    "Excellent English verbal and written communication skills"
+  ],
+  "preferred_qualifications": [
+    "Experience using the 3DEXPERIENCE platform",
+    "Exposure to machine learning workflows or data pipelines",
+    "Familiarity with Python (NumPy, Pandas) for data processing",
+    "Experience running simulations in cloud or HPC environments (e.g., job scheduling, distributed compute)",
+    "Understanding of:",
+    "Surrogate modeling",
+    "Reduced-order modeling",
+    "Design optimization workflows",
+    "Experience with test case design, validation strategies, and regression testing in numerical systems"
+  ],
+  "main_responsibilities": [
+    "Execute and validate physics-based simulations using the 3DEXPERIENCE platform environment",
+    "Review and validate historical FEA datasets for:",
+    "Boundary condition correctness",
+    "Mesh quality and convergence behavior",
+    "Material model consistency",
+    "Prepare and transform simulation outputs into structured datasets for machine learning training:",
+    "Feature extraction",
+    "Normalization and consistency checks",
+    "Label validation",
+    "Perform regression and validation testing on simulation workflows and datasets",
+    "Compare simulation outputs against baseline or “gold standard” datasets to ensure fidelity",
+    "Identify and debug issues in simulation execution across cloud HPC environments (job failures, convergence issues, runtime errors)",
+    "Collaborate with R&D team members in Product Define, and Development to ensure high-quality training data pipelines",
+    "Support development of surrogate models by validating ML predictions against physics-based results",
+    "Document test methodologies, validation criteria, and data preparation workflows"
+  ],
+  "technical_skills": [
+    "FEA fundamentals",
+    "Boundary conditions",
+    "Mesh quality and convergence",
+    "Material-model consistency",
+    "Numerical accuracy",
+    "Structured engineering datasets",
+    "Feature extraction/normalization/label checks",
+    "Regression and validation testing",
+    "Baseline comparisons",
+    "ML prediction validation against physics",
+    "Cloud-HPC execution debugging",
+    "Test-method documentation"
+  ],
+  "software_and_programming_requirements": {
+    "required": [
+      "Hands-on experience with at least one FEA tool"
+    ],
+    "platform_used_in_role": [
+      "3DEXPERIENCE GUI workflows",
+      "Cloud HPC"
+    ],
+    "preferred": [
+      "3DEXPERIENCE experience",
+      "Python with NumPy/Pandas",
+      "Cloud or HPC simulation experience",
+      "ML workflows/data pipelines",
+      "Surrogate/reduced-order models"
+    ]
+  },
+  "technical_keywords": [
+    "SIMULIA",
+    "FEA",
+    "simulation datasets",
+    "data integrity",
+    "surrogate models",
+    "training data",
+    "regression testing",
+    "validation criteria",
+    "convergence",
+    "R&D collaboration"
+  ],
+  "compensation": {
+    "currency": "USD",
+    "minimum": 118000,
+    "maximum": 130000,
+    "period": "Annual",
+    "basis": "Total expected compensation including base salary and target bonus; not base salary alone"
+  },
+  "qualification_matches": [
+    {
+      "requirement": "Relevant MS/PhD",
+      "status": "Directly supported",
+      "evidence": "Candidate_profile: Mechanical Engineering PhD, UTSA, December 2023.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Simulation/CAE/software environment experience",
+      "status": "Directly supported",
+      "evidence": "EXP-003 FEM/XFEM research and EXP-002 simulation software, followed by EXP-001 FEA/CFD product engineering. Qualifications say 0–3+ rather than strict maximum.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Hands-on FEA fundamentals and tool use",
+      "status": "Directly supported",
+      "evidence": "EXP-003 A/B custom numerical solvers and nonlinear material models; EXP-001 N/O/Q product and impact FEA. No specific commercial tool proficiency inferred.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Boundary conditions, mesh/solver behavior, accuracy/convergence",
+      "status": "Partially supported",
+      "evidence": "Custom solver development and EXP-004 CAD-to-mesh establish numerical/formulation and preprocessing foundation; formal mesh-convergence qualification campaigns are not detailed.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Structured engineering datasets",
+      "status": "Partially supported",
+      "evidence": "EXP-002 B aerodynamic data GUI; G SQL/Entity Framework database read/write. EXP-003 G uses XFEM simulation training data. Formal normalization/label-validation pipelines not documented.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Surrogate and reduced-order modeling",
+      "status": "Directly supported",
+      "evidence": "EXP-003 G XFEM-trained neural-network damage surrogate and D modal/Guyan reduced-order methods.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Test automation, validation and debugging",
+      "status": "Partially supported",
+      "evidence": "EXP-002 F Jenkins/Bash/PowerShell CI/CD debugging and test workflows; EXP-003 F experimental model calibration. Formal numerical gold-standard regression suite ownership unverified.",
+      "priority": "High"
+    },
+    {
+      "requirement": "3DEXPERIENCE and cloud HPC",
+      "status": "Not established by available sources",
+      "evidence": "EXP-003 N supports supercomputer simulation use, not 3DEXPERIENCE, cloud deployment or distributed software ownership.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Python NumPy/Pandas",
+      "status": "Partially supported",
+      "evidence": "EXP-001 A proves Python/CadQuery; named NumPy/Pandas hands-on data processing not established by achievements.",
+      "priority": "Low"
+    },
+    {
+      "requirement": "English communication",
+      "status": "Partially supported",
+      "evidence": "US doctoral research, teaching and engineering roles plus research publications provide contextual evidence, but no explicit proficiency certification is supplied.",
+      "priority": "Critical"
+    }
+  ],
+  "significant_candidate_qualification_gaps": [
+    "3DEXPERIENCE platform and cloud-HPC execution/debugging workflows not established.",
+    "NumPy/Pandas-specific professional use and formal feature normalization/label validation not established.",
+    "Formal numerical regression suite, gold-standard data maintenance and mesh-convergence audit ownership unverified.",
+    "Rhode Island work location/relocation preference unknown; work mode not stated."
+  ],
+  "estimated_match_score": 86,
+  "score_note": "Heuristic suitability, not hiring probability. Strong FEA/solver, surrogate and test foundations; platform/data-pipeline and location gaps remain.",
+  "candidate_evidence_sources": [
+    "libraries/Candidate_profile.md",
+    "libraries/EXP-001_Rheem_Project_Engineer_II_weighted_expanded.md",
+    "libraries/EXP-002_LTTS_Senior_Simulation_Integration_Engineer.md",
+    "libraries/EXP-003_UTSA_Research.md",
+    "libraries/EXP-004_Universal_Real_Time_Power_Conversion.md",
+    "libraries/Technical_knowledge_library.md",
+    "libraries/Software_and_programming_skills_library.md"
+  ],
+  "search_notes": "Remote/Texas priority screened first. Vinci remote-eligible thermal listing could not be confirmed at application endpoint. Rogers current downloaded page had stricter Fluent/industrial requirements than indexed snapshot; not selected. Dassault live posting provides stronger supported requirements fit."
+}

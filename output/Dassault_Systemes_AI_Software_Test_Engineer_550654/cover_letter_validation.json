@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "word_count": 297,
+  "pdf_pages": 1,
+  "body_paragraphs": 4,
+  "pdf_searchable": true,
+  "markdown_matches_pdf": true,
+  "motivation_ids": [
+    "MOT-001"
+  ],
+  "evidence_ids": [
+    "EXP-003-G",
+    "EXP-003-F",
+    "EXP-002-F"
+  ],
+  "accuracy_review": "Neural surrogate, modal calibration and CI/CD statements checked against full original achievement blocks. Relevant-to-role reasoning is expressed as transferable foundation, not invented dataset-validation accomplishments. No unsupported 3DEXPERIENCE/cloud/Pandas expertise or personal motives.",
+  "visual_review": "One Letter page, 10.5pt font, 0.8in side and 0.75in top/bottom margins. No clipping or overlap.",
+  "unresolved_gaps": [
+    "3DEXPERIENCE",
+    "Cloud-HPC workflow experience",
+    "NumPy/Pandas-specific processing",
+    "Formal numerical data regression and convergence audit ownership",
+    "Rhode Island relocation preference",
+    "Fixed resume title/date differences"
+  ]
+}

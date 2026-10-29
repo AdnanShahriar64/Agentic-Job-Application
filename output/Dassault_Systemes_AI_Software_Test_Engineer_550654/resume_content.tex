@@ -1,0 +1,105 @@
+% Generated. Do not edit manually. Edit resume_content.json instead.
+\renewcommand{\ResumeSummary}{
+Ph.D. mechanical engineer combining finite element solver development, physics-based surrogate modeling, and experimental model calibration. Developed custom FEM/XFEM solvers and a neural-network damage surrogate trained on high-fidelity simulations. Built C/C++ simulation models and Jenkins-based testing workflows, with additional experience in nonlinear material analysis, engineering data tools, Python automation, and reduced-order modeling.
+}
+
+\renewcommand{\ResumeSkills}{
+\textbf{Simulation Methods:} FEM/XFEM, Nonlinear material models, Neural-network damage surrogates, Reduced-order modeling\par
+\textbf{Validation and Testing:} Structural model calibration, Impact-hammer testing, Jenkins CI/CD\par
+\textbf{Engineering Software:} Python, C/C++, Bash, PowerShell, CadQuery, SQL, Entity Framework\par
+\textbf{Numerical Computing:} Custom solver development, Arithmetic and memory complexity optimization, Engineering data analysis\par
+}
+
+\renewcommand{\RheemBullets}{
+\item \textbf{Structural FEA and Assembly Optimization of Modular AHU}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Performed comprehensive finite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load-bearing capacity. Analyzed deformation under fan and motor loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical interference and supporting reliable prototype operation.
+\end{itemize}
+\item \textbf{Multi-Material Product FEA Analysis}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Performed finite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at different densities.
+\end{itemize}
+\item \textbf{Explicit Dynamic Impact and Fracture Assessment}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Performed explicit dynamic FEA impact analysis of plastic components to evaluate impact-induced stresses and potential cracking; calculated the J-integral to assess the driving force for crack propagation.
+\end{itemize}
+\item \textbf{Parametric Fan-Shroud Generation}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations.
+\end{itemize}
+\item \textbf{Engineering Workflow Automation}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Built workflows linking parametric design inputs, numerical evaluation, optimization, and CAD output to enable programmatic exploration of engineering alternatives.
+\end{itemize}
+\item \textbf{Simulation-Driven Design Optimization}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developing a framework that uses batch CFD simulations to build a performance dataset across fan-shroud geometry parameters.
+\item Applying statistical analysis and predictive modeling to identify promising configurations, establish data-driven design guidelines, and reduce the need for computationally expensive CFD runs during future product development.
+\end{itemize}
+}
+
+\renewcommand{\LTTSBullets}{
+\item \textbf{Jenkins CI/CD and Automated Debugging}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed Jenkins CI/CD pipelines with Bash and PowerShell scripting and automated screen-capture capability, streamlining debugging and test workflows for construction and forestry vehicle software.
+\end{itemize}
+\item \textbf{Modular GUI for Aerodynamic Data Analysis}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed a modular GUI for aerodynamic data analysis with well-defined input/output interfaces, improving maintainability and reducing computational and memory overhead.
+\end{itemize}
+\item \textbf{Real-Time C/C++ HVAC Plant Model for SiL and HiL}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-the-Loop (HiL) applications, combining finite element solution of transient heat transfer and velocity-pressure-coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-fluid coupling, and a proportional-derivative (PD) HVAC controller model.
+\end{itemize}
+\item \textbf{C\#/.NET Database and Desktop Application Integration}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Implemented database read/write operations using SQL and Entity Framework within C\#/.NET Windows Forms (WinForms) applications.
+\end{itemize}
+\item \textbf{Integrated SiL Simulation Infrastructure and Vehicle Network Virtualization}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed and integrated a Software-in-the-Loop (SiL) infrastructure connecting the simulator, display, virtual CAN/LIN communication, and ECU-testing components to support construction and forestry vehicle software testing.
+\end{itemize}
+}
+
+\renewcommand{\UTSABullets}{
+\item \textbf{XFEM-Informed Neural Network Damage Surrogate}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed a neural-network surrogate trained on high-fidelity XFEM simulations to approximate localized damage behavior in larger structural models.
+\end{itemize}
+\item \textbf{Custom 3D Multiphysics Finite Element Solvers}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed custom three-dimensional finite element solvers from first principles for structural mechanics, transient heat transfer, and fluid dynamics, including coupled structural-thermal habitat models and interior thermal-fluid simulations.
+\end{itemize}
+\item \textbf{XFEM, Nonlinear Materials, and Damage Modeling}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed XFEM methods to represent stress fields around three-dimensional voids and implemented nonlinear material behavior incorporating plasticity, strain-rate effects, thermal expansion, and von Mises and Drucker-Prager yield criteria.
+\end{itemize}
+\item \textbf{Experimental Structural Digital Twin and Model Updating}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer data, identifying natural frequencies and mode shapes, using Crypton optical geometry measurements, and calibrating a parameterized beam-element model to match identified modal properties and measured acceleration histories.
+\end{itemize}
+\item \textbf{Efficient Scientific Software and Numerical Algorithms}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed computational tools emphasizing reduced arithmetic and memory complexity to support novel numerical formulations and simulation workflows; contributed to a publication on algorithm development.
+\end{itemize}
+\item \textbf{Reduced-Order Modeling and High-Order Elements}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed modal-coordinate reduced-order models and applied Guyan static condensation; implemented very high-order finite element formulations for acoustic wave propagation associated with micrometeoroid impacts.
+\end{itemize}
+\item \textbf{XFEM-Based Coolant Flow and Thermal Control Modeling for Lunar Habitats}
+\begin{itemize}[leftmargin=1.3em,topsep=1pt,itemsep=1pt]
+\item Developed a numerical framework to simulate coolant flow through embedded channels within lunar habitat structures, supporting the investigation of active thermal management concepts.
+\item Implemented Darcy-based potential flow formulations to model coolant transport through internal channels and evaluate fluid-flow behavior.
+\item Developed an XFEM-based formulation incorporating level-set functions to represent embedded coolant-channel geometries and distinguish multiple material regions within a solid computational domain, enabling simulations without requiring a fully conforming mesh at every material interface.
+\end{itemize}
+}
+
+\renewcommand{\OtherExperience}{}
+
+\renewcommand{\Demonstrations}{
+Finite element formulation software tool: \url{https://www.linkedin.com/feed/update/urn:li:activity:7122914707790843904/}\par
+Large-deformation beam simulator: \url{https://www.linkedin.com/feed/update/urn:li:activity:7429372567318331392/}\par
+MCVT structural-mechanical model: \url{https://youtu.be/TAA66P_UXIM}\par
+}
+
+\renewcommand{\OtherExperience}{}

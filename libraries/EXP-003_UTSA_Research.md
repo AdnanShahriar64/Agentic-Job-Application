@@ -62,10 +62,17 @@
 - Heat Transfer: 4
 - Lunar Environment: 3
 - Design Optimization: 3
+- AI: 6
+- Artificial Intellegence: 6
+- Machine Learning: 6
+
 **Status:** Research Investigation Completed
 
 **Achievement:**
-- Investigated thermo-mechanical topology optimization of lunar habitat thermal protective layers under different environmental conditions and lunar latitudes.
+
+\- Developed a node-based, multi-objective thermal topology optimization scheme to optimize three-dimensional thermal protective structures for lunar habitats, accounting for varying environmental conditions and lunar latitudes.
+
+\- Generated optimized 3D geometries with complex, nonintuitive material distributions that would be difficult to achieve through conventional human-driven design, demonstrating the potential for improved thermal protection and more efficient material utilization.
 
 #### EXP-003-D: Reduced-Order Modeling and High-Order Elements
 
@@ -77,6 +84,10 @@
 - Wave Propagation: 4
 - Micrometeoroid Impact: 3
 - Digital Twin: 5
+- AI: 6
+- Artificial Intellegence: 6
+- Machine Learning: 6
+
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -113,6 +124,10 @@
 - Crypton Optical Measurement: 3
 - Beam Elements: 3
 - Digital Twin: 5
+- AI: 5
+- Artificial Intellegence: 5
+- Machine Learning: 5
+
 **Status:** Completed Research Development and Experimental Calibration
 
 **Achievement:**
@@ -128,6 +143,10 @@
 - High-Fidelity Simulation: 3
 - Reduced Computational Cost: 3
 - Digital Twin: 5
+- AI: 10
+- Artificial Intellegence: 10
+- Machine Learning: 10
+
 **Status:** Completed Research Development
 
 **Achievement:**
@@ -266,6 +285,31 @@
 
 **Achievement:**
 - Performed numerical post-processing and quantitative analysis of hurricane-induced fluid and structural response; contributed to more than seven journal and conference publications in bridge engineering, numerical simulation, and structural vulnerability assessment.
+
+
+
+#### EXP-003-P: XFEM-Based Coolant Flow and Thermal Control Modeling for Lunar Habitats
+
+**Weighted Keywords:**
+- Numerical Method Development: 5
+- Thermal Control Systems: 10
+- Coolant Flow Modeling: 10
+- Darcy Potential Flow: 10
+- Extended Finite Element Method (XFEM): 5
+- Level-Set Method: 5
+- Multi-Material Modeling: 5
+- Embedded Coolant Channels: 10
+- Multiphysics Simulation: 5
+- Heat Transfer: 5
+- Finite Element Analysis (FEA): 4
+- Scientific Computing: 4
+
+**Status:** Completed Research Development
+
+**Achievement:**
+- Developed a numerical framework to simulate coolant flow through embedded channels within lunar habitat structures, supporting the investigation of active thermal management concepts.
+- Implemented Darcy-based potential flow formulations to model coolant transport through internal channels and evaluate fluid-flow behavior.
+- Developed an XFEM-based formulation incorporating level-set functions to represent embedded coolant-channel geometries and distinguish multiple material regions within a solid computational domain, enabling simulations without requiring a fully conforming mesh at every material interface.
 
 ---
 
