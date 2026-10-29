@@ -61,7 +61,7 @@
 - Thermal Protection: 3
 - Heat Transfer: 4
 - Lunar Environment: 3
-- Design Optimization: 3
+- Design Optimization: 5
 
 **Status:** Research Investigation Completed
 

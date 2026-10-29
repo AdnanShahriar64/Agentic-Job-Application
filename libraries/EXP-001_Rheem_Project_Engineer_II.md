@@ -38,6 +38,7 @@
 - Simulation Automation: 5
 - CFD: 5
 - Computational Fluid Dynamics: 5
+- Machine Learning (AI): 5
 
 **Status:** In Development
 

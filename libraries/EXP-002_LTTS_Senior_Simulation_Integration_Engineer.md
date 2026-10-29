@@ -84,6 +84,8 @@
 - Scalability: 5
 - Software Performance: 5
 - Refactoring: 5
+- Machine Learning (AI): 5
+
 **Status:** Completed Development
 
 **Achievement:**
