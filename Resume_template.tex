@@ -36,9 +36,6 @@
 % IMPORTANT: Escape special chars in inserted prose: \&, \%, \_, \#, \$; URLs go inside \url{...}.
 \IfFileExists{resume_content.tex}{\input{resume_content.tex}}{}
 
-\providecommand{\ResumeDemonstrations}{
-	\textit{[Insert selected technical demonstrations.]}
-}
 
 \begin{document}
 	% ===== FIXED HEADER: copied from Resume_Basic_Structure.odt =====
@@ -71,9 +68,8 @@
 	\begin{itemize}\UTSABullets\end{itemize}
 	\ifdefempty{\OtherExperience}{}{\subjob{Other relevant experience}\OtherExperience}
 	
-	% ===== FIXED SELECTED TECHNICAL DEMONSTRATIONS: copied from Resume_Basic_Structure.odt =====	
-	\section*{SELECTED TECHNICAL DEMONSTRATIONS}
-	\ResumeDemonstrations
+	% ===== SELECTED TECHNICAL DEMONSTRATIONS (printed only when selected) =====
+	\ifdefempty{\Demonstrations}{}{\section*{SELECTED TECHNICAL DEMONSTRATIONS}\Demonstrations}
 	
 	
 	
@@ -81,5 +77,4 @@
 	\section*{EDUCATION}
 	\textbf{Ph.D., Mechanical Engineering} --- University of Texas at San Antonio, 2023 | GPA: 3.94\par
 	\textbf{B.S., Aeronautical Engineering (Aerospace Major)} --- Military Institute of Science and Technology, 2015\par
-	\ifdefempty{\Demonstrations}{}{\section*{SELECTED TECHNICAL DEMONSTRATIONS}\Demonstrations}
 \end{document}

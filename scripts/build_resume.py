@@ -196,8 +196,9 @@ def make_macros(data):
                           for d in data['demonstrations'])
     bodies = (tex_escape(data['summary']), skills, bullet_list('rheem'),
               bullet_list('ltts'), bullet_list('utsa'), others, demos)
+    # An empty body must stay truly empty so the template's \\ifdefempty checks work.
     return '% Generated. Do not edit manually. Edit resume_content.json instead.\n' + '\n\n'.join(
-        '\\renewcommand{\\' + macro + '}{\n' + body + '\n}'
+        '\\renewcommand{\\' + macro + '}{' + ('\n' + body + '\n' if body.strip() else '') + '}'
         for macro, body in zip(MACROS, bodies)) + '\n'
 
 def compile_latex(template, content, dest, compiler):

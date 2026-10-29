@@ -58,7 +58,8 @@ def extract_entries(path):
             bullets = []
             continue
         # Once the next top-level section begins, stop looking for bullets.
-        if line.lstrip().startswith('#') and current_id and not head:
+        # Headings may be wrapped in bold markers (e.g. "**## Tailoring Notes**").
+        if line.lstrip().lstrip('*').lstrip().startswith('#') and current_id and not head:
             finish()
             current_id = None
             current_heading = None
