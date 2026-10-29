@@ -1,0 +1,162 @@
+{
+  "employer": "Alcon",
+  "job_title": "Sr. Associate, Modeling and Simulation Engineering (T)",
+  "requisition_number": "R-2026-50029",
+  "location": "Fort Worth, Texas, United States",
+  "employment_arrangement": {
+    "type": "Full-time",
+    "work_mode": "Onsite",
+    "relocation": "Yes",
+    "sponsorship": "Yes"
+  },
+  "official_job_posting_url": "https://alcon.wd5.myworkdayjobs.com/en-US/careers_alcon/job/Sr-Associate--Modeling-and-Simulation-Engineering--T-_R-2026-50029-1",
+  "official_application_url": "https://alcon.wd5.myworkdayjobs.com/en-US/careers_alcon/job/Sr-Associate--Modeling-and-Simulation-Engineering--T-_R-2026-50029-1",
+  "date_checked": "2026-10-28",
+  "application_end_date": "2026-12-07",
+  "salary": null,
+  "verification": {
+    "status": "Official employer Workday posting indexed yesterday, with future application end date; reasonably likely open",
+    "limitations": "Direct live page returned a JavaScript shell; direct structured endpoint retrieval failed certificate verification. Description obtained from current search-indexed official employer page; live application availability not independently confirmed.",
+    "source": "Official employer Workday search result",
+    "duplicate_check": "Not among five existing project job folders"
+  },
+  "complete_available_job_description": "## Sr. Associate, Modeling and Simulation Engineering (T)\n\nremote type\n    Not applicable\n\nlocations\n    Fort Worth, Texas\n\ntime type\n    Full time\n\nposted on\n    Posted 14 Days Ago\n\ntime left to apply\n    End Date: December 7, 2026 (30+ days left to apply)\n\njob requisition id\n    R-2026-50029\n\nAt Alcon, we are driven by the meaningful work we do to help people see brilliantly. We innovate boldly, champion progress, and act with speed as the global leader in eye care. Here, you’ll be recognized for your commitment and contributions and see your career like never before. Together, we go above and beyond to make an impact in the lives of our patients and customers.\n\nWe foster an inclusive culture and are seeking diverse, talented individuals to join Alcon. As a Senior Associate, Modeling & Simulation Engineer, you will play a critical role in supporting the design, development, and delivery of innovative medical devices through advanced finite element analysis (FEA), computational fluid dynamics (CFD), and simulation-driven engineering in a regulated environment. In this role, you will help accelerate product development, improve design quality, and deliver safe, effective solutions that enhance patient outcomes. This position is onsite in Fort Worth, Texas.\n\nIn this role, a typical day will include:\n\n  * Lead FEA and CFD efforts supporting Surgical R&D medical device development, driving faster, cost-effective innovation\n  * Perform advanced structural and dynamic simulations (linear/nonlinear, implicit/explicit, impact, transient, frequency) on complex, multi-material systems\n  * Develop multi-physics, large-scale models to enable virtual prototyping across the product lifecycle\n  * Leverage tools such as Ansys Mechanical, FLUENT, LS-DYNA, and OptiStruct for modeling, simulation, and convergence analysis\n  * Validate simulation results through correlation with experimental data\n  * Define project scope, requirements, and timelines, managing multiple simulations to meet delivery goals\n  * Collaborate with cross-functional engineering teams to identify and resolve design issues early\n  * Support regulatory submissions, post-market analysis, and Global Medical Affairs through simulation insights\n  * Drive innovation by advancing simulation methods, tools, and best practices\n  * Solve complex, multi-disciplinary engineering challenges using strong analytical skills\n  * Mentor team members and deliver clear, professional technical reports\n\nWHAT YOU’LL BRING TO ALCON:\n\n  * Bachelor’s Degree or Equivalent years of directly related experience (or high school +10 yrs.; Assoc.+6 yrs.; M.S.+0 yrs.) \n  * The ability to fluently read, write, understand, and communicate in English\n  * 2 Years of Relevant Experience \n  * Relocation: Yes\n  * Sponsorship: Yes\n\nPreferred\n\n  * Strong foundation in structural mechanics, dynamics, material modeling, and computational fluid dynamics\n  * Experience with medical devices, R&D, or regulated environments\n  * Strong analytical, problem-solving, and communication skills\n\nHOW YOU CAN THRIVE AT ALCON:\n\n  * See your career like never before with focused growth and development opportunities\n  * Join Alcon’s mission to provide outstanding, innovative products and solutions to improve sight, improve lives, and grow your career!\n  * Alcon provides robust benefits package including health, life, retirement, flexible time off for exempt associates, PTO for hourly associates, and much more!\n\nALCON IS AN EQUAL OPPORTUNITY EMPLOYER AND PARTICIPATES IN E-VERIFY\n\nAlcon takes pride in maintaining an inclusive environment that values different perspectives and our policies are non-discriminatory in recruitment, hiring, training, promotion or other employment practices for reasons of race, color, religion, gender, national origin, age, sexual orientation, marital or veteran status, disability, or any other legally protected status. Alcon is also committed to working with and providing reasonable accommodation to individuals with disabilities. If, because of a medical condition or disability, you need a reasonable accommodation for any part of the application process, or in order to perform the essential functions of a position, please send an email to alcon.recruitment@alcon.com and let us know the nature of your request and your contact information.",
+  "required_qualifications": [
+    "Bachelor’s Degree or Equivalent years of directly related experience (or high school +10 yrs.; Assoc.+6 yrs.; M.S.+0 yrs.)",
+    "The ability to fluently read, write, understand, and communicate in English",
+    "2 Years of Relevant Experience"
+  ],
+  "preferred_qualifications": [
+    "Strong foundation in structural mechanics, dynamics, material modeling, and computational fluid dynamics",
+    "Experience with medical devices, R&D, or regulated environments",
+    "Strong analytical, problem-solving, and communication skills"
+  ],
+  "main_responsibilities": [
+    "Lead FEA and CFD efforts supporting Surgical R&D medical device development, driving faster, cost-effective innovation",
+    "Perform advanced structural and dynamic simulations (linear/nonlinear, implicit/explicit, impact, transient, frequency) on complex, multi-material systems",
+    "Develop multi-physics, large-scale models to enable virtual prototyping across the product lifecycle",
+    "Leverage tools such as Ansys Mechanical, FLUENT, LS-DYNA, and OptiStruct for modeling, simulation, and convergence analysis",
+    "Validate simulation results through correlation with experimental data",
+    "Define project scope, requirements, and timelines, managing multiple simulations to meet delivery goals",
+    "Collaborate with cross-functional engineering teams to identify and resolve design issues early",
+    "Support regulatory submissions, post-market analysis, and Global Medical Affairs through simulation insights",
+    "Drive innovation by advancing simulation methods, tools, and best practices",
+    "Solve complex, multi-disciplinary engineering challenges using strong analytical skills",
+    "Mentor team members and deliver clear, professional technical reports"
+  ],
+  "technical_skills": [
+    "FEA",
+    "CFD",
+    "Linear and nonlinear structural simulation",
+    "Structural dynamics",
+    "Implicit and explicit analysis",
+    "Impact, transient and frequency analysis",
+    "Multimaterial systems",
+    "Multiphysics virtual prototyping",
+    "Convergence analysis",
+    "Experimental correlation",
+    "Simulation-driven product development",
+    "Technical reporting and mentoring"
+  ],
+  "software_and_programming_requirements": {
+    "named_tools_in_responsibilities": [
+      "Ansys Mechanical",
+      "FLUENT",
+      "LS-DYNA",
+      "OptiStruct"
+    ],
+    "note": "Tools are named in job duties; no language requirement or separate proficiency threshold is stated. Custom solver work does not establish use of named packages."
+  },
+  "technical_keywords": [
+    "Surgical R&D",
+    "medical devices",
+    "structural mechanics",
+    "material modeling",
+    "large-scale models",
+    "virtual prototyping",
+    "experimental validation",
+    "regulatory submissions",
+    "post-market analysis",
+    "Global Medical Affairs",
+    "simulation methods"
+  ],
+  "qualification_matches": [
+    {
+      "requirement": "Degree and two years relevant experience",
+      "status": "Directly supported",
+      "evidence": "Candidate_profile: BS Aeronautical Engineering and Mechanical Engineering PhD; EXP-002 Jan 2024–Mar 2025 plus EXP-001 Mar 2025–present provides over two years engineering experience by checked date.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Advanced FEA and CFD research and engineering",
+      "status": "Directly supported",
+      "evidence": "EXP-003 A/B custom FEM/XFEM and coupled thermal-fluid solvers; EXP-001 E/F/G/N product CFD, structural analysis and prototyping.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Material modeling, structural dynamics and explicit impact",
+      "status": "Directly supported",
+      "evidence": "EXP-003 B nonlinear plasticity, strain-rate effects, von Mises/Drucker-Prager; EXP-001 O multimaterial FEA, P modal analysis, Q explicit impact and J-integral assessment.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Multiphysics models and virtual prototyping",
+      "status": "Directly supported",
+      "evidence": "EXP-003 A/E coupled structural/thermal/fluid solvers and NASA MCVT; EXP-002 C real-time thermal-fluid simulation.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Experimental correlation and design improvements",
+      "status": "Directly supported",
+      "evidence": "EXP-003 F experimentally calibrated structural model; EXP-001 E/F/J prototype testing and G structural material reduction.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Ansys Mechanical, FLUENT, LS-DYNA and OptiStruct workflows",
+      "status": "Not established by available sources",
+      "evidence": "Software inventory lists Ansys/Abaqus, but named-package professional use is not established in achievement text. FLUENT, LS-DYNA and OptiStruct experience is not established.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Medical devices and regulated-environment deliverables",
+      "status": "Not established by available sources",
+      "evidence": "No medical-device, regulatory-submission, post-market or Global Medical Affairs experience documented. R&D experience is supported.",
+      "priority": "High"
+    },
+    {
+      "requirement": "Project scope, concurrent simulations, mentoring and reporting",
+      "status": "Partially supported",
+      "evidence": "EXP-001/003 support engineering investigations and research publications; Candidate_profile teaching supports technical instruction. Formal medical-device project ownership and mentoring scope not established.",
+      "priority": "Medium"
+    },
+    {
+      "requirement": "Fluent English communication",
+      "status": "Partially supported",
+      "evidence": "US doctoral research, publications and US engineering roles provide contextual evidence; explicit language proficiency statement is not in the reviewed libraries.",
+      "priority": "Critical"
+    },
+    {
+      "requirement": "Fort Worth onsite availability",
+      "status": "Not established by available sources",
+      "evidence": "Candidate based in San Antonio; commuting/relocation willingness unknown. Employer lists relocation support.",
+      "priority": "Critical"
+    }
+  ],
+  "significant_candidate_qualification_gaps": [
+    "Hands-on use of Ansys Mechanical/FLUENT/LS-DYNA/OptiStruct is not established by documented accomplishments.",
+    "Medical-device/regulatory submission/post-market analysis experience is not established.",
+    "Specific implicit/contact/convergence workflows and large-scale commercial model ownership require confirmation.",
+    "Fort Worth onsite relocation or commuting availability is unknown."
+  ],
+  "estimated_match_score": 84,
+  "score_note": "Heuristic suitability assessment, not hiring probability. Strong mechanics/CFD/experimental evidence and preferred DFW location; named-tool and regulated-industry gaps remain significant.",
+  "candidate_evidence_sources": [
+    "libraries/Candidate_profile.md",
+    "libraries/EXP-001_Rheem_Project_Engineer_II_weighted_expanded.md",
+    "libraries/EXP-002_LTTS_Senior_Simulation_Integration_Engineer.md",
+    "libraries/EXP-003_UTSA_Research.md",
+    "libraries/Software_and_programming_skills_library.md",
+    "libraries/Technical_knowledge_library.md"
+  ],
+  "search_notes": "Remote options reviewed first: Trane JR-7761 requires data-center/high-tech design experience not established; Trane JR-13350 asks five-plus HVAC&R years not established. Alcon gives strong technical overlap in preferred DFW area. Caterpillar R0000356986 excluded for July 2026 deadline."
+}
