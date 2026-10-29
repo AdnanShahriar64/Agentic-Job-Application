@@ -1,0 +1,107 @@
+Adnan Shahriar, PhD
+Phone: 210-803-5230
+|
+Email: shahriar.adnan@yahoo.com
+LinkedIn: https://www.linkedin.com/in/adnan-shahriar/
+GitHub: https://github.com/AdnanShahriar64
+Google Scholar: https://scholar.google.com/citations?user=jF2HLEcAAAAJ
+PROFESSIONAL SUMMARY
+Ph.D. mechanical engineer combining HVAC product development, CFD/FEA, scientiﬁc programming, and prototype
+testing. At Rheem, developed and experimentally evaluated fan, air-handling, and condensate-management designs,
+including a fan-shroud prototype demonstrating more than 80% higher airﬂow eﬃciency (CFM/W) than the previous
+design. Additional experience includes real-time C/C++ HVAC plant modeling and coupled thermal-ﬂuid simulation.
+TECHNICAL SKILLS
+Thermal and Fluids: HVAC airﬂow systems, Heat transfer, CFD, Transient thermal modeling, Convective thermal-
+ﬂuid coupling
+Mechanical Design and Analysis: FEA, Structural optimization, Parametric CAD, Design for manufacturability,
+Assembly and clearance analysis
+Prototypes and Validation: 3D printing, Airﬂow testing, Variable-geometry test ﬁxtures, Experimental modal
+testing, Model calibration
+Programming and CAD: Python, C/C++, CadQuery, STEP geometry generation, Custom numerical solvers,
+Engineering workﬂow automation
+PROFESSIONAL EXPERIENCE
+Project Engineer — Rheem Manufacturing (Friedrich Air Conditioning) | San Antonio, TX
+Mar 2025–Present
+• Outdoor Fan-Shroud Optimization
+– Used CFD to optimize shroud geometry and improve airﬂow distribution across the condenser coil. Fabricated
+and tested a prototype, demonstrating more than 80% improvement in airﬂow eﬃciency (CFM/W) relative to
+the previous design.
+• Airﬂow-Induced Condensate Management Invention
+– Invented a passive condensate entrainment and slinging system that uses fan-generated pressure diﬀerences to
+draw condensed water into the fan airﬂow path and improve condensate slinging performance.
+– Performed CFD simulations to investigate airﬂow behavior, pressure distribution, and condensate entrainment
+mechanisms.
+– Designed, fabricated, and iteratively reﬁned 3D-printed prototypes to demonstrate the mechanism.
+– Conducted experimental testing to validate condensate entrainment, slinging eﬀectiveness, and overall system
+performance.
+• VPAK Air-Handling Unit Development
+– Designed an air-handling unit that delivered approximately 25% higher airﬂow than the existing conﬁguration.
+Fabricated and tested 3D-printed prototypes to assess airﬂow and reﬁne design assumptions.
+• Reconﬁgurable Fan Test Fixture
+– Designed and fabricated a modular, 3D-printed cross-ﬂow fan test ﬁxture with adjustable tongue and scroll
+geometry and clearances, enabling multiple conﬁgurations to be tested without rebuilding the full housing.
+• Multi-Material Product FEA Analysis
+– Performed ﬁnite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum
+and steel sheet metal, and expanded polypropylene (EPP) at diﬀerent densities.
+• Structural FEA and Assembly Optimization of Modular AHU
+– Performed comprehensive ﬁnite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate
+structural integrity, press-ﬁt connections, and load-bearing capacity. Analyzed deformation under fan and motor
+loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical
+interference and supporting reliable prototype operation.
+• Invention Disclosures
+– Submitted four patent disclosures covering HVAC innovations, including fan shroud optimization, condensate
+management, and experimental testing systems.
+
+• Modular VPAK Air-Handling Unit Prototype
+– Designed and developed a nine-segment modular VPAK air-handling unit (AHU) prototype, allowing individual
+sections to be modiﬁed independently for airﬂow optimization and rapid accommodation of design changes,
+including heater, coil, and component conﬁgurations. Used low-cost 3D printing to accelerate design iteration
+while maintaining a uniﬁed, single-piece AHU conﬁguration for production.
+• Parametric Fan-Shroud Generation
+– Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and
+design clearances into 3D shroud geometry and STEP ﬁles, reducing repetitive CAD modeling and accelerating
+design iteration across product conﬁgurations.
+• Motor-Mount Structural Optimization
+– Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining
+stiﬀness and vibration requirements. Simpliﬁed injection-molded components to reduce secondary manufacturing
+operations and assembly complexity.
+• Cross-Flow Fan Aerodynamics
+– Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity
+of fan performance to scroll and housing geometry.
+• Fan-Induced Vibration and Modal Analysis
+– Performed FEA-based modal analysis to identify natural frequencies of product components and assess resonance
+risk by comparing them with fan rotational frequency (RPM/60) and blade-passing frequency.
+Senior Simulation Integration Engineer — L&T Technology Services | Plano, TX
+Jan 2024–Mar 2025
+• Real-Time C/C++ HVAC Plant Model for SiL and HiL
+– Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-
+the-Loop (HiL) applications, combining ﬁnite element solution of transient heat transfer and velocity-pressure-
+coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-ﬂuid cou-
+pling, and a proportional-derivative (PD) HVAC controller model.
+• Modular GUI for Aerodynamic Data Analysis
+– Developed a modular GUI for aerodynamic data analysis with well-deﬁned input/output interfaces, improving
+maintainability and reducing computational and memory overhead.
+Graduate Researcher — Resilient Extraterrestrial Habitats Institute | San Antonio, TX
+Dec 2019–Jan 2024
+• Custom 3D Multiphysics Finite Element Solvers
+– Developed custom three-dimensional ﬁnite element solvers from ﬁrst principles for structural mechanics, transient
+heat transfer, and ﬂuid dynamics, including coupled structural-thermal habitat models and interior thermal-ﬂuid
+simulations.
+• NASA Modular-Coupled Virtual Testbed (MCVT)
+– Developed and integrated structural, thermal, and ﬂuid plant models for NASA’s Modular-Coupled Virtual
+Testbed (MCVT), a system-of-systems simulation environment for virtual testing of resilient extraterrestrial
+habitats.
+• Thermal Protective Layer Topology Optimization
+– Investigated thermo-mechanical topology optimization of lunar habitat thermal protective layers under diﬀerent
+environmental conditions and lunar latitudes.
+• Experimental Structural Digital Twin and Model Updating
+– Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer data,
+identifying natural frequencies and mode shapes, using Crypton optical geometry measurements, and calibrating
+a parameterized beam-element model to match identiﬁed modal properties and measured acceleration histories.
+SELECTED TECHNICAL DEMONSTRATIONS
+HVAC duct CFD: https://www.linkedin.com/feed/update/urn:li:activity:7258219618144538624/
+Lunar habitat thermal topology optimization: https://youtu.be/EGVZgg1pb6Q
+MCVT structural-mechanical model: https://youtu.be/TAA66P_UXIM
+EDUCATION
+Ph.D., Mechanical Engineering — University of Texas at San Antonio, 2023 | GPA: 3.94
+B.S., Aeronautical Engineering (Aerospace Major) — Military Institute of Science and Technology, 2015

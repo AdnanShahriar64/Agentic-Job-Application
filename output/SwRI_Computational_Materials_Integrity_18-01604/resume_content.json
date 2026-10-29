@@ -1,0 +1,205 @@
+{
+  "target_company": "Southwest Research Institute",
+  "target_role": "Research Engineer / Sr. Research Engineer - Computational Materials Integrity",
+  "summary": "Ph.D. mechanical engineer developing computational mechanics methods and scientific simulation software. Developed custom three-dimensional FEM/XFEM solvers, nonlinear material models, and algorithms emphasizing reduced arithmetic and memory complexity. Applied explicit dynamic FEA and J-integral analysis to plastic-component impact and cracking assessments, with additional experience in C/C++ simulation development, automated testing workflows, and experimentally calibrated structural models.",
+  "skills": [
+    {
+      "category": "Computational Mechanics",
+      "items": [
+        "FEM/XFEM",
+        "Nonlinear constitutive modeling",
+        "Plasticity",
+        "Explicit dynamic FEA",
+        "J-integral assessment",
+        "Structural dynamics"
+      ]
+    },
+    {
+      "category": "Numerical Methods",
+      "items": [
+        "Custom solver development",
+        "Reduced-order modeling",
+        "Arithmetic and memory complexity optimization",
+        "Physics-based neural-network surrogates"
+      ]
+    },
+    {
+      "category": "Numerical Software",
+      "items": [
+        "C/C++",
+        "Python",
+        "Jenkins CI/CD",
+        "Bash",
+        "PowerShell",
+        "Modular software interfaces"
+      ]
+    },
+    {
+      "category": "Experimental Validation",
+      "items": [
+        "Impact-hammer testing",
+        "Modal identification",
+        "Structural model calibration"
+      ]
+    }
+  ],
+  "experience": {
+    "rheem": [
+      {
+        "source_id": "EXP-001-Q",
+        "heading": "Explicit Dynamic Impact and Fracture Assessment",
+        "bullets": [
+          "Performed explicit dynamic FEA impact analysis of plastic components to evaluate impact-induced stresses and potential cracking; calculated the J-integral to assess the driving force for crack propagation."
+        ]
+      },
+      {
+        "source_id": "EXP-001-O",
+        "heading": "Multi-Material Product FEA Analysis",
+        "bullets": [
+          "Performed finite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at different densities."
+        ]
+      },
+      {
+        "source_id": "EXP-001-G",
+        "heading": "Motor-Mount Structural Optimization",
+        "bullets": [
+          "Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining stiffness and vibration requirements. Simplified injection-molded components to reduce secondary manufacturing operations and assembly complexity."
+        ]
+      },
+      {
+        "source_id": "EXP-001-N",
+        "heading": "Structural FEA and Assembly Optimization of Modular AHU",
+        "bullets": [
+          "Performed comprehensive finite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load-bearing capacity. Analyzed deformation under fan and motor loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical interference and supporting reliable prototype operation."
+        ]
+      },
+      {
+        "source_id": "EXP-001-P",
+        "heading": "Fan-Induced Vibration and Modal Analysis",
+        "bullets": [
+          "Performed FEA-based modal analysis to identify natural frequencies of product components and assess resonance risk by comparing them with fan rotational frequency (RPM/60) and blade-passing frequency."
+        ]
+      },
+      {
+        "source_id": "EXP-001-A",
+        "heading": "Parametric Fan-Shroud Generation",
+        "bullets": [
+          "Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations."
+        ]
+      },
+      {
+        "source_id": "EXP-001-C",
+        "heading": "Refrigerant-Tube Routing Optimization",
+        "bullets": [
+          "Developing an FEA-based tool to evaluate natural frequencies and optimize compressor-to-outdoor-coil tubing routes to reduce vibration susceptibility. Incorporating experimental modal testing and model updating to calibrate FEA predictions against measured vibration characteristics."
+        ]
+      }
+    ],
+    "ltts": [
+      {
+        "source_id": "EXP-002-B",
+        "heading": "Modular GUI for Aerodynamic Data Analysis",
+        "bullets": [
+          "Developed a modular GUI for aerodynamic data analysis with well-defined input/output interfaces, improving maintainability and reducing computational and memory overhead."
+        ]
+      },
+      {
+        "source_id": "EXP-002-F",
+        "heading": "Jenkins CI/CD and Automated Debugging",
+        "bullets": [
+          "Developed Jenkins CI/CD pipelines with Bash and PowerShell scripting and automated screen-capture capability, streamlining debugging and test workflows for construction and forestry vehicle software."
+        ]
+      },
+      {
+        "source_id": "EXP-002-C",
+        "heading": "Real-Time C/C++ HVAC Plant Model for SiL and HiL",
+        "bullets": [
+          "Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-the-Loop (HiL) applications, combining finite element solution of transient heat transfer and velocity-pressure-coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-fluid coupling, and a proportional-derivative (PD) HVAC controller model."
+        ]
+      },
+      {
+        "source_id": "EXP-002-D",
+        "heading": "Probability-Based File-Type Detection Algorithm",
+        "bullets": [
+          "Developed a probability-based file-type detection algorithm for John Deere software, replacing a rigid if-else structure with a scalable, data-driven approach intended to improve performance, reliability, and extensibility."
+        ]
+      },
+      {
+        "source_id": "EXP-002-E",
+        "heading": "Integrated SiL Simulation Infrastructure and Vehicle Network Virtualization",
+        "bullets": [
+          "Developed and integrated a Software-in-the-Loop (SiL) infrastructure connecting the simulator, display, virtual CAN/LIN communication, and ECU-testing components to support construction and forestry vehicle software testing."
+        ]
+      }
+    ],
+    "utsa": [
+      {
+        "source_id": "EXP-003-B",
+        "heading": "XFEM, Nonlinear Materials, and Damage Modeling",
+        "bullets": [
+          "Developed XFEM methods to represent stress fields around three-dimensional voids and implemented nonlinear material behavior incorporating plasticity, strain-rate effects, thermal expansion, and von Mises and Drucker-Prager yield criteria."
+        ]
+      },
+      {
+        "source_id": "EXP-003-A",
+        "heading": "Custom 3D Multiphysics Finite Element Solvers",
+        "bullets": [
+          "Developed custom three-dimensional finite element solvers from first principles for structural mechanics, transient heat transfer, and fluid dynamics, including coupled structural-thermal habitat models and interior thermal-fluid simulations."
+        ]
+      },
+      {
+        "source_id": "EXP-003-H",
+        "heading": "Efficient Scientific Software and Numerical Algorithms",
+        "bullets": [
+          "Developed computational tools emphasizing reduced arithmetic and memory complexity to support novel numerical formulations and simulation workflows; contributed to a publication on algorithm development."
+        ]
+      },
+      {
+        "source_id": "EXP-003-G",
+        "heading": "XFEM-Informed Neural Network Damage Surrogate",
+        "bullets": [
+          "Developed a neural-network surrogate trained on high-fidelity XFEM simulations to approximate localized damage behavior in larger structural models."
+        ]
+      },
+      {
+        "source_id": "EXP-003-D",
+        "heading": "Reduced-Order Modeling and High-Order Elements",
+        "bullets": [
+          "Developed modal-coordinate reduced-order models and applied Guyan static condensation; implemented very high-order finite element formulations for acoustic wave propagation associated with micrometeoroid impacts."
+        ]
+      },
+      {
+        "source_id": "EXP-003-F",
+        "heading": "Experimental Structural Digital Twin and Model Updating",
+        "bullets": [
+          "Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer data, identifying natural frequencies and mode shapes, using Crypton optical geometry measurements, and calibrating a parameterized beam-element model to match identified modal properties and measured acceleration histories."
+        ]
+      },
+      {
+        "source_id": "EXP-003-E",
+        "heading": "NASA Modular-Coupled Virtual Testbed (MCVT)",
+        "bullets": [
+          "Developed and integrated structural, thermal, and fluid plant models for NASA's Modular-Coupled Virtual Testbed (MCVT), a system-of-systems simulation environment for virtual testing of resilient extraterrestrial habitats."
+        ]
+      }
+    ]
+  },
+  "other_experience": [],
+  "demonstrations": [
+    {
+      "id": 1,
+      "title": "Finite element formulation software tool",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7122914707790843904/"
+    },
+    {
+      "id": 2,
+      "title": "P-refinement software tool",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7257511067562500096/"
+    },
+    {
+      "id": 4,
+      "title": "Large-deformation beam simulator",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7429372567318331392/"
+    }
+  ]
+}

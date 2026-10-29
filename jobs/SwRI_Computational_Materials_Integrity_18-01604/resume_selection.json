@@ -1,0 +1,79 @@
+{
+  "target_company": "Southwest Research Institute",
+  "target_role": "Research Engineer / Sr. Research Engineer - Computational Materials Integrity",
+  "summary": "Ph.D. mechanical engineer developing computational mechanics methods and scientific simulation software. Developed custom three-dimensional FEM/XFEM solvers, nonlinear material models, and algorithms emphasizing reduced arithmetic and memory complexity. Applied explicit dynamic FEA and J-integral analysis to plastic-component impact and cracking assessments, with additional experience in C/C++ simulation development, automated testing workflows, and experimentally calibrated structural models.",
+  "skills": [
+    {
+      "category": "Computational Mechanics",
+      "items": [
+        "FEM/XFEM",
+        "Nonlinear constitutive modeling",
+        "Plasticity",
+        "Explicit dynamic FEA",
+        "J-integral assessment",
+        "Structural dynamics"
+      ]
+    },
+    {
+      "category": "Numerical Methods",
+      "items": [
+        "Custom solver development",
+        "Reduced-order modeling",
+        "Arithmetic and memory complexity optimization",
+        "Physics-based neural-network surrogates"
+      ]
+    },
+    {
+      "category": "Numerical Software",
+      "items": [
+        "C/C++",
+        "Python",
+        "Jenkins CI/CD",
+        "Bash",
+        "PowerShell",
+        "Modular software interfaces"
+      ]
+    },
+    {
+      "category": "Experimental Validation",
+      "items": [
+        "Impact-hammer testing",
+        "Modal identification",
+        "Structural model calibration"
+      ]
+    }
+  ],
+  "experience": {
+    "rheem": [
+      "EXP-001-Q",
+      "EXP-001-O",
+      "EXP-001-G",
+      "EXP-001-N",
+      "EXP-001-P",
+      "EXP-001-A",
+      "EXP-001-C"
+    ],
+    "ltts": [
+      "EXP-002-B",
+      "EXP-002-F",
+      "EXP-002-C",
+      "EXP-002-D",
+      "EXP-002-E"
+    ],
+    "utsa": [
+      "EXP-003-B",
+      "EXP-003-A",
+      "EXP-003-H",
+      "EXP-003-G",
+      "EXP-003-D",
+      "EXP-003-F",
+      "EXP-003-E"
+    ],
+    "other": []
+  },
+  "demonstration_ids": [
+    1,
+    2,
+    4
+  ]
+}

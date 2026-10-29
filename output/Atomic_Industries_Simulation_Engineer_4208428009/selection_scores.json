@@ -1,0 +1,3401 @@
+{
+  "formula": "R=sum(w*r)/sum(w); S=0.80*R+0.20*E",
+  "caveats": [
+    "Scores are decision aids grounded in the achievement text, not proficiency or hiring probabilities.",
+    "Invalid out-of-range weights are excluded from the aggregate and retained here for audit. Source files are unchanged.",
+    "EXP-002-C keyword PID Control is not supported by the PD-controller achievement; that keyword receives zero relevance.",
+    "EXP-005 fails the exceptional-match gate regardless of its numeric score.",
+    "EXP-004-A considered but omitted: higher-priority nonlinear simulation, surrogate modeling and physical validation evidence was preferred."
+  ],
+  "accomplishments": [
+    {
+      "source_id": "EXP-004-A",
+      "heading": "CAD-to-Mesh Automation Algorithm",
+      "weighted_relevance": 4.903,
+      "evidence_strength": 4.5,
+      "score": 4.823,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "CAD-to-Mesh",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Automated Meshing",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Geometry",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Mesh Generation",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Simulation Preprocessing",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Numerical Algorithms",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Arithmetic Complexity",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Engineering Software",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Scientific Computing",
+          "weight": 10,
+          "relevance": 2.5,
+          "valid_weight": false
+        }
+      ],
+      "status": "**Status:** Developed"
+    },
+    {
+      "source_id": "EXP-003-H",
+      "heading": "Efficient Scientific Software and Numerical Algorithms",
+      "weighted_relevance": 4.741,
+      "evidence_strength": 4.5,
+      "score": 4.693,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Arithmetic Complexity",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Memory Complexity",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Numerical Formulations",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Solver Development",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Scientific Computing",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Algorithm Publication",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software Engineering",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-001-Q",
+      "heading": "Explicit Dynamic Impact and Fracture Assessment",
+      "weighted_relevance": 4.578,
+      "evidence_strength": 4.5,
+      "score": 4.562,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Explicit Dynamic FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Impact Analysis",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plastic Component Fracture",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "J-Integral",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Crack Propagation Assessment",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Stress Analysis",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fracture Mechanics",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Analysis"
+    },
+    {
+      "source_id": "EXP-003-A",
+      "heading": "Custom 3D Multiphysics Finite Element Solvers",
+      "weighted_relevance": 4.562,
+      "evidence_strength": 4.5,
+      "score": 4.55,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "3D FEM",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Finite Element Formulation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Navier-Stokes",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Transient Heat Transfer",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermo-Fluid Coupling",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural-Thermal Coupling",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Mechanics",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-002-B",
+      "heading": "Modular GUI for Aerodynamic Data Analysis",
+      "weighted_relevance": 4.196,
+      "evidence_strength": 4.5,
+      "score": 4.257,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Graphical User Interface",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "GUI",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modular Software",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Input/Output Interfaces",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Optimization",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Memory Efficiency",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Data Processing",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Client Assignment"
+    },
+    {
+      "source_id": "EXP-003-C",
+      "heading": "Thermal Protective Layer Topology Optimization",
+      "weighted_relevance": 4.182,
+      "evidence_strength": 4.5,
+      "score": 4.245,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Thermal Topology Optimization",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermal",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermo Fluid",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermo-Mechanical Optimization",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermal Protection",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Heat Transfer",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Lunar Environment",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design Optimization",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Research Investigation Completed"
+    },
+    {
+      "source_id": "EXP-001-R",
+      "heading": "Experimental Drop-Impact Testing",
+      "weighted_relevance": 3.977,
+      "evidence_strength": 5,
+      "score": 4.182,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Experimental Drop Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Impact Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Validation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plastic Component Durability",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Physical Prototyping",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Experimental Testing"
+    },
+    {
+      "source_id": "EXP-001-G",
+      "heading": "Motor-Mount Structural Optimization",
+      "weighted_relevance": 4.052,
+      "evidence_strength": 4.5,
+      "score": 4.141,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "FEA-Based Structural Optimization",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Material Reduction (>50%)",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural Stiffness",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Vibration Requirements",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Injection-Molding Simplification",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design for Manufacturability",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed"
+    },
+    {
+      "source_id": "EXP-003-B",
+      "heading": "XFEM, Nonlinear Materials, and Damage Modeling",
+      "weighted_relevance": 4.044,
+      "evidence_strength": 4.5,
+      "score": 4.135,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Extended FEM",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "XFEM",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "3D Voids",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plasticity",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Strain-Rate Effects",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Thermal Expansion",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "von Mises",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Drucker-Prager",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Constitutive Modeling",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-003-G",
+      "heading": "XFEM-Informed Neural Network Damage Surrogate",
+      "weighted_relevance": 4.034,
+      "evidence_strength": 4.5,
+      "score": 4.128,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Neural Networks",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "XFEM",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Damage Prediction",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Physics-Based Surrogates",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "High-Fidelity Simulation",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Reduced Computational Cost",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Digital Twin",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-001-A",
+      "heading": "Parametric Fan-Shroud Generation",
+      "weighted_relevance": 3.986,
+      "evidence_strength": 4.5,
+      "score": 4.089,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "CAD",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CAD Automation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Parametric Shroud Geometry",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Python",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CadQuery",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Parametric Design",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "STEP Export",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HVAC",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 1,
+          "relevance": 0,
+          "valid_weight": true
+        },
+        {
+          "keyword": "FEA",
+          "weight": 1,
+          "relevance": 0,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed"
+    },
+    {
+      "source_id": "EXP-001-E",
+      "heading": "Outdoor Fan-Shroud Optimization",
+      "weighted_relevance": 3.887,
+      "evidence_strength": 4.5,
+      "score": 4.01,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Experimental Performance Validation",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Airflow Efficiency (CFM/W)",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan-Shroud Optimization",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Prototype Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Condenser Coil Airflow",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed"
+    },
+    {
+      "source_id": "EXP-002-F",
+      "heading": "Jenkins CI/CD and Automated Debugging",
+      "weighted_relevance": 3.718,
+      "evidence_strength": 4.5,
+      "score": 3.874,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Jenkins",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CI/CD",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Bash",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "PowerShell",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Automated Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Screen Capture",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Debugging",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Construction Equipment",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Forestry Equipment",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software Engineering",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Development"
+    },
+    {
+      "source_id": "EXP-003-F",
+      "heading": "Experimental Structural Digital Twin and Model Updating",
+      "weighted_relevance": 3.538,
+      "evidence_strength": 5,
+      "score": 3.831,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Model Updating",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Impact-Hammer Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Accelerometers",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modal Identification",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Natural Frequencies",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Mode Shapes",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modal Damping",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Crypton Optical Measurement",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Beam Elements",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Digital Twin",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development and Experimental Calibration"
+    },
+    {
+      "source_id": "EXP-001-F",
+      "heading": "Airflow-Induced Condensate Management Invention",
+      "weighted_relevance": 3.583,
+      "evidence_strength": 4.5,
+      "score": 3.767,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Experimental Validation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Condensate Entrainment",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Passive Water Slinging",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "3D-Printed Prototype Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan Pressure Differential",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fluid Dynamics",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed Experimental Development"
+    },
+    {
+      "source_id": "EXP-001-I",
+      "heading": "Reconfigurable Fan Test Fixture",
+      "weighted_relevance": 3.567,
+      "evidence_strength": 4.5,
+      "score": 3.753,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Experimental Test Fixture",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Reconfigurable Fan Geometry",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Cross-Flow Fan Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "3D-Printed Prototyping",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Variable Clearances",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Mechanical Design",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Validation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design of Experiments",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Validation",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Airflow Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed"
+    },
+    {
+      "source_id": "EXP-001-D",
+      "heading": "Engineering Workflow Automation",
+      "weighted_relevance": 3.553,
+      "evidence_strength": 4.5,
+      "score": 3.742,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Engineering Workflow Automation",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design-Space Exploration",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Parametric Design",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Numerical Evaluation",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CAD Generation",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed"
+    },
+    {
+      "source_id": "EXP-003-D",
+      "heading": "Reduced-Order Modeling and High-Order Elements",
+      "weighted_relevance": 3.552,
+      "evidence_strength": 4.5,
+      "score": 3.741,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Modal Reduction",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modal Coordinates",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Guyan Condensation",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "High-Order Finite Elements",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wave Propagation",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Micrometeoroid Impact",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Digital Twin",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-003-K",
+      "heading": "Numerical Experiments in Wave and Fluid Loading",
+      "weighted_relevance": 3.435,
+      "evidence_strength": 4.5,
+      "score": 3.648,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Numerical Experiments",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wave Behavior",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fluid Loading",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Wave Generation",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Simulation Analysis",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Conference Publication",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research and Publication Contribution"
+    },
+    {
+      "source_id": "EXP-003-O",
+      "heading": "Simulation Post-Processing and Bridge Research Publications",
+      "weighted_relevance": 3.423,
+      "evidence_strength": 4.5,
+      "score": 3.638,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Simulation Post-Processing",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Quantitative Analysis",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Bridge Engineering",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Numerical Modeling",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural Vulnerability",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Journal Publications",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Conference Papers",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Contribution"
+    },
+    {
+      "source_id": "EXP-001-M",
+      "heading": "Modular VPAK Air-Handling Unit Prototype",
+      "weighted_relevance": 3.417,
+      "evidence_strength": 4.5,
+      "score": 3.633,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Design Flexibility",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Rapid Prototyping",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Component Configuration Changes",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "3D Printing",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Airflow Optimization",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Production Design Intent",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Validation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design of Experiments",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Validation",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Airflow Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed Prototype Development"
+    },
+    {
+      "source_id": "EXP-005-E4",
+      "heading": "Unconventional Aircraft Configurations and Publications",
+      "weighted_relevance": 3.344,
+      "evidence_strength": 4.5,
+      "score": 3.575,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "unconventional aircraft",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aerodynamic advantages",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "structural advantages",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "publications",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Research and publications"
+    },
+    {
+      "source_id": "EXP-001-O",
+      "heading": "Multi-Material Product FEA Analysis",
+      "weighted_relevance": 3.316,
+      "evidence_strength": 4.5,
+      "score": 3.553,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Finite Element Analysis (FEA)",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Material-Specific Structural Analysis",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Mechanical Product Design",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "ABS Plastic",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "ASA Plastic",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plastic",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Aluminum and Steel Sheet Metal",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Expanded Polypropylene (EPP)",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Material Density Variation",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Stress Analysis",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed FEA Analysis"
+    },
+    {
+      "source_id": "EXP-001-H",
+      "heading": "Cross-Flow Fan Aerodynamics",
+      "weighted_relevance": 3.312,
+      "evidence_strength": 4.5,
+      "score": 3.55,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Cross-Flow Fan Aerodynamics",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Eccentric Vortex",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Tongue-Vortex Interaction",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Recirculation",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Scroll Geometry",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed CFD Investigation"
+    },
+    {
+      "source_id": "EXP-001-N",
+      "heading": "Structural FEA and Assembly Optimization of Modular AHU",
+      "weighted_relevance": 3.3,
+      "evidence_strength": 4.5,
+      "score": 3.54,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Structural Integrity FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan–Bellmouth Clearance Verification",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Deformation Analysis",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Press-Fit Connections",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan and Motor Loading",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Assembly Optimization",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Mechanical Interference Prevention",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Stress Analysis",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed FEA Analysis"
+    },
+    {
+      "source_id": "EXP-003-J",
+      "heading": "Eulerian CFD and Hurricane Wave Simulation",
+      "weighted_relevance": 3.297,
+      "evidence_strength": 4.5,
+      "score": 3.538,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Eulerian CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wave Generation",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hurricane Waves",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hydrodynamic Loading",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fluid Motion",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Coastal Bridges",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Numerical Simulation",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-005-D2",
+      "heading": "Beam Finite Element Aircraft Model",
+      "weighted_relevance": 3.281,
+      "evidence_strength": 4.5,
+      "score": 3.525,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "beam finite elements",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aircraft structures",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "stiffness",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "dynamic response",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Developed"
+    },
+    {
+      "source_id": "EXP-005-D6",
+      "heading": "Runway Roughness Assessment",
+      "weighted_relevance": 3.281,
+      "evidence_strength": 4.5,
+      "score": 3.525,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "runway roughness",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "numerical simulation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "surface irregularities",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aircraft dynamic response",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-001-B",
+      "heading": "Simulation-Driven Design Optimization",
+      "weighted_relevance": 3.905,
+      "evidence_strength": 2,
+      "score": 3.524,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Data-Driven Design Optimization",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Batch CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Predictive Modeling",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Performance Dataset",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Statistical Analysis",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan-Shroud Optimization",
+          "weight": 2,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Simulation Automation",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** In Development"
+    },
+    {
+      "source_id": "EXP-002-A",
+      "heading": "Wind-Tunnel Aerodynamic Data Evaluation",
+      "weighted_relevance": 3.194,
+      "evidence_strength": 4.5,
+      "score": 3.456,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wind Tunnel",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Dynamic-Pressure Correction",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wake Distortion",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Strut Interference",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Boundary-Layer Correction",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Aerodynamic Data",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Client Assignment"
+    },
+    {
+      "source_id": "EXP-002-E",
+      "heading": "Integrated SiL Simulation Infrastructure and Vehicle Network Virtualization",
+      "weighted_relevance": 3.171,
+      "evidence_strength": 4.5,
+      "score": 3.437,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "Software-in-the-Loop",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "SiL",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Simulation Infrastructure",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Virtual CAN",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "LIN",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "ECU Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Simulator Integration",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Display Integration",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Embedded Control",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software Engineering",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Development"
+    },
+    {
+      "source_id": "EXP-003-E",
+      "heading": "NASA Modular-Coupled Virtual Testbed (MCVT)",
+      "weighted_relevance": 3.161,
+      "evidence_strength": 4.5,
+      "score": 3.429,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "MCVT",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modular-Coupled Virtual Testbed",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plant Modeling",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural-Thermal-Fluid Coupling",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "System Integration",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Virtual Testing",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "NASA",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Digital Twin",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Contribution"
+    },
+    {
+      "source_id": "EXP-005-D1",
+      "heading": "Aircraft–Runway Dynamic Simulation",
+      "weighted_relevance": 3.158,
+      "evidence_strength": 4.5,
+      "score": 3.426,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "numerical modeling",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aircraft-runway interaction",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "taxiing",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "takeoff",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "landing",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Developed"
+    },
+    {
+      "source_id": "EXP-005-C4",
+      "heading": "Parametric Wing and Mounting CAD",
+      "weighted_relevance": 3.125,
+      "evidence_strength": 4.5,
+      "score": 3.4,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "parametric CAD",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "NACA 0012",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "modular mounting structure",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aerodynamic tests",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Developed"
+    },
+    {
+      "source_id": "EXP-001-P",
+      "heading": "Fan-Induced Vibration and Modal Analysis",
+      "weighted_relevance": 3.069,
+      "evidence_strength": 4.5,
+      "score": 3.356,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Modal Analysis",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Resonance Assessment",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan Blade-Passing Frequency",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Rotational Excitation Frequency",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural Dynamics",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Finite Element Analysis (FEA)",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Natural Frequencies",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Vibration",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Analysis"
+    },
+    {
+      "source_id": "EXP-003-M",
+      "heading": "Bridge Dynamics Under Extreme Hydrodynamic Loading",
+      "weighted_relevance": 3.056,
+      "evidence_strength": 4.5,
+      "score": 3.344,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Bridge Vibration",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Stress Distribution",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hydrodynamic Loading",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Dynamic Response",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wave Impact",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Structural Deformation",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Coastal Infrastructure",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Analysis"
+    },
+    {
+      "source_id": "EXP-005-C1",
+      "heading": "Wing Aerodynamic Experimental Framework",
+      "weighted_relevance": 3.026,
+      "evidence_strength": 4.5,
+      "score": 3.321,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "NACA 0012",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "biplane",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "monoplane",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aerodynamic testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "wing spacing",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed experimental design work"
+    },
+    {
+      "source_id": "EXP-002-C",
+      "heading": "Real-Time C/C++ HVAC Plant Model for SiL and HiL",
+      "weighted_relevance": 2.984,
+      "evidence_strength": 4.5,
+      "score": 3.287,
+      "selected": true,
+      "weighted_keywords": [
+        {
+          "keyword": "C++",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Real-Time Simulation",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HVAC Plant Model",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Plant Modeling",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software-in-the-Loop",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "SiL",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hardware-in-the-Loop",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HiL",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Finite Element Method",
+          "weight": 4,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "FEM",
+          "weight": 2,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Navier-Stokes Equations",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Transient Heat Transfer",
+          "weight": 3,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Lumped Capacitance",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Convective Coupling",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "PID Control",
+          "weight": 5,
+          "relevance": 0,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Development"
+    },
+    {
+      "source_id": "EXP-001-L",
+      "heading": "Invention Disclosures",
+      "weighted_relevance": 2.957,
+      "evidence_strength": 4.5,
+      "score": 3.265,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Invention Disclosures (Four Submitted)",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HVAC Innovation",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Condensate Management",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Testing Systems",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fan-Shroud Optimization",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Research and Development",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Four Disclosures Submitted"
+    },
+    {
+      "source_id": "EXP-002-D",
+      "heading": "Probability-Based File-Type Detection Algorithm",
+      "weighted_relevance": 2.929,
+      "evidence_strength": 4.5,
+      "score": 3.243,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Statistical Modeling",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Probability-Based Classification",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "File Type Detection",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Algorithm Design",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Scalability",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software Performance",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Refactoring",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Development"
+    },
+    {
+      "source_id": "EXP-005-D5",
+      "heading": "Coupled Aircraft–Runway Model",
+      "weighted_relevance": 2.853,
+      "evidence_strength": 4.5,
+      "score": 3.182,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "aircraft structural model",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "landing gear dynamics",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "runway contact",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "coupled response",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Integrated"
+    },
+    {
+      "source_id": "EXP-002-G",
+      "heading": "C#/.NET Database and Desktop Application Integration",
+      "weighted_relevance": 2.847,
+      "evidence_strength": 4.5,
+      "score": 3.178,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "C#",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": ".NET",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Windows Forms",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "WinForms",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "SQL",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Entity Framework",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Database Read/Write",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Desktop Applications",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Software Engineering",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Development"
+    },
+    {
+      "source_id": "EXP-001-C",
+      "heading": "Refrigerant-Tube Routing Optimization",
+      "weighted_relevance": 3.438,
+      "evidence_strength": 2,
+      "score": 3.15,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Structural Dynamics",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Natural Frequency Optimization",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Beam-Element FEA",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Refrigerant Tube Routing",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modal Analysis",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Model Updating",
+          "weight": 5,
+          "relevance": 5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Vibration",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Explicit",
+          "weight": 4,
+          "relevance": 0,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Implicit",
+          "weight": 4,
+          "relevance": 0,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** In Development"
+    },
+    {
+      "source_id": "EXP-005-A3",
+      "heading": "Atomistic MoSe2 Models",
+      "weighted_relevance": 2.781,
+      "evidence_strength": 4.5,
+      "score": 3.125,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "3D atomistic models",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "MoSe2",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "molecular geometry",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "crystal structure",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-C3",
+      "heading": "Adjustable Wing Test Structure",
+      "weighted_relevance": 2.781,
+      "evidence_strength": 4.5,
+      "score": 3.125,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "adjustable wing gap",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "modular experimental setup",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "variable geometry",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "wing spacing",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Designed"
+    },
+    {
+      "source_id": "EXP-005-E1",
+      "heading": "Lightweight Composite Fuselage",
+      "weighted_relevance": 2.737,
+      "evidence_strength": 4.5,
+      "score": 3.089,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "fuselage",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "composite materials",
+          "weight": 5,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "wire tension elements",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "bending",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "tensile loads",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Designed and fabricated"
+    },
+    {
+      "source_id": "EXP-005-E2",
+      "heading": "Airframe Load-Path Assessment",
+      "weighted_relevance": 2.737,
+      "evidence_strength": 4.5,
+      "score": 3.089,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "airframe load paths",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "static loading",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "dynamic loading",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "material selection",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "lightweight structures",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed design work"
+    },
+    {
+      "source_id": "EXP-003-N",
+      "heading": "Large-Scale FSI Simulations on HPC Systems",
+      "weighted_relevance": 2.696,
+      "evidence_strength": 4.5,
+      "score": 3.057,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "HPC",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Supercomputer",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Coupled Eulerian-Lagrangian",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CEL",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Large-Scale FSI",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Simulation",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Simulation"
+    },
+    {
+      "source_id": "EXP-003-I",
+      "heading": "Modular Experimental Habitat and Cyber-Physical Testing",
+      "weighted_relevance": 3.125,
+      "evidence_strength": 2.5,
+      "score": 3.0,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Cyber-Physical Testing",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Experimental Habitat",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Additive Manufacturing",
+          "weight": 4,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Design for Assembly",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Modular Prototyping",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Validation",
+          "weight": 3,
+          "relevance": 4.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Conceptual Design"
+    },
+    {
+      "source_id": "EXP-005-A5",
+      "heading": "Contaminant Interaction Interpretation",
+      "weighted_relevance": 2.594,
+      "evidence_strength": 4.5,
+      "score": 2.975,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "atomic interactions",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "molecular interactions",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "contaminant behavior",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "DOE materials",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-003-L",
+      "heading": "Coupled Eulerian-Lagrangian FSI Modeling",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Coupled Eulerian-Lagrangian",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CEL",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Fluid-Structure Interaction",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Eulerian Fluid Domain",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Lagrangian Structure",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Wave-Structure Interaction",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hydrodynamic Loads",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed Research Development"
+    },
+    {
+      "source_id": "EXP-005-A1",
+      "heading": "Microscopy Image Processing",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "TEM",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HRTEM",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "2D FFT",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "MoSe2",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "microscopy",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "nanocrystals",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-A2",
+      "heading": "Crystallographic Analysis",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "crystal structure",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "spatial frequency",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "crystallographic patterns",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "MoSe2",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-C5",
+      "heading": "GD&T and Assembly Fit",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "GD&T",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "geometric tolerancing",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "dimensional accuracy",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "assembly compatibility",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Applied during design"
+    },
+    {
+      "source_id": "EXP-005-C6",
+      "heading": "Additively Manufactured Wind-Tunnel Hardware",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "3D printing",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "wing components",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "mounting hardware",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "prototyping",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Fabricated"
+    },
+    {
+      "source_id": "EXP-005-D3",
+      "heading": "Landing Gear and Tire–Runway Contact",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "landing gear",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "tire-runway contact",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "surface irregularities",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "runway roughness",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Modeled"
+    },
+    {
+      "source_id": "EXP-005-D4",
+      "heading": "Aerodynamic Loading in Ground Operations",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 4.5,
+      "score": 2.9,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "aerodynamic forces",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "takeoff",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aircraft dynamics",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "ground operations",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Implemented"
+    },
+    {
+      "source_id": "EXP-005-B2",
+      "heading": "Graphene Derivative Molecular Models",
+      "weighted_relevance": 2.469,
+      "evidence_strength": 4.5,
+      "score": 2.875,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "graphene derivatives",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "molecular models",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "material characteristics",
+          "weight": 3,
+          "relevance": 4,
+          "valid_weight": true
+        },
+        {
+          "keyword": "biological interactions",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-B1",
+      "heading": "Graphene Energy Minimization",
+      "weighted_relevance": 2.312,
+      "evidence_strength": 4.5,
+      "score": 2.75,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "graphene",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "energy minimization",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "mechanical properties",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "atomic-scale modeling",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-A4",
+      "heading": "Mercury–Steel Molecular Dynamics",
+      "weighted_relevance": 2.262,
+      "evidence_strength": 4.5,
+      "score": 2.71,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "molecular dynamics",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "MD",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "mercury",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Hg",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "steel substrate",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "interatomic interactions",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-B3",
+      "heading": "Graphene–Membrane Molecular Dynamics",
+      "weighted_relevance": 2.222,
+      "evidence_strength": 4.5,
+      "score": 2.678,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "molecular dynamics",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "graphene derivatives",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "cell membranes",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "lipid membrane",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "MD",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-001-K",
+      "heading": "Air-Conditioner Front-Panel Design",
+      "weighted_relevance": 2.188,
+      "evidence_strength": 4.5,
+      "score": 2.65,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Airflow Improvement",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Front-Panel Design",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "AI-Assisted Concept Exploration",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Product Appearance",
+          "weight": 2,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HVAC",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed Design"
+    },
+    {
+      "source_id": "EXP-005-B5",
+      "heading": "Intermolecular Interaction Analysis",
+      "weighted_relevance": 2.188,
+      "evidence_strength": 4.5,
+      "score": 2.65,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "intermolecular forces",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "graphene",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "lipid membrane",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "atomic-scale interactions",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-B4",
+      "heading": "POPC–Water Model Characterization",
+      "weighted_relevance": 2.15,
+      "evidence_strength": 4.5,
+      "score": 2.62,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "POPC",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "phosphatidylcholine",
+          "weight": 3,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "lipid",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "water",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "molecular interactions",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Completed research work"
+    },
+    {
+      "source_id": "EXP-005-C2",
+      "heading": "Subsonic Wind-Tunnel Test Planning",
+      "weighted_relevance": 2.5,
+      "evidence_strength": 2.5,
+      "score": 2.5,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "subsonic wind tunnel",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "aerodynamic forces",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "test setup",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "wings",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Test planning and setup"
+    },
+    {
+      "source_id": "EXP-001-J",
+      "heading": "VPAK Air-Handling Unit Development",
+      "weighted_relevance": 1.955,
+      "evidence_strength": 4.5,
+      "score": 2.464,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "Airflow Performance Improvement",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Prototype Testing",
+          "weight": 5,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Air-Handling Unit Development",
+          "weight": 4,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Airflow Optimization",
+          "weight": 4,
+          "relevance": 4.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "3D Printing",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "HVAC",
+          "weight": 2,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "CFD",
+          "weight": 5,
+          "relevance": 0,
+          "valid_weight": true
+        },
+        {
+          "keyword": "Computational Fluid Dynamics",
+          "weight": 5,
+          "relevance": 0,
+          "valid_weight": true
+        }
+      ],
+      "status": "**\\*\\*Status:\\*\\*** Completed Prototype Development"
+    },
+    {
+      "source_id": "EXP-005-E3",
+      "heading": "Wide-Body Aircraft Concept",
+      "weighted_relevance": 2.25,
+      "evidence_strength": 2.5,
+      "score": 2.3,
+      "selected": false,
+      "weighted_keywords": [
+        {
+          "keyword": "wide-body aircraft",
+          "weight": 5,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "canard",
+          "weight": 5,
+          "relevance": 1.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "forward-swept wings",
+          "weight": 4,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "passenger capacity",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        },
+        {
+          "keyword": "fuel efficiency",
+          "weight": 3,
+          "relevance": 2.5,
+          "valid_weight": true
+        }
+      ],
+      "status": "**Status:** Conceptual design"
+    }
+  ]
+}

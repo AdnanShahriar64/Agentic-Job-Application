@@ -1,0 +1,108 @@
+Adnan Shahriar, PhD
+Phone: 210-803-5230
+|
+Email: shahriar.adnan@yahoo.com
+LinkedIn: https://www.linkedin.com/in/adnan-shahriar/
+GitHub: https://github.com/AdnanShahriar64
+Google Scholar: https://scholar.google.com/citations?user=jF2HLEcAAAAJ
+PROFESSIONAL SUMMARY
+Ph.D. mechanical engineer developing ﬁrst-principles simulation tools and workﬂows for structural, thermal, and ﬂuid
+systems.
+Built custom FEM/XFEM solvers, nonlinear material models, and experimentally calibrated structural
+simulations. Developed C/C++ plant models, Python/CadQuery automation, and CAD-to-mesh algorithms, with
+additional research in reduced-order methods and simulation-trained damage surrogates.
+Applied CFD/FEA and
+prototype testing to mechanical product design.
+TECHNICAL SKILLS
+Physics-Based Simulation: Custom FEM/XFEM solvers, Nonlinear material models, Thermal-ﬂuid coupling, Struc-
+tural dynamics
+Engineering Software: Python, C/C++, CadQuery, Jenkins CI/CD, Numerical algorithm optimization, Bash,
+PowerShell, Simulation integration
+Geometry and Modeling: Parametric CAD, STEP export, CAD-to-mesh preprocessing, Reduced-order models,
+Neural-network surrogates
+Experimental Validation: Prototype testing, Impact-hammer testing, Structural model calibration
+PROFESSIONAL EXPERIENCE
+Project Engineer — Rheem Manufacturing (Friedrich Air Conditioning) | San Antonio, TX
+Mar 2025–Present
+• Parametric Fan-Shroud Generation
+– Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and
+design clearances into 3D shroud geometry and STEP ﬁles, reducing repetitive CAD modeling and accelerating
+design iteration across product conﬁgurations.
+• Engineering Workﬂow Automation
+– Built workﬂows linking parametric design inputs, numerical evaluation, optimization, and CAD output to enable
+programmatic exploration of engineering alternatives.
+• Motor-Mount Structural Optimization
+– Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining
+stiﬀness and vibration requirements. Simpliﬁed injection-molded components to reduce secondary manufacturing
+operations and assembly complexity.
+• Structural FEA and Assembly Optimization of Modular AHU
+– Performed comprehensive ﬁnite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate
+structural integrity, press-ﬁt connections, and load-bearing capacity. Analyzed deformation under fan and motor
+loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical
+interference and supporting reliable prototype operation.
+• Explicit Dynamic Impact and Fracture Assessment
+– Performed explicit dynamic FEA impact analysis of plastic components to evaluate impact-induced stresses and
+potential cracking; calculated the J-integral to assess the driving force for crack propagation.
+• Outdoor Fan-Shroud Optimization
+– Used CFD to optimize shroud geometry and improve airﬂow distribution across the condenser coil. Fabricated
+and tested a prototype, demonstrating more than 80% improvement in airﬂow eﬃciency (CFM/W) relative to
+the previous design.
+Senior Simulation Integration Engineer — L&T Technology Services | Plano, TX
+Jan 2024–Mar 2025
+• Real-Time C/C++ HVAC Plant Model for SiL and HiL
+– Developed a real-time C/C++ executable HVAC plant model for Software-in-the-Loop (SiL) and Hardware-in-
+the-Loop (HiL) applications, combining ﬁnite element solution of transient heat transfer and velocity-pressure-
+coupled Navier-Stokes equations with lumped-capacitance heater/cooler models, convective thermal-ﬂuid cou-
+pling, and a proportional-derivative (PD) HVAC controller model.
+
+• Modular GUI for Aerodynamic Data Analysis
+– Developed a modular GUI for aerodynamic data analysis with well-deﬁned input/output interfaces, improving
+maintainability and reducing computational and memory overhead.
+• Jenkins CI/CD and Automated Debugging
+– Developed Jenkins CI/CD pipelines with Bash and PowerShell scripting and automated screen-capture capability,
+streamlining debugging and test workﬂows for construction and forestry vehicle software.
+• Integrated SiL Simulation Infrastructure and Vehicle Network Virtualization
+– Developed and integrated a Software-in-the-Loop (SiL) infrastructure connecting the simulator, display, virtual
+CAN/LIN communication, and ECU-testing components to support construction and forestry vehicle software
+testing.
+Graduate Researcher — Resilient Extraterrestrial Habitats Institute | San Antonio, TX
+Dec 2019–Jan 2024
+• Custom 3D Multiphysics Finite Element Solvers
+– Developed custom three-dimensional ﬁnite element solvers from ﬁrst principles for structural mechanics, transient
+heat transfer, and ﬂuid dynamics, including coupled structural-thermal habitat models and interior thermal-ﬂuid
+simulations.
+• XFEM, Nonlinear Materials, and Damage Modeling
+– Developed XFEM methods to represent stress ﬁelds around three-dimensional voids and implemented nonlinear
+material behavior incorporating plasticity, strain-rate eﬀects, thermal expansion, and von Mises and Drucker-
+Prager yield criteria.
+• Eﬃcient Scientiﬁc Software and Numerical Algorithms
+– Developed computational tools emphasizing reduced arithmetic and memory complexity to support novel numer-
+ical formulations and simulation workﬂows; contributed to a publication on algorithm development.
+• XFEM-Informed Neural Network Damage Surrogate
+– Developed a neural-network surrogate trained on high-ﬁdelity XFEM simulations to approximate localized dam-
+age behavior in larger structural models.
+• Experimental Structural Digital Twin and Model Updating
+– Created a structural digital twin of an experimental habitat by acquiring impact-hammer and accelerometer data,
+identifying natural frequencies and mode shapes, using Crypton optical geometry measurements, and calibrating
+a parameterized beam-element model to match identiﬁed modal properties and measured acceleration histories.
+• Reduced-Order Modeling and High-Order Elements
+– Developed modal-coordinate reduced-order models and applied Guyan static condensation; implemented very
+high-order ﬁnite element formulations for acoustic wave propagation associated with micrometeoroid impacts.
+• NASA Modular-Coupled Virtual Testbed (MCVT)
+– Developed and integrated structural, thermal, and ﬂuid plant models for NASA’s Modular-Coupled Virtual
+Testbed (MCVT), a system-of-systems simulation environment for virtual testing of resilient extraterrestrial
+habitats.
+Other relevant experience
+Universal Real-Time Power Conversion LLC | Milwaukee, WI | June 2022–September 2022
+• CAD-to-Mesh Automation Algorithm
+– Developed a CAD-to-mesh automation algorithm for engineering simulation preprocessing, applying computa-
+tional geometry methods with an emphasis on reducing arithmetic complexity and automating mesh generation
+from CAD models.
+SELECTED TECHNICAL DEMONSTRATIONS
+Finite element formulation software tool: https://www.linkedin.com/feed/update/urn:li:activity:712291470779084390
+4/
+Large-deformation beam simulator: https://www.linkedin.com/feed/update/urn:li:activity:7429372567318331392/
+Lunar habitat thermal topology optimization: https://youtu.be/EGVZgg1pb6Q
+EDUCATION
+Ph.D., Mechanical Engineering — University of Texas at San Antonio, 2023 | GPA: 3.94
+B.S., Aeronautical Engineering (Aerospace Major) — Military Institute of Science and Technology, 2015

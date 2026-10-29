@@ -1,0 +1,74 @@
+{
+  "target_company": "Stryker",
+  "target_role": "Senior Modeling and Simulation Engineer, R&D - NPD",
+  "summary": "Ph.D. mechanical engineer combining nonlinear finite element methods, multiphysics simulation, and experimental model calibration. Developed custom FEM/XFEM solvers, nonlinear material models, and a neural-network damage surrogate trained on simulation data. Applied structural and impact analysis to product development, built Python-based engineering automation tools, and validated designs through prototype testing, with additional experience developing real-time C/C++ simulation software.",
+  "skills": [
+    {
+      "category": "Computational Mechanics",
+      "items": [
+        "FEM/XFEM",
+        "Nonlinear material modeling",
+        "Explicit dynamic FEA"
+      ]
+    },
+    {
+      "category": "Simulation Methods",
+      "items": [
+        "Neural-network damage surrogates",
+        "Reduced-order modeling",
+        "Numerical solver development",
+        "Structural optimization"
+      ]
+    },
+    {
+      "category": "Engineering Automation",
+      "items": [
+        "Python",
+        "CadQuery",
+        "C/C++",
+        "Parametric CAD",
+        "Jenkins CI/CD"
+      ]
+    },
+    {
+      "category": "Experimental Validation",
+      "items": [
+        "Prototype testing",
+        "Impact-hammer testing",
+        "Structural model calibration"
+      ]
+    }
+  ],
+  "experience": {
+    "rheem": [
+      "EXP-001-Q",
+      "EXP-001-F",
+      "EXP-001-G",
+      "EXP-001-N",
+      "EXP-001-O",
+      "EXP-001-A"
+    ],
+    "ltts": [
+      "EXP-002-B",
+      "EXP-002-C",
+      "EXP-002-F",
+      "EXP-002-D"
+    ],
+    "utsa": [
+      "EXP-003-G",
+      "EXP-003-B",
+      "EXP-003-F",
+      "EXP-003-A",
+      "EXP-003-D",
+      "EXP-003-H",
+      "EXP-003-E",
+      "EXP-003-C"
+    ],
+    "other": []
+  },
+  "demonstration_ids": [
+    4,
+    1,
+    5
+  ]
+}
