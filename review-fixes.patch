@@ -1,0 +1,272 @@
+From 8c93c5365e65e20c4b356930bf13ae702c1ef733 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Wed, 28 Oct 2026 19:39:37 -0500
+Subject: [PATCH] Fix template demo/placeholder bugs, empty macros, resolver
+ section end, stronger validator
+
+---
+ .gitignore                       |  6 +++
+ AGENTS.md                        |  2 +-
+ Resume_template.tex              |  9 +---
+ scripts/build_resume.py          |  3 +-
+ scripts/select_resume_content.py |  3 +-
+ scripts/validate_resume.py       | 45 ++++++++++++++++++--
+ templates/Resume_template.tex    | 73 --------------------------------
+ 7 files changed, 54 insertions(+), 87 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 templates/Resume_template.tex
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..6839cc2
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,6 @@
++__pycache__/
++*.pyc
++*.aux
++*.log
++*.out
++*.synctex.gz
+diff --git a/AGENTS.md b/AGENTS.md
+index 8d2c107..5ca2206 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -2,4 +2,4 @@
+ 
+ This repository provides two separate workflows. These are instructions, not a guarantee of autonomous subagent execution.
+ 
+-Read agents/Agent_1_job_discovery.md and follow instruction and then Read agents/Agent_2_resume_generator.md and follow instruction and then read agents/Agent_3_cover_letter_generator.md and follow instruction
++Read agents/Agent1_job_discovery.md and follow instruction and then Read agents/Agent_2_resume_generator.md and follow instruction and then read agents/Agent_3_cover_letter_generator.md and follow instruction
+diff --git a/Resume_template.tex b/Resume_template.tex
+index b1790f6..dd1f7cd 100644
+--- a/Resume_template.tex
++++ b/Resume_template.tex
+@@ -36,9 +36,6 @@
+ % IMPORTANT: Escape special chars in inserted prose: \&, \%, \_, \#, \$; URLs go inside \url{...}.
+ \IfFileExists{resume_content.tex}{\input{resume_content.tex}}{}
+ 
+-\providecommand{\ResumeDemonstrations}{
+-	\textit{[Insert selected technical demonstrations.]}
+-}
+ 
+ \begin{document}
+ 	% ===== FIXED HEADER: copied from Resume_Basic_Structure.odt =====
+@@ -71,9 +68,8 @@
+ 	\begin{itemize}\UTSABullets\end{itemize}
+ 	\ifdefempty{\OtherExperience}{}{\subjob{Other relevant experience}\OtherExperience}
+ 	
+-	% ===== FIXED SELECTED TECHNICAL DEMONSTRATIONS: copied from Resume_Basic_Structure.odt =====	
+-	\section*{SELECTED TECHNICAL DEMONSTRATIONS}
+-	\ResumeDemonstrations
++	% ===== SELECTED TECHNICAL DEMONSTRATIONS (printed only when selected) =====
++	\ifdefempty{\Demonstrations}{}{\section*{SELECTED TECHNICAL DEMONSTRATIONS}\Demonstrations}
+ 	
+ 	
+ 	
+@@ -81,5 +77,4 @@
+ 	\section*{EDUCATION}
+ 	\textbf{Ph.D., Mechanical Engineering} --- University of Texas at San Antonio, 2023 | GPA: 3.94\par
+ 	\textbf{B.S., Aeronautical Engineering (Aerospace Major)} --- Military Institute of Science and Technology, 2015\par
+-	\ifdefempty{\Demonstrations}{}{\section*{SELECTED TECHNICAL DEMONSTRATIONS}\Demonstrations}
+ \end{document}
+\ No newline at end of file
+diff --git a/scripts/build_resume.py b/scripts/build_resume.py
+index cdbe9a5..3860946 100644
+--- a/scripts/build_resume.py
++++ b/scripts/build_resume.py
+@@ -196,8 +196,9 @@ def make_macros(data):
+                           for d in data['demonstrations'])
+     bodies = (tex_escape(data['summary']), skills, bullet_list('rheem'),
+               bullet_list('ltts'), bullet_list('utsa'), others, demos)
++    # An empty body must stay truly empty so the template's \\ifdefempty checks work.
+     return '% Generated. Do not edit manually. Edit resume_content.json instead.\n' + '\n\n'.join(
+-        '\\renewcommand{\\' + macro + '}{\n' + body + '\n}'
++        '\\renewcommand{\\' + macro + '}{' + ('\n' + body + '\n' if body.strip() else '') + '}'
+         for macro, body in zip(MACROS, bodies)) + '\n'
+ 
+ def compile_latex(template, content, dest, compiler):
+diff --git a/scripts/select_resume_content.py b/scripts/select_resume_content.py
+index 9d29f7c..ebe75c8 100644
+--- a/scripts/select_resume_content.py
++++ b/scripts/select_resume_content.py
+@@ -58,7 +58,8 @@ def extract_entries(path):
+             bullets = []
+             continue
+         # Once the next top-level section begins, stop looking for bullets.
+-        if line.lstrip().startswith('#') and current_id and not head:
++        # Headings may be wrapped in bold markers (e.g. "**## Tailoring Notes**").
++        if line.lstrip().lstrip('*').lstrip().startswith('#') and current_id and not head:
+             finish()
+             current_id = None
+             current_heading = None
+diff --git a/scripts/validate_resume.py b/scripts/validate_resume.py
+index b90902d..a8c1f68 100644
+--- a/scripts/validate_resume.py
++++ b/scripts/validate_resume.py
+@@ -8,7 +8,10 @@ from pathlib import Path
+ 
+ def extract_pdf(pdf):
+     try:
+-        import fitz
++        try:
++            import pymupdf as fitz
++        except ImportError:
++            import fitz
+         doc = fitz.open(str(pdf))
+         return len(doc), '\n'.join(page.get_text() for page in doc), 'PyMuPDF'
+     except ImportError:
+@@ -19,6 +22,25 @@ def extract_pdf(pdf):
+         except ImportError:
+             raise RuntimeError('PDF validation requires: pip install pymupdf (or pypdf)')
+ 
++def page2_fill(pdf):
++    """Fraction of page 2's usable height occupied by text (None if unavailable)."""
++    try:
++        try:
++            import pymupdf as fitz
++        except ImportError:
++            import fitz
++        doc = fitz.open(str(pdf))
++        if len(doc) < 2:
++            return None
++        page = doc[1]
++        blocks = [b for b in page.get_text('blocks') if b[4].strip()]
++        if not blocks:
++            return 0.0
++        top, bottom = 0.62 * 72, page.rect.height - 0.65 * 72
++        return round(min(1.0, (max(b[3] for b in blocks) - top) / (bottom - top)), 3)
++    except Exception:
++        return None
++
+ def normalize(s):
+     return re.sub(r'\s+', ' ', s).lower()
+ 
+@@ -30,8 +52,8 @@ def validate_pdf(pdf, data=None, log=None):
+         pages, content, extractor = extract_pdf(pdf)
+     except Exception as exc:
+         return dict(passed=False, errors=['Cannot parse PDF: '+str(exc)], warnings=[], pages=0)
+-    if pages > 2:
+-        errors.append(f'PDF contains {pages} pages (limit: 2)')
++    if pages != 2:
++        errors.append(f'PDF contains {pages} pages (target: exactly 2)')
+     if not content.strip() or len(content) < 250:
+         errors.append('Insufficient text extracted: check ATS readability')
+     for label in ('Rheem Manufacturing', 'Technology Services', 'Extraterrestrial Habitats',
+@@ -44,17 +66,32 @@ def validate_pdf(pdf, data=None, log=None):
+         for label in [x['category'] for x in data['skills']]:
+             if normalize(label) not in normalize(content):
+                 warnings.append('Skill category not found in extracted PDF: '+label)
++        # Every experience bullet must appear verbatim (layout-normalized) in the PDF.
++        flat = re.sub(r'[^a-z0-9]', '', content.lower())
++        bullets = []
++        for entries in data.get('experience', {}).values():
++            for e in entries:
++                bullets += e.get('bullets', [e['text']] if 'text' in e else [])
++        for e in data.get('other_experience', []):
++            bullets += e.get('bullets', [e['text']] if 'text' in e else [])
++        for b in bullets:
++            if re.sub(r'[^a-z0-9]', '', b.lower()) not in flat:
++                errors.append('Bullet not found verbatim in PDF: ' + b[:70] + '...')
+         for d in data.get('demonstrations', []):
+             # URLs may wrap into multiple lines in PDF text.
+             compact = re.sub(r'\s+', '', content)
+             if re.sub(r'\s+', '', d['url']) not in compact:
+                 warnings.append('Demonstration URL may be wrapped/omitted: '+d['url'])
++    fill = page2_fill(pdf)
++    if fill is not None and pages == 2 and fill < 0.80:
++        warnings.append(f'Page 2 is only {fill:.0%} filled (target 85-100%)')
+     if log and Path(log).exists():
+         logtext = Path(log).read_text(encoding='utf-8', errors='replace')
+         if 'Overfull \\hbox' in logtext or 'Overfull \\vbox' in logtext:
+             warnings.append('Overfull box reported by TeX; inspect rendered PDF')
+     return dict(passed=not errors, errors=errors, warnings=warnings,
+-                pages=pages, pdf_text_characters=len(content), extraction_backend=extractor)
++                pages=pages, page2_fill=fill, pdf_text_characters=len(content),
++                extraction_backend=extractor)
+ 
+ def main():
+     ap = argparse.ArgumentParser(description=__doc__)
+diff --git a/templates/Resume_template.tex b/templates/Resume_template.tex
+deleted file mode 100644
+index 72e4c8f..0000000
+--- a/templates/Resume_template.tex
++++ /dev/null
+@@ -1,73 +0,0 @@
+-% Resume_template.tex — ATS-conscious, single-column LaTeX template
+-% Compile: pdflatex -interaction=nonstopmode -halt-on-error Resume_template.tex
+-% Optional: create resume_content.tex in the same folder to supply job-specific text.
+-% FIXED CONTENT: contact header, education, employers/titles/locations/dates.
+-% DYNAMIC CONTENT: summary, skills, experience bullets, optional additional work,
+-% demonstrations. Never rewrite fixed content when tailoring.
+-\documentclass[10pt,letterpaper]{article}
+-\usepackage[T1]{fontenc}
+-\usepackage[utf8]{inputenc}
+-\usepackage{lmodern}
+-\usepackage[margin=0.70in,top=0.62in,bottom=0.65in]{geometry}
+-\usepackage[unicode,hidelinks,breaklinks]{hyperref}
+-\usepackage{xurl}
+-\usepackage{enumitem}
+-\usepackage{titlesec}
+-\usepackage{microtype}
+-\usepackage{etoolbox}
+-\urlstyle{same}
+-\pagestyle{empty}
+-\setlength{\parindent}{0pt}
+-\setlength{\parskip}{2pt}
+-\setlist[itemize]{leftmargin=1.2em,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+-\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\titlerule]
+-\titlespacing*{\section}{0pt}{9pt}{4pt}
+-\newcommand{\job}[3]{\textbf{#1} --- #2\hfill\textit{#3}\par}
+-\newcommand{\subjob}[1]{\textit{#1}\par}
+-% Content macros: safe fallback is an empty section or explanatory placeholder.
+-\newcommand{\ResumeSummary}{\textit{[Insert job-specific professional summary.]}}
+-\newcommand{\ResumeSkills}{\textit{[Insert selected technical and software skills.]}}
+-\newcommand{\RheemBullets}{\item \textit{[Insert selected Rheem accomplishments.]}}
+-\newcommand{\LTTSBullets}{\item \textit{[Insert selected L\&T accomplishments.]}}
+-\newcommand{\UTSABullets}{\item \textit{[Insert selected UTSA accomplishments.]}}
+-\newcommand{\OtherExperience}{} % e.g. EXP-004 / EXP-005 if relevant
+-\newcommand{\Demonstrations}{}   % exact display URLs; e.g. \url{https://...}
+-% Job-specific file should use \renewcommand for macros above.
+-% IMPORTANT: Escape special chars in inserted prose: \&, \%, \_, \#, \$; URLs go inside \url{...}.
+-\IfFileExists{resume_content.tex}{\input{resume_content.tex}}{}
+-\begin{document}
+-	% ===== FIXED HEADER: copied from Resume_Basic_Structure.odt =====
+-	\noindent
+-
+-	\begin{flushleft}
+-		{\Large\bfseries Adnan Shahriar, PhD}\par
+-		\vspace{4pt}
+-		
+-		Phone: 210-803-5230 \quad | \quad
+-		Email: \href{mailto:shahriar.adnan@yahoo.com}{shahriar.adnan@yahoo.com}\par
+-		
+-		LinkedIn: \url{https://www.linkedin.com/in/adnan-shahriar/}\par
+-		GitHub: \url{https://github.com/AdnanShahriar64}\par
+-		Google Scholar: \url{https://scholar.google.com/citations?user=jF2HLEcAAAAJ}
+-	\end{flushleft}
+-	
+-	\vspace{-1pt}
+-	\section*{PROFESSIONAL SUMMARY}
+-	\ResumeSummary
+-	\section*{TECHNICAL SKILLS}
+-	\ResumeSkills
+-	\section*{PROFESSIONAL EXPERIENCE}
+-	% Mandatory employers remain even if job-specific content is short.
+-	\job{Project Engineer}{Rheem Manufacturing (Friedrich Air Conditioning) | San Antonio, TX}{Mar 2025--Present}
+-	\begin{itemize}\RheemBullets\end{itemize}
+-	\job{Senior Simulation Integration Engineer}{L\&T Technology Services | Plano, TX}{Jan 2024--Mar 2025}
+-	\begin{itemize}\LTTSBullets\end{itemize}
+-	\job{Graduate Researcher}{Resilient Extraterrestrial Habitats Institute | San Antonio, TX}{Dec 2019--Jan 2024}
+-	\begin{itemize}\UTSABullets\end{itemize}
+-	\ifdefempty{\OtherExperience}{}{\subjob{Other relevant experience}\OtherExperience}
+-	% ===== FIXED EDUCATION: copied from Resume_Basic_Structure.odt =====
+-	\section*{EDUCATION}
+-	\textbf{Ph.D., Mechanical Engineering} --- University of Texas at San Antonio, 2023 | GPA: 3.94\par
+-	\textbf{B.S., Aeronautical Engineering (Aerospace Major)} --- Military Institute of Science and Technology, 2015\par
+-	\ifdefempty{\Demonstrations}{}{\section*{SELECTED TECHNICAL DEMONSTRATIONS}\Demonstrations}
+-\end{document}
+\ No newline at end of file
+-- 
+2.43.0
+
