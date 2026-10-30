@@ -68,7 +68,7 @@ Job discovery (Agent 1) should also rank a job higher when it asks for one of th
 | --- | --- | --- | --- |
 | EXP-001 | Rheem Manufacturing / Friedrich Air Conditioning Division — Project Engineer II | March 2025–Present | `EXP-001_Rheem_Project_Engineer_II.md` |
 | EXP-002 | L&T Technology Services — Senior Simulation Integration Engineer | January 2024–March 2025 | `EXP-002_LTTS_Senior_Simulation_Integration_Engineer.md` |
-| EXP-003 | UTSA — Graduate Researcher and Postdoctoral Fellow (title/date verification noted below) | January 2017–January 2024 | `EXP-003_UTSA_Research.md` |
+| EXP-003 | UTSA — Graduate Researcher (Postdoctoral Fellow title still to be confirmed) | March 2018–January 2024 | `EXP-003_UTSA_Research.md` |
 | EXP-004 | Universal Real-Time Power Conversion LLC — Physics-Based Modeling and Simulation Engineer | June–September 2022 | `EXP-004_Universal_Real_Time_Power_Conversion.md` |
 | EXP-005 | Selected earlier research and aerospace projects | Various dates | `EXP-005_Selected_Earlier_Research_Projects.md` |
 

@@ -20,11 +20,13 @@
 - HVAC: 2
 - CFD: 1
 - FEA: 1
+- Rapid Design Iteration: 4
+- Time Savings: 3
 
 **Status:** Completed
 
 **Achievement:**
-- Developed a Python/CadQuery-based tool that converts fan diameter, coil geometry, component locations, and design clearances into 3D shroud geometry and STEP files, reducing repetitive CAD modeling and accelerating design iteration across product configurations.
+- Developed a Python/CadQuery tool that automatically generates 3D fan-shroud geometry and STEP files from fan diameter, coil geometry, component locations, and design clearances; used across five product lines, saving at least one to two weeks of CAD modeling per product and enabling rapid simulation-driven design iteration.
 
 ### EXP-001-B: Simulation-Driven Design Optimization
 
@@ -43,8 +45,8 @@
 **Status:** In Development
 
 **Achievement:**
-- Developing a framework that uses batch CFD simulations to build a performance dataset across fan-shroud geometry parameters.
-- Applying statistical analysis and predictive modeling to identify promising configurations, establish data-driven design guidelines, and reduce the need for computationally expensive CFD runs during future product development.
+- Developing a batch CFD workflow that builds a performance dataset across fan-shroud geometry parameters.
+- Applying statistical analysis and predictive modeling to the dataset to identify high-performing configurations, establish data-driven design guidelines, and reduce computationally expensive CFD runs in future product development.
 
 ### EXP-001-C: Refrigerant-Tube Routing Optimization
 
@@ -61,7 +63,7 @@
 **Status:** In Development
 
 **Achievement:**
-- Developing an FEA-based tool to evaluate natural frequencies and optimize compressor-to-outdoor-coil tubing routes to reduce vibration susceptibility. Incorporating experimental modal testing and model updating to calibrate FEA predictions against measured vibration characteristics.
+- Developing an FEA-based tool to predict natural frequencies of compressor-to-outdoor-coil refrigerant tubing and optimize routing to reduce vibration risk; calibrating predictions against experimental modal test data through model updating.
 
 ### EXP-001-D: Engineering Workflow Automation
 
@@ -75,7 +77,7 @@
 **Status:** Completed
 
 **Achievement:**
-- Built workflows linking parametric design inputs, numerical evaluation, optimization, and CAD output to enable programmatic exploration of engineering alternatives.
+- Built automated engineering workflows linking parametric design inputs, numerical evaluation, optimization, and CAD generation, enabling programmatic design-space exploration.
 
 ## CFD, Structural Optimization, and HVAC Product Design
 
@@ -89,11 +91,13 @@
 - Computational Fluid Dynamics: 5
 - Condenser Coil Airflow: 3
 - CFD: 5
+- SolidWorks Flow Simulation: 3
+- Ansys: 3
 
 **Status:** Completed
 
 **Achievement:**
-- Used CFD to optimize shroud geometry and improve airflow distribution across the condenser coil. Fabricated and tested a prototype, demonstrating more than 80% improvement in airflow efficiency (CFM/W) relative to the previous design.
+- Improved condenser fan airflow efficiency (CFM/W) by more than 80% over the previous design by optimizing shroud geometry with CFD (SolidWorks Flow Simulation, Ansys); fabricated and tested a prototype to validate the improvement.
 
 ### EXP-001-F: Airflow-Induced Condensate Management Invention
 
@@ -107,14 +111,14 @@
 - Invention Disclosure: 3
 - CFD: 5
 - Computational Fluid Dynamics: 5
+- SolidWorks Flow Simulation: 3
+- Ansys: 3
 
 **Status:** Completed Experimental Development; invention disclosure submitted (see EXP-001-L)
 
 **Achievement:**
-- Invented a passive condensate entrainment and slinging system (patent disclosure submitted) that uses fan-generated pressure differences to draw condensed water into the fan airflow path and improve condensate slinging performance.
-- Performed CFD simulations to investigate airflow behavior, pressure distribution, and condensate entrainment mechanisms.
-- Designed, fabricated, and iteratively refined 3D-printed prototypes to demonstrate the mechanism.
-- Conducted experimental testing to validate condensate entrainment, slinging effectiveness, and overall system performance.
+- Invented a passive condensate management system (patent disclosure submitted) that uses fan-generated pressure differences to draw condensate into the fan airflow path, improving condensate slinging performance.
+- Analyzed airflow, pressure distribution, and condensate entrainment with CFD (SolidWorks Flow Simulation, Ansys); designed and iteratively refined 3D-printed prototypes and validated entrainment, slinging effectiveness, and system performance through experimental testing.
 
 ### EXP-001-G: Motor-Mount Structural Optimization
 
@@ -126,11 +130,12 @@
 - Vibration Requirements: 4
 - Injection-Molding Simplification: 3
 - Design for Manufacturability: 3
+- SolidWorks Simulation: 3
 
 **Status:** Completed
 
 **Achievement:**
-- Redesigned a motor-mount structure using FEA, reducing material usage by more than 50% while maintaining stiffness and vibration requirements. Simplified injection-molded components to reduce secondary manufacturing operations and assembly complexity.
+- Reduced motor-mount material usage by more than 50% through FEA-driven structural redesign in SolidWorks Simulation while maintaining stiffness and vibration requirements; simplified injection-molded components to reduce secondary manufacturing operations and assembly complexity.
 
 ### EXP-001-H: Cross-Flow Fan Aerodynamics
 
@@ -142,11 +147,13 @@
 - Scroll Geometry: 4
 - CFD: 5
 - Computational Fluid Dynamics: 5
+- SolidWorks Flow Simulation: 3
+- Ansys: 3
 
 **Status:** Completed CFD Investigation
 
 **Achievement:**
-- Used CFD to investigate tongue-vortex interaction, recirculation, eccentric vortex behavior, and the sensitivity of fan performance to scroll and housing geometry.
+- Used CFD (SolidWorks Flow Simulation, Ansys) to analyze cross-flow fan aerodynamics, including tongue-vortex interaction, recirculation, and eccentric vortex behavior, and evaluated the sensitivity of fan performance to scroll and housing geometry.
 
 ### EXP-001-I: Reconfigurable Fan Test Fixture
 
@@ -160,28 +167,38 @@
 - Experimental Validation: 5
 - Design of Experiments: 5
 - Airflow Testing: 5
+- SolidWorks: 3
 
 **Status:** Completed
 
 **Achievement:**
-- Designed and fabricated a modular, 3D-printed cross-flow fan test fixture with adjustable tongue and scroll geometry and clearances, enabling multiple configurations to be tested without rebuilding the full housing.
+- Designed in SolidWorks and 3D-printed a modular cross-flow fan test fixture with adjustable tongue geometry, scroll geometry, and clearances, enabling multiple configurations to be tested without rebuilding the housing.
 
-### EXP-001-J: VPAK Air-Handling Unit Development
+### EXP-001-J: Modular VPAK Air-Handling Unit Prototype Development
 
 **Weighted Keywords:**
 - Airflow Performance Improvement: 5
-- Prototype Testing: 5
 - Air-Handling Unit Development: 4
 - Airflow Optimization: 4
-- 3D Printing: 3
+- Prototype Testing: 5
+- Experimental Validation: 5
+- Airflow Testing: 5
+- Rapid Prototyping: 4
+- 3D Printing: 4
+- Design Flexibility: 4
+- Component Configuration Changes: 3
+- Production Design Intent: 2
 - HVAC: 2
 - CFD: 5
 - Computational Fluid Dynamics: 5
+- SolidWorks Flow Simulation: 3
+- Ansys: 3
 
 **Status:** Completed Prototype Development
 
 **Achievement:**
-- Designed an air-handling unit prototype that achieved approximately 25% higher airflow than the existing configuration. Fabricated and tested 3D-printed prototypes to measure airflow and refine design assumptions.
+- Designed a nine-segment modular VPAK air-handling unit (AHU) prototype whose sections can be modified independently for heater, coil, and component changes, achieving approximately 25% higher airflow than the existing configuration.
+- Optimized airflow with CFD (SolidWorks Flow Simulation, Ansys) and validated it by fabricating and testing low-cost 3D-printed prototypes, accelerating design iteration while preserving the single-piece production design.
 
 ### EXP-001-K: Air-Conditioner Front-Panel Design
 
@@ -191,11 +208,12 @@
 - AI-Assisted Concept Exploration: 5
 - Product Appearance: 2
 - HVAC: 2
+- CFD: 4
 
 **Status:** Completed Design
 
 **Achievement:**
-- Redesigned the front panel to deliver approximately 60% higher airflow than the baseline while improving its appearance. Used AI-assisted concept exploration to compare visual design alternatives.
+- Redesigned an air-conditioner front panel for approximately 60% higher CFD-predicted airflow than the baseline while improving its appearance; used AI-assisted concept exploration to compare visual design alternatives.
 
 ### EXP-001-L: Invention Disclosures
 
@@ -210,25 +228,7 @@
 **Status:** Four Disclosures Submitted
 
 **Achievement:**
-- Submitted four patent disclosures covering HVAC innovations, including fan shroud optimization, condensate management, and experimental testing systems.
-
-### EXP-001-M: Modular VPAK Air-Handling Unit Prototype
-
-**Weighted Keywords:**
-- Design Flexibility: 5
-- Rapid Prototyping: 4
-- Component Configuration Changes: 4
-- 3D Printing: 4
-- Airflow Optimization: 3
-- Production Design Intent: 2
-- Experimental Validation: 5
-- Design of Experiments: 5
-- Airflow Testing: 5
-
-**Status:** Completed Prototype Development
-
-**Achievement:**
-- Designed and developed a nine-segment modular VPAK air-handling unit (AHU) prototype, allowing individual sections to be modified independently for airflow optimization and rapid accommodation of design changes, including heater, coil, and component configurations. Used low-cost 3D printing to accelerate design iteration while preserving the single-piece AHU design intended for production.
+- Submitted four patent disclosures for HVAC innovations in fan-shroud optimization, condensate management, and experimental test systems.
 
 ### EXP-001-N: Structural FEA and Assembly Optimization of Modular AHU
 
@@ -242,11 +242,12 @@
 - Assembly Optimization: 3
 - Mechanical Interference Prevention: 4
 - Stress Analysis: 5
+- SolidWorks Simulation: 3
 
 **Status:** Completed FEA Analysis
 
 **Achievement:**
-- Performed finite element analysis (FEA) of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load-bearing capacity. Analyzed deformation under fan and motor loads to maintain critical clearances between the rotating fan lip and stationary bellmouth, preventing mechanical interference and supporting reliable prototype operation.
+- Performed structural FEA in SolidWorks Simulation of the nine-segment modular AHU assembly to evaluate structural integrity, press-fit connections, and load capacity; analyzed deformation under fan and motor loads to maintain fan-to-bellmouth clearance and prevent mechanical interference.
 
 ### EXP-001-O: Multi-Material Product FEA Analysis
 
@@ -261,11 +262,15 @@
 - Expanded Polypropylene (EPP): 5
 - Material Density Variation: 5
 - Stress Analysis: 5
+- SolidWorks Simulation: 3
+- Custom FEA Code: 4
+- Stiffness Optimization: 4
+- Wall-Thickness Selection: 3
 
 **Status:** Completed FEA Analysis
 
 **Achievement:**
-- Performed finite element analysis (FEA) to support product designs using ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at different densities.
+- Performed structural FEA using SolidWorks Simulation and custom-developed FEA code for product designs in ABS and ASA plastics, aluminum and steel sheet metal, and expanded polypropylene (EPP) at several densities; results guided wall-thickness selection and topology changes, such as raised surface features to increase plate bending stiffness.
 
 ### EXP-001-P: Fan-Induced Vibration and Modal Analysis
 
@@ -278,41 +283,31 @@
 - Finite Element Analysis (FEA): 4
 - Natural Frequencies: 4
 - Vibration: 4
+- SolidWorks Simulation: 3
 
 **Status:** Completed Analysis
 
 **Achievement:**
-- Performed FEA-based modal analysis to identify natural frequencies of product components and assess resonance risk by comparing them with fan rotational frequency (RPM/60) and blade-passing frequency.
+- Performed FEA modal analysis in SolidWorks Simulation to identify component natural frequencies and assess resonance risk against fan rotational and blade-passing excitation frequencies; used results to guide thickness and stiffening changes.
 
-### EXP-001-Q: Explicit Dynamic Impact and Fracture Assessment
+### EXP-001-Q: Impact and Fracture Simulation Validated by Drop Testing
 
 **Weighted Keywords:**
 - Explicit Dynamic FEA: 5
 - Impact Analysis: 5
 - Plastic Component Fracture: 5
 - J-Integral: 5
-- Crack Propagation Assessment: 4
-- Stress Analysis: 4
-- Fracture Mechanics: 4
-
-**Status:** Completed Analysis
-
-**Achievement:**
-- Performed explicit dynamic FEA impact analysis of plastic components to evaluate impact-induced stresses and potential cracking; calculated the J-integral to assess the driving force for crack propagation.
-
-### EXP-001-R: Experimental Drop-Impact Testing
-
-**Weighted Keywords:**
-- Experimental Drop Testing: 5
-- Impact Testing: 5
 - Experimental Validation: 5
+- Experimental Drop Testing: 5
+- Crack Propagation Assessment: 4
+- Fracture Mechanics: 4
+- Stress Analysis: 4
 - Plastic Component Durability: 4
-- Physical Prototyping: 3
 
-**Status:** Completed Experimental Testing
+**Status:** Completed Analysis and Experimental Validation
 
 **Achievement:**
-- Conducted physical drop tests to experimentally assess component response and damage under impact loading.
+- Performed explicit dynamic FEA of plastic components under impact to evaluate stresses and cracking risk, calculating the J-integral to assess the crack-propagation driving force; validated the predictions with physical drop-impact tests.
 
 ## Tailoring Notes
 

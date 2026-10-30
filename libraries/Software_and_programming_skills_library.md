@@ -29,7 +29,8 @@
 **Source Number:** 3  
 **Importance:** 5/5  
 **Domains:** FEA; Structural Simulation  
-**Tools and Capabilities:** Abaqus, Custom FEM/XFEM Solvers, Structural Dynamics and Nonlinear Analysis Tools  
+**Tools and Capabilities:** SOLIDWORKS Simulation, Abaqus, Custom FEM/XFEM Solvers, Structural Dynamics and Nonlinear Analysis Tools  
+**Confirmed by candidate:** SOLIDWORKS Simulation and custom-developed FEA code used for Rheem FEA work; Abaqus used for coupled Eulerian-Lagrangian (CEL) FSI at UTSA; custom solvers written in MATLAB with C++ executables (October 30, 2026).  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-04: Computational Fluid Dynamics (CFD)
@@ -38,7 +39,7 @@
 **Importance:** 5/5  
 **Domains:** CFD; Flow Simulation  
 **Tools and Capabilities:** Ansys Fluent, SOLIDWORKS Flow Simulation, Ansys, OpenFOAM, Custom CFD Solvers, ParaView  
-**Confirmed by candidate:** Ansys Fluent (October 28, 2026). May be listed as a CFD tool in the skills section. Do not attribute a specific accomplishment to Fluent unless that accomplishment's Achievement text names it.  
+**Confirmed by candidate:** Ansys Fluent (October 28, 2026). SOLIDWORKS Flow Simulation (preliminary) and Ansys (final) used for Rheem CFD work (October 30, 2026). May be listed as a CFD tool in the skills section. Do not attribute a specific accomplishment to Fluent unless that accomplishment's Achievement text names it.  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-05: Thermal & HVAC Simulation
@@ -62,7 +63,7 @@
 **Source Number:** 7  
 **Importance:** 4/5  
 **Domains:** Visualization; Postprocessing  
-**Tools and Capabilities:** Python (Matplotlib, Trimesh), MATLAB App Designer, ParaView, Scientific Visualization and Post-Processing Tools  
+**Tools and Capabilities:** Python (Matplotlib, Trimesh), Python GUI Development (PyQt, Tkinter), MATLAB App Designer, ParaView, Scientific Visualization and Post-Processing Tools  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-08: Software Development & DevOps
@@ -78,7 +79,7 @@
 **Source Number:** 9  
 **Importance:** 4/5  
 **Domains:** Embedded Testing; Simulators  
-**Tools and Capabilities:** Arduino, CAN/LIN Simulation, ECU Testing Environments, Software-in-the-Loop (SiL), Hardware-in-the-Loop (HiL), Model-in-the-Loop (MiL)  
+**Tools and Capabilities:** Simulink, Arduino, CAN/LIN Simulation, ECU Testing Environments, Software-in-the-Loop (SiL), Hardware-in-the-Loop (HiL), Model-in-the-Loop (MiL)  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-10: Machine Learning & Data Analysis
@@ -103,6 +104,7 @@
 **Importance:** 4/5  
 **Domains:** HPC; Parallel Computing  
 **Tools and Capabilities:** CPU/GPU Parallel Computing, Supercomputer-Based Simulation, HPC Batch Execution  
+**Confirmed by candidate:** UTSA HPC cluster (Abaqus CEL/FSI simulations); TACC Stampede (molecular dynamics simulations only — do not attribute the bridge FSI work to Stampede) (October 30, 2026).  
 **Selection:** Pick individually verified tools or capabilities relevant to the job. Avoid reproducing the entire category by default.
 
 ## SPSL-13: Documentation & Technical Communication

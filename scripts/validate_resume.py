@@ -56,7 +56,7 @@ def validate_pdf(pdf, data=None, log=None):
         errors.append(f'PDF contains {pages} pages (target: exactly 2)')
     if not content.strip() or len(content) < 250:
         errors.append('Insufficient text extracted: check ATS readability')
-    for label in ('Rheem Manufacturing', 'Technology Services', 'Extraterrestrial Habitats',
+    for label in ('Rheem Manufacturing', 'Technology Services', 'Graduate Researcher',
                   'EDUCATION', 'Shahriar', 'LinkedIn', 'GitHub', 'Google Scholar'):
         if normalize(label) not in normalize(content):
             errors.append('Missing expected fixed header/section: ' + label)

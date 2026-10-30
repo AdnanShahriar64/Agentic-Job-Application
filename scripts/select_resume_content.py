@@ -16,10 +16,19 @@ FILES = {
     'EXP-003': 'EXP-003_UTSA_Research.md',
     'EXP-004': 'EXP-004_Universal_Real_Time_Power_Conversion.md',
     'EXP-005': 'EXP-005_Selected_Earlier_Research_Projects.md',
+    'EXP-006': 'EXP-006_UTSA_Teaching_Experience.md',
 }
+
 EMPLOYER_FOR = {'EXP-001':'rheem','EXP-002':'ltts','EXP-003':'utsa'}
-ID_RE = re.compile(r'EXP-00[1-5]-[A-Z][0-9]*')
-HEADING_RE = re.compile(r'^\s*\**\s*#{3,6}\s+(EXP-00[1-5]-[A-Z][0-9]*)\s*:\s*(.+?)\s*\**\s*$')
+
+ID_RE = re.compile(r'EXP-00[1-6]-[A-Z][0-9]*')
+
+HEADING_RE = re.compile(
+    r'^\s*\**\s*#{3,6}\s+'
+    r'(EXP-00[1-6]-[A-Z][0-9]*)'
+    r'\s*:\s*(.+?)\s*\**\s*$'
+)
+
 BULLET_RE = re.compile(r'^\s*(?:\\)?-\s+(.+?)\s*$')
 
 
@@ -124,6 +133,11 @@ def build(selection, libdir):
                 raise ValueError(f'{eid} belongs to {actual}, not {employer}')
             entry = {'source_id': eid, 'heading': index[eid]['heading'], 'bullets': index[eid]['bullets']}
             if employer == 'other':
+                if eid.startswith('EXP-006-'):
+                    entry['heading'] = (
+                        'Graduate Teaching Assistant | UTSA | '
+                        'Jan 2017–May 2019 — ' + entry['heading']
+                    )
                 result['other_experience'].append(entry)
             else:
                 result['experience'][employer].append(entry)
