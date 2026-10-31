@@ -1,0 +1,764 @@
+AGENTIC JOB APPLICATION — DETAILED PYTHON WORKFLOW GUIDE
+=========================================================
+Repository: https://github.com/AdnanShahriar64/Agentic-Job-Application
+Reviewed: October 30, 2026 (public main-branch source)
+Scope: CURRENT code, not the previously proposed patch or future Agent 4.
+
+PURPOSE
+-------
+This guide explains what Codex (the language-model agent) does, what each
+Python script does, which files move between stages, how to run the workflow,
+and what the current checks do and do NOT guarantee.
+
+Core design principle:
+    Codex decides WHAT is relevant to a job.
+    Python calculates scores, extracts original achievement text by ID,
+    formats the resume, compiles LaTeX, and checks the resulting PDF.
+
+The Python scripts are not separate autonomous AI agents. Codex reads the
+instructions in AGENTS.md and agents/*.md, then invokes the scripts as tools.
+These scripts do not search the internet or submit job applications.
+
+
+1. HIGH-LEVEL PIPELINE
+======================
+
+User supplies one job URL/text OR requests job discovery
+    |
+    v
+Agent 0 (specific job) or Agent 1 (search and analysis): Codex
+    |-- jobs/<Company_Role>/job_posting.txt
+    `-- jobs/<Company_Role>/job_requirements.json
+    |
+    v
+Agent 2: Codex compares job requirements with master libraries
+    `-- jobs/<Company_Role>/relevance.json
+    |
+    v
+[Python] scripts/score_selection.py
+    `-- jobs/<Company_Role>/selection_scores.json
+    |
+    v
+Agent 2: Codex reviews ranking, mandatory experience, and page budget
+    `-- jobs/<Company_Role>/resume_selection.json  (IDS, not achievement text)
+    |
+    v
+[Python] scripts/check_job_files.py
+    `-- prints CHECK: PASS or CHECK: FAIL; does not create resume content
+    |
+    v
+[Python] scripts/select_resume_content.py
+    `-- jobs/<Company_Role>/resume_content.json
+    |
+    v
+[Python] scripts/build_resume.py  (calls pdflatex/MiKTeX)
+    |-- output/<Company_Role>/resume_content.json
+    |-- output/<Company_Role>/resume_content.tex
+    |-- output/<Company_Role>/Resume_template.tex
+    |-- output/<Company_Role>/compile.log
+    |-- output/<Company_Role>/Resume_template.pdf
+    `-- output/<Company_Role>/Resume.pdf
+    |
+    v
+[Python] scripts/validate_resume.py (also called internally by builder)
+    `-- output/<Company_Role>/validation_report.json
+    |
+    v
+If needed: Agent 2 revises selected IDs/skills/demonstrations and rebuilds
+    |
+    v
+Optional Agent 3: Codex creates cover_letter_plan.json and Cover_Letter.md;
+                  PDF when requested and supported.
+
+Not yet in this active root workflow: Agent 4/browser application submission.
+
+
+
+Table format:
+Python script			What it does															Output
+score_selection.py		Calculates numerical relevance scores for accomplishments using keyword weights, evidence strength, and career-focus bonuses	selection_scores.json
+check_job_files.py		Checks the job description, requirements JSON, selected IDs, and basic consistency						PASS / FAIL
+select_resume_content.py	Converts selected IDs into complete, original achievement text from your Markdown libraries					resume_content.json
+build_resume.py			Converts résumé JSON into LaTeX, compiles using MiKTeX, and invokes the PDF validator						Resume.pdf and supp files
+validate_resume.py		Checks the finished PDF's length, contents, page utilization, and compilation warnings						validation_report.json
+
+
+
+
+
+
+
+2. PROJECT FILES AND THEIR ROLES
+================================
+
+Root:
+  AGENTS.md
+      Main routing instructions for Codex. Gives two workflows:
+      A. User gives a posting -> Agent 0 -> resume -> optional Agent 3.
+      B. User asks to find jobs -> Agent 1 -> Agent 2 -> Agent 3.
+      It also specifies Windows/MiKTeX and output-directory rules.
+
+  Resume_template.tex
+      Fixed LaTeX structure, contact/header and main employment headings.
+      The builder fills predefined macros. It is NOT the scoring system.
+
+  agents/Agent_0_job_intake.md
+      Instructions for using one supplied URL or pasted job posting.
+
+  agents/Agent1_job_discovery.md
+      Instructions for finding and analyzing relevant job openings.
+
+  agents/Agent_2_resume_generator.md
+      Instructions for ranking/selecting accomplishment IDs and page-fitting.
+
+  agents/Agent_3_cover_letter_generator.md
+      Optional narrative letter generation rules; not one of the five Python
+      scripts documented here.
+
+  libraries/Candidate_profile.md
+      Candidate facts and Career Focus table used for focus-score bonuses.
+
+  libraries/Summary_library.md
+      Source material for professional summaries.
+
+  libraries/EXP-00*.md
+      Master achievement entries: ID, heading, weighted keywords, status,
+      and complete Achievement bullets. Treat as authoritative source text.
+
+      Current resolver's hardcoded FILES dictionary includes:
+        EXP-001 = Rheem
+        EXP-002 = L&T Technology Services
+        EXP-003 = UTSA research
+        EXP-004 = Universal Real-Time Power Conversion
+        EXP-005 = selected earlier research projects
+        EXP-006 = UTSA teaching experience
+
+      IMPORTANT: As checked on GitHub, EXP-006 is already registered in
+      select_resume_content.py, despite the older Agent 2 instructions still
+      saying 'five' libraries. A future EXP-007 would still require changes
+      to hardcoded ID patterns and the FILES mapping.
+
+  libraries/Technical_knowledge_library.md
+  libraries/Software_and_programming_skills_library.md
+      Skill evidence consulted by Codex. The scoring script does not
+      automatically infer keyword relevance from these files.
+
+  libraries/Demonstration_links_library.json
+      Canonical demonstration IDs, titles, URLs. Resolver pulls the precise
+      title and URL after Codex selects a demonstration ID.
+
+  jobs/<Company_Role>/
+      Job-specific working data, analysis, scoring and selected content.
+
+  output/<Company_Role>/
+      Generated LaTeX, PDF and validation deliverables.
+
+
+3. STEP ZERO — HOW CODEX PREPARES A JOB
+======================================
+
+This is NOT a Python script.
+
+When the user supplies a job URL or pasted posting, Codex follows Agent 0:
+  A. Capture the original posting in job_posting.txt. The file normally has:
+       Source: <URL or pasted by user>
+       Retrieved: <YYYY-MM-DD>
+       ---
+       <posting text>
+  B. Analyze requirements into job_requirements.json:
+       employer, job_title, location, employment_arrangement,
+       requisition_number, application_url, date_checked, posting_file,
+       eligibility_requirements, required_qualifications,
+       preferred_qualifications, main_responsibilities,
+       technical_skills, software_requirements, technical_keywords,
+       qualification_gaps and match_score.
+  C. Compare qualifications with the master libraries.
+
+When asked to find jobs, Codex instead follows Agent 1 to discover and
+analyze postings before moving to selection. That discovery procedure is
+agent-led; none of the five Python scripts fetches postings.
+
+Current caveat: Agent 1's general structured-output instructions and
+Agent 0/check_job_files.py do not always describe identical JSON contracts.
+Use Agent 0's field names when running check_job_files.py for a specific job.
+
+
+4. SCRIPT #1 — scripts/score_selection.py
+========================================
+
+PURPOSE
+  Convert Codex's subjective relevance judgments into reproducible numeric
+  accomplishment rankings, using the weights in your experience libraries.
+
+WHO CREATES INPUT?
+  Codex writes jobs/<Company_Role>/relevance.json.
+  This script does not ask the AI to evaluate the job itself.
+
+INPUTS
+  1. jobs/<Company_Role>/relevance.json
+  2. Every library listed in select_resume_content.py's FILES dictionary
+  3. libraries/Candidate_profile.md (Career Focus table)
+
+Example relevance.json (illustrative):
+  {
+    "focus_requested": ["FOCUS-AI"],
+    "items": {
+      "EXP-003-G": {
+        "keyword_relevance": {
+          "Neural Networks": 5,
+          "Digital Twin": 4
+        },
+        "evidence_strength": 4.5
+      }
+    }
+  }
+
+  Codex assigns each keyword a relevance r from 0 to 5.
+  'evidence_strength' E is also judged by Codex, from 0 to 5 by design.
+  The Python script reads the library's corresponding keyword WEIGHTS.
+  Unmentioned keywords count as relevance zero, not as neutral relevance.
+
+FORMULAS
+  R = SUM(weight_i * relevance_i) / SUM(weight_i)
+  S = 0.80 * R + 0.20 * E + Career_Focus_bonus
+
+  Career Focus bonus is the sum of bonuses for requested focus IDs that
+  explicitly include that accomplishment in Candidate_profile.md.
+
+MAIN INTERNAL OPERATIONS
+  - Imports FILES and HEADING_RE from select_resume_content.py.
+  - Parses 'Weighted Keywords' and 'Status' within each library entry.
+  - Rejects source keyword weights outside the range 1 to 5.
+  - Reads the Career Focus table from Candidate_profile.md.
+  - Checks for unknown focus IDs and accomplishment IDs.
+  - Warns when an assigned keyword is absent from an accomplishment's library.
+  - For statuses describing in-development, planned, ongoing, proposed, or
+    in-progress work, caps evidence strength E at 2.0.
+  - Calculates R, E, bonus, S for every supplied accomplishment.
+  - Sorts descending by S and writes the ranking.
+
+OUTPUT
+  jobs/<Company_Role>/selection_scores.json
+  Contains the formula, requested focus IDs and ordered 'ranking' entries:
+    id, status, R, E, focus_bonus, S.
+  Script also prints a console score table and any warnings/errors.
+
+RUN
+  python scripts/score_selection.py jobs/<Company_Role>
+
+IMPORTANT LIMITATIONS
+  - The script does not select the final résumé bullets; Agent 2 does.
+  - A high S is not a license to invent qualifications.
+  - The ranking is only for accomplishments supplied in relevance.json.
+  - It does not automatically deduplicate synonymous keywords such as
+    'CFD' and 'Computational Fluid Dynamics'.
+  - Evidence scores and relevance inputs depend on Codex's judgment.
+  - Some malformed numeric values can raise an exception rather than
+    producing a polished validation error.
+
+
+5. AGENT 2 — SELECT IDS AFTER SCORING
+====================================
+
+Again, this step is carried out by Codex, not a Python script.
+
+Codex reads selection_scores.json, the posting, and the experience libraries.
+It decides which accomplishments will fit and best address the job.
+
+It creates jobs/<Company_Role>/resume_selection.json with:
+  - target_company and target_role
+  - a factual job-specific summary
+  - skill categories with lists of items
+  - experience groups containing ONLY accomplishment IDs
+  - optional demonstration_ids
+  - sometimes a selection_rationale for the audit trail
+
+Illustrative selection:
+  {
+    "target_company": "Example Company",
+    "target_role": "Simulation Engineer",
+    "summary": "Factual professional summary for this position.",
+    "skills": [{"category": "Numerical Simulation", "items": ["FEM", "CFD"]}],
+    "experience": {
+      "rheem": ["EXP-001-F"],
+      "ltts": ["EXP-002-C"],
+      "utsa": ["EXP-003-G"],
+      "other": ["EXP-006-A"]
+    },
+    "demonstration_ids": [1, 2]
+  }
+
+Key policy: the agent selects a complete accomplishment ID. It does NOT
+write, summarize, reorder or shorten that ID's Achievement bullets.
+
+The resolver requires at least one accomplishment each from Rheem, L&T, and
+UTSA research, regardless of whether other experience is selected.
+
+Agent 2 instructions also restrict EXP-005 to exceptional relevance and
+normally a maximum of one, and recommend at most five demonstrations.
+The pre-build checking script enforces these particular limits.
+
+
+6. SCRIPT #2 — scripts/check_job_files.py
+========================================
+
+PURPOSE
+  Check that the job folder is internally usable before building the résumé.
+  It is a preflight checker, not a résumé generator.
+
+INPUTS
+  jobs/<Company_Role>/job_posting.txt
+  jobs/<Company_Role>/job_requirements.json
+  jobs/<Company_Role>/resume_selection.json
+  libraries/EXP-*.md via the hardcoded FILES dictionary
+  libraries/Demonstration_links_library.json (via resolver dry run)
+
+MAIN INTERNAL OPERATIONS
+  - Confirms job_posting.txt exists.
+  - Warns if posting body appears very short (under 80 words).
+  - Checks job_requirements.json exists and is valid JSON.
+  - Requires the full expected field list defined by REQ_KEYS.
+  - Expects required/preferred qualification entries as objects with a
+    recognized priority: Critical, High, Medium or Low.
+  - Checks qualification_gap status values:
+    Directly supported / Partially supported / Not established.
+  - Checks evidence IDs attached to gaps against known library IDs.
+  - Checks match_score, if provided, is numeric and between 0 and 100.
+  - Warns when no required qualifications were extracted.
+  - Checks resume_selection.json exists and parses as JSON.
+  - Rejects more than one selected EXP-005 item.
+  - Rejects more than five demonstration IDs.
+  - Rejects an empty summary.
+  - Calls select_resume_content.build(...) as a DRY RUN to validate IDs,
+    group attribution, duplicates, library availability and demonstrations.
+  - Checks the master keyword weights (1 through 5) using score_selection.
+
+OUTPUT
+  Console diagnostics only:
+      WARNING: ...
+      ERROR: ...
+      CHECK: PASS  or  CHECK: FAIL
+
+EXIT STATUS
+  0 = passed checks
+  1 = failure
+
+RUN
+  python scripts/check_job_files.py jobs/<Company_Role>
+
+NOTES
+  - It does not compile LaTeX or generate a PDF.
+  - It does not verify that the posting URL is still open.
+  - It does not fully verify every factual claim in job_requirements.json.
+  - It doesn't recompute the ranking or prove the final ID selection is optimal.
+  - Its source IDs and JSON contract are sensitive to the exact library
+    and Agent 0 schema versions.
+
+
+7. SCRIPT #3 — scripts/select_resume_content.py
+===============================================
+
+PURPOSE
+  Resolve selected accomplishment IDs into the ORIGINAL achievement text.
+  This is the main safeguard against AI rewriting résumé accomplishments.
+
+INPUTS
+  jobs/<Company_Role>/resume_selection.json
+  libraries/EXP-001 through EXP-006 (as currently hardcoded)
+  libraries/Demonstration_links_library.json
+
+RUN
+  python scripts/select_resume_content.py \
+      --selection jobs/<Company_Role>/resume_selection.json \
+      --output jobs/<Company_Role>/resume_content.json
+
+  PowerShell users may put this on one line or use backticks for line
+  continuation instead of the backslashes shown above.
+
+OPTION
+  --libraries <path>  (default: libraries relative to project root)
+
+MAIN INTERNAL OPERATIONS
+  - Reads and parses the selection JSON.
+  - Loads every library named in the FILES dictionary.
+  - Detects headings with EXP-00[1-6]-<letter><optional number> IDs.
+  - Finds each Achievement block and captures every bullet in original order.
+  - Does NOT print Weighted Keywords or Status in the résumé.
+  - Rejects an achievement with no bullets or duplicate IDs in one library.
+  - Rejects duplicate IDs across libraries.
+  - Rejects unknown IDs, malformed IDs, duplicate selections and wrong groups.
+  - Determines the employer group from the ID prefix:
+       EXP-001 -> rheem
+       EXP-002 -> ltts
+       EXP-003 -> utsa
+       EXP-004, EXP-005, EXP-006 -> other
+  - Requires at least one selected ID from each mandatory employer group.
+  - For EXP-006 teaching items, prefixes the OTHER-EXPERIENCE heading with:
+       Graduate Teaching Assistant | UTSA | Jan 2017-May 2019
+    (the source code uses an en dash for the year range).
+  - Looks up selected demonstration IDs in Demonstration_links_library.json.
+  - Copies original demonstration titles and full URLs into the result.
+  - Omits a repeated demonstration URL.
+  - Writes the resolved JSON, creating its parent directory if needed.
+
+OUTPUT
+  jobs/<Company_Role>/resume_content.json
+
+Shape of an experience entry after resolution:
+  {
+    "source_id": "EXP-001-F",
+    "heading": "The source accomplishment heading",
+    "bullets": ["Original bullet 1", "Original bullet 2"]
+  }
+
+Groups:
+  experience.rheem
+  experience.ltts
+  experience.utsa
+  other_experience
+  demonstrations
+
+WHY THIS MATTERS
+  If Codex selects EXP-001-F, it gets ALL of EXP-001-F, not just a condensed
+  or paraphrased summary. A single selected ID is indivisible at this stage.
+
+CURRENT LIMITATION
+  The resolver itself faithfully extracts master-library text. However,
+  build_resume.py still accepts JSON containing legacy, manually supplied
+  'text' fields; it does NOT independently prove that every later-supplied
+  resume_content.json field still matches the original library.
+
+
+8. SCRIPT #4 — scripts/build_resume.py
+=====================================
+
+PURPOSE
+  Turn resume_content.json into a formatted two-page-target PDF using the
+  fixed Resume_template.tex, without asking AI to author LaTeX achievements.
+
+INPUTS
+  --input <path to resume_content.json>         [required]
+  --template <path to Resume_template.tex>      [optional]
+  --output <output directory>                  [optional]
+  --compiler <executable name>                 [optional; pdflatex]
+  --skip-validate                              [optional; discouraged]
+
+RUN
+  python scripts/build_resume.py \
+      --input jobs/<Company_Role>/resume_content.json \
+      --output output/<Company_Role>
+
+  For Windows PowerShell, put the command on one line or replace each
+  backslash continuation with a PowerShell backtick.
+
+MAIN INTERNAL OPERATIONS
+  1. Loads resume_content.json.
+  2. Validates the summary is nonempty, skills have nonempty categories/items,
+     and mandatory Rheem/L&T/UTSA experience groups are populated.
+  3. Supports grouped entries with heading and bullets, and a legacy format
+     with a separate text entry per bullet.
+  4. Validates demonstration URLs are http/https, have a hostname and do not
+     contain disallowed whitespace or LaTeX delimiters. Rejects duplicate URLs.
+  5. Escapes LaTeX-sensitive characters (&, %, $, #, _, braces, etc.) and
+     converts several special Unicode characters to LaTeX equivalents.
+  6. Builds macros for:
+       ResumeSummary
+       ResumeSkills
+       RheemBullets
+       LTTSBullets
+       UTSABullets
+       OtherExperience
+       Demonstrations
+  7. Renders each grouped accomplishment as a bold main bullet with its
+     original Achievement text as nested sub-bullets.
+  8. Copies Resume_template.tex into the output folder.
+  9. Writes resume_content.tex containing the LaTeX macro definitions.
+ 10. Finds pdflatex using the operating system's PATH.
+ 11. Runs pdflatex twice with nonstop, halt-on-error and file-line-error flags.
+     Each compile attempt has a 120-second timeout.
+ 12. Stores compiler output in compile.log. Because the file is rewritten
+     for each run, it primarily captures the latest run's output.
+ 13. Copies Resume_template.pdf to Resume.pdf.
+ 14. Unless --skip-validate was set, calls validate_resume.validate_pdf(...)
+     and writes validation_report.json in the same output directory.
+ 15. Returns failure if LaTeX compilation or PDF validation fails.
+
+OUTPUTS
+  output/<Company_Role>/resume_content.json   (copy of input content)
+  output/<Company_Role>/resume_content.tex    (generated macros)
+  output/<Company_Role>/Resume_template.tex   (copy of template)
+  output/<Company_Role>/compile.log
+  output/<Company_Role>/Resume_template.pdf
+  output/<Company_Role>/Resume.pdf
+  output/<Company_Role>/validation_report.json  (unless validation skipped)
+  Plus auxiliary files produced by pdflatex.
+
+EXIT STATUS
+  0 = successful build and validation, or successful build if validation skipped
+  1 = input/LaTeX/OS exception handled by builder
+  2 = PDF validation reported failure
+
+DEPENDENCIES
+  - Python standard library for building.
+  - MiKTeX/TeX Live's pdflatex executable on PATH.
+  - pymupdf (preferred) or pypdf for PDF validation.
+  - No need to launch a graphical LaTeX editor.
+
+IMPORTANT LIMITATIONS
+  - The script targets two pages but does not automatically choose IDs to
+    fit; the AGENT chooses/revises ID selections after validation.
+  - It is not a strict source-library integrity checker for manually edited
+    resume_content.json.
+  - It does not independently validate actual clickable PDF link annotations.
+
+
+9. SCRIPT #5 — scripts/validate_resume.py
+========================================
+
+PURPOSE
+  Inspect the COMPILED PDF, not merely the LaTeX source or JSON.
+
+INPUTS
+  The PDF path; optionally resume_content.json and compile.log.
+
+STANDALONE RUN
+  python scripts/validate_resume.py \
+      --pdf output/<Company_Role>/Resume.pdf \
+      --json output/<Company_Role>/resume_content.json \
+      --log output/<Company_Role>/compile.log
+
+  As above, use one line or PowerShell backticks on Windows.
+
+MAIN INTERNAL OPERATIONS
+  - Attempts text extraction via PyMuPDF; falls back to pypdf.
+  - Fails if the PDF is missing or suspiciously small.
+  - Fails if PDF page count is not exactly 2.
+  - Fails if extracted text is missing/too short (under 250 characters).
+  - Checks certain fixed employment/header strings, education and profile
+    references are present in the extracted text.
+  - Flags unresolved 'Insert job-specific' or 'Insert selected' placeholders.
+  - When JSON is provided, checks that selected skill-category labels appear.
+  - When JSON is provided, checks that every supplied achievement bullet
+    appears in the PDF after stripping whitespace/punctuation differences.
+  - When JSON is provided, checks whether full demonstration URLs are present
+    in extracted PDF text; missing ones are WARNINGS.
+  - Estimates how much of page 2 is filled with text, using PyMuPDF if present.
+  - Warns if page 2 is under 80% filled, while the agent's page-fitting
+    instructions target approximately 85-100%.
+  - Checks compile.log for 'Overfull \\hbox' or 'Overfull \\vbox' warnings.
+
+REPORT FIELDS (when produced by the builder)
+  passed: true / false
+  errors: [...]
+  warnings: [...]
+  pages: integer
+  page2_fill: numeric fraction or null
+  pdf_text_characters: integer
+  extraction_backend: PyMuPDF or pypdf
+
+OUTPUT
+  Standalone invocation: prints JSON report to the terminal.
+  When build_resume.py calls it: output/<Company_Role>/validation_report.json.
+
+EXIT STATUS
+  0 = validation passed
+  2 = validation failed
+
+IMPORTANT DISTINCTIONS
+  - It checks PDF text vs. the provided JSON, NOT independently vs. the
+    authoritative Markdown libraries.
+  - Visible URL text is checked; underlying clickable PDF links are NOT
+    independently verified by this current script.
+  - Page-two utilization is an estimate and visual review still matters.
+  - Warnings do not necessarily make passed=false; errors do.
+
+
+10. PAGE FITTING: THE HUMAN-READABLE CONTROL LOOP
+=================================================
+
+After the first PDF build:
+
+  IF validation_report.json reports pages > 2:
+      Agent 2 removes a complete lower-priority accomplishment ID, or
+      revises the optional skills/demonstration selection.
+      It DOES NOT shorten a selected achievement bullet.
+
+  IF pages == 2 but page 2 is underfilled:
+      Agent 2 may add a complete relevant accomplishment ID, or adjust
+      other optional content.
+
+  IF an addition produces 3 pages:
+      Agent 2 tries a smaller whole accomplishment or substitutes another.
+
+  IF there is no feasible two-page fit without distorting content:
+      Agent 2 should explain the issue, not fake achievements or force tiny text.
+
+Agent 2's instructions allow a maximum of five selection revisions and aim
+for a final page-2 fill of about 85-100%. This is a Codex-directed loop,
+not a standalone automatic Python page-layout optimizer.
+
+
+11. OPTIONAL AGENT 3: COVER LETTER
+=================================
+
+Agent 3 uses the selected job requirements, candidate profile, verified
+experience libraries and Personal_Motivation_Library.md.
+
+Expected deliverables under output/<Company_Role>/:
+  cover_letter_plan.json
+  Cover_Letter.md
+  Cover_Letter.pdf             (when requested and supported)
+  cover_letter_validation.json
+
+Agent 3 may paraphrase supported technical accomplishments to form natural
+prose. That differs from Agent 2, which must reproduce résumé Achievement
+bullets verbatim. No separate required cover-letter Python build script is
+specified by the current Agent 3 instruction file.
+
+
+12. COMMAND REFERENCE — WINDOWS POWERSHELL
+=========================================
+
+Open PowerShell in your LOCAL repository:
+
+  cd 'C:\Users\AluPotol\Documents\GitHub\Agentic-Job-Application'
+
+Choose an existing job folder (replace the placeholder):
+
+  $job = 'Company_Role'
+
+Prerequisite: Codex has already written job_posting.txt,
+job_requirements.json and relevance.json for this job.
+
+  # 1. Calculate numeric accomplishment ranking
+  python scripts/score_selection.py "jobs/$job"
+
+Next Codex should create resume_selection.json using those rankings.
+
+  # 2. Check job and selected IDs
+  python scripts/check_job_files.py "jobs/$job"
+
+  # 3. Pull the original achievement bullets into resolved JSON
+  python scripts/select_resume_content.py `
+      --selection "jobs/$job/resume_selection.json" `
+      --output "jobs/$job/resume_content.json"
+
+  # 4. Compile PDF (and validate automatically)
+  python scripts/build_resume.py `
+      --input "jobs/$job/resume_content.json" `
+      --output "output/$job"
+
+  # 5. Optional standalone rerun of PDF validator
+  python scripts/validate_resume.py `
+      --pdf "output/$job/Resume.pdf" `
+      --json "output/$job/resume_content.json" `
+      --log "output/$job/compile.log"
+
+Note: The exact source program accepts paths relative to project root, so
+these commands do not require manually copying files elsewhere.
+
+Environment checks:
+  where.exe pdflatex
+  pdflatex --version
+  python -m pip install pymupdf
+
+
+13. TROUBLESHOOTING GUIDE
+=========================
+
+A. 'Missing job_requirements.json' or schema complaints
+   -> Codex must create the canonical job file expected by Agent 0/checker.
+   -> Verify required/preferred qualification items have 'text' and 'priority'.
+
+B. 'Unknown accomplishment ID' / 'Missing library'
+   -> Check the selected ID is present in a listed EXP library.
+   -> Check FILES mapping, naming, and filename case/extension.
+
+C. 'Mandatory employer ... must have an accomplishment'
+   -> Select at least one valid ID each from EXP-001, EXP-002, EXP-003.
+   -> EXP-004/005/006 do not replace these mandatory groups.
+
+D. Keyword scoring fails
+   -> Check relevance.json values and Weighted Keywords source formatting.
+   -> A missing relevance score for a keyword counts as zero.
+
+E. 'pdflatex not found'
+   -> Put the MiKTeX executable folder on PATH and restart Codex/terminal.
+   -> A graphical LaTeX editor is unnecessary for automated compilation.
+
+F. LaTeX compilation error
+   -> Inspect output/<job>/compile.log, particularly the last error lines.
+   -> Confirm MiKTeX packages are available and compilation is authorized.
+
+G. PDF contains 3 pages
+   -> Remove or swap a COMPLETE lower-priority accomplishment ID.
+   -> Re-run resolver, builder and validator.
+
+H. PDF reports missing bullet text
+   -> Check resolver input, Unicode extraction and generated TeX/PDF text.
+   -> Do NOT repair by rewriting an original achievement bullet.
+
+I. URL is displayed but cannot be clicked
+   -> This current validator does not prove hyperlinks are active.
+   -> Manually inspect links in PDF viewer or implement annotation checking.
+
+J. Resume appears successful but content was edited after ID resolution
+   -> Existing builder/validator may not detect library-vs-JSON edits.
+   -> Regenerate resume_content.json from original IDs and avoid hand edits.
+
+K. Agent 4/application submission
+   -> Not part of the active coordinator; no applicant submission occurs here.
+
+
+14. CURRENT LIMITATIONS / IMPORTANT DESIGN NOTES
+================================================
+
+1. Agent 2's source paragraph still says 'five' experience libraries, while
+   the checked select_resume_content.py currently maps EXP-001 to EXP-006.
+
+2. New libraries are NOT discovered automatically. FILES and ID patterns
+   are currently explicit. Adding EXP-007 requires code updates.
+
+3. Source-extraction fidelity is strong, but there is no independent strict
+   check in build_resume.py against the master Markdown libraries.
+
+4. PDF validator currently checks visible URLs, not actual click targets.
+
+5. No automatic job-site application or submission is wired into AGENTS.md.
+
+6. A score, matching heuristic, or generated PDF is not evidence of
+   eligibility or hiring likelihood. Critical eligibility statements must
+   be checked by the user rather than inferred away.
+
+7. Legacy content support in the builder means manually authored 'text'
+   entries can still be compiled. Agent 2's correct working convention is
+   always select IDs and let select_resume_content.py expand them.
+
+8. Some constraints are agent instructions rather than independently enforced
+   by every Python layer; do not assume every stated rule is programmatically
+   guaranteed by the current code.
+
+9. This guide describes static source inspection on October 30, 2026. It does
+   not claim a successful end-to-end execution on your local Windows machine.
+
+
+15. SOURCE FILES REVIEWED
+=========================
+
+Coordinator:
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/AGENTS.md
+
+Agents:
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/agents/Agent_0_job_intake.md
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/agents/Agent1_job_discovery.md
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/agents/Agent_2_resume_generator.md
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/agents/Agent_3_cover_letter_generator.md
+
+Python scripts:
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/scripts/score_selection.py
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/scripts/check_job_files.py
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/scripts/select_resume_content.py
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/scripts/build_resume.py
+https://github.com/AdnanShahriar64/Agentic-Job-Application/blob/main/scripts/validate_resume.py
+
+END OF GUIDE
